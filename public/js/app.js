@@ -36855,6 +36855,17 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); //window.
   * });
   */
 
+
+showCart();
+
+function showCart(id) {
+  axios.post('{{route("addCart")}}', {
+    id: id
+  }).then(function (data) {
+    $('#shoppingCart').html(data.data);
+  })["catch"](function (error) {});
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -36933,8 +36944,8 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\lavarel\shopsite\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\lavarel\shopsite\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\lavarel\laravel-shopsite\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\lavarel\laravel-shopsite\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

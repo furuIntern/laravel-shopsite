@@ -10667,3 +10667,34 @@ a.text-dark:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+#bar > li {
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  top: 30px;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu .dropdown-menu {
+  margin-left: 155px;
+  top: -10px;
+}
+
+.card > p {
+  text-align: justify;
+  padding: 20px;
+  margin: 0;
+}
+

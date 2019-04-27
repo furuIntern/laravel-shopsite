@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Builder;
 class Products extends Model
 {
     //
@@ -14,4 +14,10 @@ class Products extends Model
     protected $hidden = [
         'amount'
     ];
+
+
+    public function scopeProductsFilter($query,$filter) {
+
+       return $filter->apply($query);
+    }
 }

@@ -2,7 +2,9 @@
 <div class="row">
     @foreach ($products as $product)
         <div class="card mr-3 ml-3 mb-3" style="width:15rem; text-align:center">
-            <img class="" src="{{ $product->img }}" alt="" style="width: 100%">
+            <a href="{{route('detail' , [ 'id' => $product->id])}}">
+                <img class="" src="{{ $product->img }}" alt="" style="width: 100%">
+            </a>
             <div class="card-body">
               <h3 class="card-title">{{ $product->name }}</h3>
             </div>

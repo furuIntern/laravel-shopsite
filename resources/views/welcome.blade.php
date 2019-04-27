@@ -1,41 +1,9 @@
 @extends('layouts\app')
     
         @section('content')
-            <div class="row mt-3">
-                <div class="col-9" id="products">
+            <div id="products">
 
-                </div>
-                <div class="col-3">
-                    <div class="mb-3" id="shoppingCart">
-                      
-                    </div>
-                    <div class="container card">
-                        <h4 class="content-center">Fillter</h4>
-                        <form class="m-3">
-                            <div class="form-group">
-                                <input type="checkbox" name="" id=""/>
-                                <span><label for="">Best Seller</label></span>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="" id=""/>
-                                <span><label for="">Price Down</label></span>
-                            </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="" id=""/>
-                                    <span><label for="">Price Up</label></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="" id=""/>
-                                    <span><label for="">Newest</label></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="" id=""/>
-                                    <span><label for="">Oldest</label></span>
-                                </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            </div>  
         @endsection
         
     @section('script')
@@ -54,23 +22,107 @@
                 })
                 showCart();
                 function showCart(id) {
-                 
+  
 
                     axios.post('{{route("addCart")}}' , {
                         id : id
                     })
-                    .then(function(data) {
-                        console.log(data);
-                        $('#shoppingCart').html(data.data);
-                    })
-                    .catch(function(error) {
+                        .then(function(data) {
+      
+                            $('#shoppingCart').html(data.data);
+                        })
+                        .catch(function(error) {
 
-                    })
+                        })
                 }
                 $(document).on('click','.btn-success' , function() {
                     var id = $(this).attr('id');
                     showCart(id);
                 })
+                
+                $(document).on('click','.category',function(e) {
+                    e.preventDefault();
+                    var id = $(this).data('id');
+                
+                    axios.get("{{route('category')}}", {
+                        params: {
+                            id: id
+                        }
+                    })
+                    .then(function(data) {
+                     
+                        $('#products').html(data.data);
+                    })
+                    .catch(function(error) {
+
+                    })
+                })
+
+                $(document).on('click','.fillter',function() {
+                    var price = $('input[name="price"]:checked').val();
+                    var time = $('input[name="time"]:checked').val();
+                    var popular = $('input[name="popular"]:checked').val();
+                   
+                    axios.get('{{route("filter")}}', {
+                        params: {
+                            price: price,
+                            time: time,
+                            popular: popular
+                            
+                        }
+                    })
+                     .then(function(data) {
+                        $('#products').html(data.data);
+                     })
+                     .catch(function(error) {
+
+                     })
+                    
+                })
+                function checked(val,e) {
+                    if(val.val() > parseInt(val.attr('max')) || val.val() < parseInt(val.attr('min'))) {
+                        e.preventDefault()
+                        $(val).val(0);
+                        return false;
+                    }
+                    return true;
+                }
+                $(document).on('blur','.rangePrice',function(e) { 
+                    if(!checked($(this),e)) {
+                        return false;
+                    }
+                    
+                    var rangePrice = [
+                            $('input[name="min_price"]').val(),
+                            $('input[name="max_price"]').val()
+                    ];
+                   
+                    axios.get('{{route("filter")}}', {
+                        params: {
+                            rangePrice: rangePrice
+                        }
+                    })
+                     .then(function(data) {
+                       
+                        $('#products').html(data.data);
+                     })
+                     .catch(function(error) {
+
+                     })
+                })
+                $(document).on('click','.page-link' , function(e) {
+                    e.preventDefault();
+
+                    var link = $(this).attr('href');
+
+                    axios.post(link)
+                        .then(function(data) {
+                            $('#products').html(data.data);
+                        })
+                        .catch(function(error) {
+
+                        })
+                })                
             })
         </script>
     @endsection

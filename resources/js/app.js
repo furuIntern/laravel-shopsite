@@ -32,3 +32,19 @@ require('./bootstrap');
   *  el: '#app'
   * });
   */
+
+ showCart();
+ function showCart(id) {
+  
+
+     axios.post('{{route("addCart")}}' , {
+         id : id
+     })
+     .then(function(data) {
+        
+         $('#shoppingCart').html(data.data);
+     })
+     .catch(function(error) {
+
+     })
+ }

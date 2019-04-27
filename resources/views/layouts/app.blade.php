@@ -54,7 +54,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
+                                
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -77,12 +77,19 @@
             
         
     </div>
-    <div class="container">
+    <div class="container mb-5">
         @include('element\navbar')
-        @yield('content')
+        <div class="row mt-3">
+            <div class="col-9">
+                @yield('content')
+            </div>
+            @include('element\aside')
+        </div>
+        
     </div>
 </body>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{asset('public/js/main.js')}}"></script>
     @yield('script')
 </html>
