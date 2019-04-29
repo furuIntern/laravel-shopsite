@@ -1,10 +1,6 @@
 @extends('admin/layouts/manage')
 @section('component')
-<div class='row bg-white shadow-sm justify-content-end px-3'>
-    <h2 class='my-3'>Superadmin</h2>
-    <!--Logout-->
-    <a href="logout" class="text-secondary"><h2 class='my-3 pl-2 ml-2 border-left'><i class="fas fa-power-off"></i></h2></a>
-</div>
+
 <div class="container my-5">
     <div class="card">
         <div class="d-flex justify-content-between p-3">

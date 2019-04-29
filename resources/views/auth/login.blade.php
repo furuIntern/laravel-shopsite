@@ -6,6 +6,9 @@
         <div class="card shadow border-primary">
             <div class="card-header bg-primary text-light"><h2 class='text-center'><b>Login</b></h2></div>
             <div class="container my-3">
+                @if($errors->any())
+                    <div class="alert alert-danger">Your username or password is incorrect</div>
+                @endif
                 <div class='row'>
                     <div class="col-md-8">
                         <div class="input-group mb-4">
@@ -24,7 +27,7 @@
                                 </span>
                             </div>
                             <!--Input password-->
-                            <input type="text" class="form-control border-primary" name='password' placeholder='Password'/>
+                            <input type="password" class="form-control border-primary" name='password' placeholder='Password'/>
                         </div>
                     </div>
                     <div class="col-md-4 border-left text-center">

@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-
+    
     /**
      * Create a new controller instance.
      *
@@ -39,6 +39,12 @@ class LoginController extends Controller
 
     protected function redirectTo()
     {
-        return '/admin';
+        return 'admin';
+    }
+    
+    
+    public function username()
+    {
+    return 'username';
     }
 }

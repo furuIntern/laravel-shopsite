@@ -14068,3 +14068,7 @@ h3 {
 .component {
   font-size: 18px;
 }
+
+body, html {
+  height: 100%;
+}

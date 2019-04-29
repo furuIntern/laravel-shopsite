@@ -5,12 +5,16 @@
         <div class="col-md-8">
             <div class="card mt-5 shadow">
                 <div class="card-header text-center">
+                <a href="{{route('login')}}" class="float-left">Back</a>
                 <h2>
                 {{ __('Register') }}
                 </h2>
                 </div>
 
                 <div class="card-body">
+                    @if($errors->any())
+                        <div class="alert alert-danger">Refill the form </div>
+                    @endif
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <div class="container w-75">
