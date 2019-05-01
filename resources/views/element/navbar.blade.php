@@ -6,7 +6,7 @@
                 <a class="nav-link" href="">pages</a>
             </li>
             <li class="nav-item ">
-                <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                <a id="navbarDropdown" class="nav-link" href="{{route('shop')}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     shop
                 </a>
                 <ul class="">

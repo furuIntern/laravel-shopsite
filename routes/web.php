@@ -19,10 +19,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('products', 'products\ProductsController@showProducts')->name('product');
+
 Route::post('addcart' , 'cart\CartController@addCart')->name('addCart');
+Route::get('detailCart' ,function() {
+    return view('cart\detailCart');
+})->name('detailCart');
+
 Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
-    Route::get('/', 'products\ProductsController@category')->name('category');
+    Route::get('/',function() {
+        return view('shop\mainPage');
+    })->name('shop');
+    Route::post('/products', 'products\ProductsController@showProducts')->name('product');
+    Route::get('/category', 'products\ProductsController@category')->name('category');
     Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detail');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
 });

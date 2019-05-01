@@ -12,7 +12,8 @@
             <li class="list-group-item justify-content-between d-flex">
                 <div>
                     <h6>{{$item->name}}</h6>
-                    <strong>Qty:{{$item->qty}}</strong>
+                    <label for="">Qty</label>
+                    <input class="form-control" name="qty" value="{{$item->qty}}"/>
                 </div>
                 <span>${{$item->price}}</span>
             </li>
@@ -21,7 +22,11 @@
                 <strong>Total:</strong>
                 <strong>{{$total}}</strong>
             </li>
+            <li class="list-group-item text-center">
+                <button class="btn btn-success btn-block"><a href="{{route('detailCart')}}" style="text-decoration:none ; color:#fff">Detail</a></button>
+            </li>
         </ul>
+        
     @else
         <ul class="list-group">
             <li class="list-group-item">

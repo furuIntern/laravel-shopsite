@@ -15,27 +15,27 @@ class ProductsController extends Controller
     public function showProducts(Request $request) {
         $products = Products::Paginate(10);
        
-        return view('product\showProduct', [ 'products' => $products ]);
+        return view('shop\showProduct', [ 'products' => $products ]);
     }
 
     public function category(Request $request) {
         
         $products = Products::where('category_id', $request->id)->paginate(10);
 
-        return view('product\showProduct', [ 'products' => $products]);
+        return view('shop\showProduct', [ 'products' => $products]);
     }
 
     public function detailProduct(Request $request , $id) {
 
         $Product = Products::find($id);
-        return view('product\detailProduct' , [ 'product' => $Product]);
+        return view('shop\detailProduct' , [ 'product' => $Product]);
     }
 
     public function filter(ProductsFilter $filter) {
         
     
         return view(
-            'product\showProduct', 
+            'shop\showProduct', 
                 [
                     'products' => Products::ProductsFilter($filter)
                                             ->paginate(10)

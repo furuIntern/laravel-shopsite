@@ -83,7 +83,9 @@
             <div class="col-9">
                 @yield('content')
             </div>
-            @include('element\aside')
+            <div class="col-3">
+                @yield('aside')
+            </div>
         </div>
         
     </div>
