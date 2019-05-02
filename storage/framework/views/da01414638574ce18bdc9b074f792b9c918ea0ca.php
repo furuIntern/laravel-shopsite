@@ -12,7 +12,8 @@
             <li class="list-group-item justify-content-between d-flex">
                 <div>
                     <h6><?php echo e($item->name); ?></h6>
-                    <strong>Qty:<?php echo e($item->qty); ?></strong>
+                    <label for="">Qty</label>
+                    <input class="form-control" name="qty" value="<?php echo e($item->qty); ?>"/>
                 </div>
                 <span>$<?php echo e($item->price); ?></span>
             </li>

@@ -1,8 +1,6 @@
     
         <?php $__env->startSection('content'); ?>
-            <div id="products">
-
-            </div>  
+            
         <?php $__env->stopSection(); ?>
 
         <?php $__env->startSection('aside'); ?>

@@ -2,14 +2,48 @@
 
 @section('content')
     <div id="products">
-
+        
     </div>  
 @endsection
 
 @section('aside')
     <div class="mb-3" id="shoppingCart">
-       
+        <h4 class="d-flex justify-content-between">
+            <strong>Cart</strong>
+            @if (Session::has('cart'))
+                <span class="badge badge-secondary">{{Cart::count()}}</span>
+            @endif
+        </h4>
+    
+        @if (Session::has('cart'))
+            <ul class="list-group">
+                @foreach (Cart::content() as $item)
+                <li class="list-group-item justify-content-between d-flex">
+                    <div>
+                        <h5>{{$item->name}}</h5>
+                        <strong>Qty: {{$item->qty}}</strong>
+                    </div>
+                    <span>${{$item->price}}</span>
+                </li>
+                @endforeach
+                <li class="list-group-item justify-content-between d-flex">
+                    <strong>Total:</strong>
+                    <strong>{{Cart::total()}}</strong>
+                </li>
+                <li class="list-group-item text-center p-0">
+                    <button class="btn btn-success btn-block"><a href="{{route('detailCart')}}" style="text-decoration:none ; color:#fff">Detail</a></button>
+                </li>
+            </ul>
+            
+        @else
+            <ul class="list-group">
+                <li class="list-group-item">
+                   <h4>Empty Cart</h4> 
+                </li>
+            </ul>
+        @endif
     </div>
+
     <div class="container card">
         <h4 class="content-center">Fillter</h4>
         <form class="m-3" id="demo">
@@ -56,7 +90,7 @@
                 .catch(function(error) {
 
                 })
-                showCart();
+                
                 function showCart(id) {
   
 
@@ -160,19 +194,7 @@
                         })
                 })
 
-                $(document).on('change','.qty', function() {
-                    var qty = $(this).val();
-
-                    axios.post('{{route("editCart")}}', {
-                        qty: qty
-                    })
-                     .then(function(data) {
-                        showCart();
-                     })
-                     .catch(function(error) {
-                         
-                     })
-                })                
+                               
             })
         </script>
     @endsection

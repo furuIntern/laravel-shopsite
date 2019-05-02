@@ -24,7 +24,8 @@ Route::post('addcart' , 'cart\CartController@addCart')->name('addCart');
 Route::get('detailCart' ,function() {
     return view('cart\detailCart');
 })->name('detailCart');
-
+Route::post('show-items' ,'cart\CartController@itemsCart')->name('items');
+Route::post('/edit-cart', 'cart\CartController@editCart')->name('editCart');
 Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
     Route::get('/',function() {
         return view('shop\mainPage');
@@ -33,6 +34,7 @@ Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
     Route::get('/category', 'products\ProductsController@category')->name('category');
     Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detail');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
+    
 });
 
 Route::get('/contact', function() {
