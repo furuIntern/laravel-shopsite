@@ -1,6 +1,7 @@
-@extends('layouts\app')
+@extends('layouts\shop')
 
-@section('content')
+@section('main')
+
     <div id="products">
         
     </div>  

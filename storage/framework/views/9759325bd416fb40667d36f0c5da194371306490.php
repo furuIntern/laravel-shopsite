@@ -81,14 +81,7 @@
     </div>
     <div class="container mb-5">
         <?php echo $__env->make('element\navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-        <div class="row mt-3">
-            <div class="col-9">
-                <?php echo $__env->yieldContent('content'); ?>
-            </div>
-            <div class="col-3">
-                <?php echo $__env->yieldContent('aside'); ?>
-            </div>
-        </div>
+        <?php echo $__env->yieldContent('content'); ?>
         
     </div>
 </body>

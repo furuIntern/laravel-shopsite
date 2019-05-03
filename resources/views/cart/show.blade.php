@@ -1,10 +1,11 @@
 
         <ul class="list-group">
+            
             @foreach ($items as $item)
             <li class="list-group-item justify-content-between d-flex">
                 <div>
                     <h6>{{$item->name}}</h6>
-                    <strong>Qty: {{$items->qty}}</strong>
+                    <strong>Qty: {{$item->qty}}</strong>
                 </div>
                 <span>${{$item->price}}</span>
             </li>

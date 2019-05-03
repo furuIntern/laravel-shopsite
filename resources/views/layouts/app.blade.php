@@ -79,14 +79,7 @@
     </div>
     <div class="container mb-5">
         @include('element\navbar')
-        <div class="row mt-3">
-            <div class="col-9">
-                @yield('content')
-            </div>
-            <div class="col-3">
-                @yield('aside')
-            </div>
-        </div>
+        @yield('content')
         
     </div>
 </body>

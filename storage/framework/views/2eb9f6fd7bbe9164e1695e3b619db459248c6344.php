@@ -1,4 +1,5 @@
-<?php $__env->startSection('content'); ?>
+<?php $__env->startSection('main'); ?>
+
     <div id="products">
         
     </div>  
@@ -41,6 +42,7 @@
             </ul>
         <?php endif; ?>
     </div>
+
     <div class="container card">
         <h4 class="content-center">Fillter</h4>
         <form class="m-3" id="demo">
@@ -191,21 +193,9 @@
                         })
                 })
 
-                $(document).on('change','.qty', function() {
-                    var qty = $(this).val();
-
-                    axios.post('<?php echo e(route("editCart")); ?>', {
-                        qty: qty
-                    })
-                     .then(function(data) {
-                        showCart();
-                     })
-                     .catch(function(error) {
-                         
-                     })
-                })                
+                               
             })
         </script>
     <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts\app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\lavarel\laravel-shopsite\resources\views/shop\mainPage.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts\shop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\lavarel\laravel-shopsite\resources\views/shop\mainPage.blade.php ENDPATH**/ ?>

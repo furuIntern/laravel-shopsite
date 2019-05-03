@@ -6,7 +6,7 @@
                 <a class="nav-link" href="">pages</a>
             </li>
             <li class="nav-item ">
-                <a id="navbarDropdown" class="nav-link" href="<?php echo e(route('shop')); ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                <a id="navbarDropdown" class="nav-link" href="<?php echo e(route('shop')); ?>">
                     shop
                 </a>
                 <ul class="">

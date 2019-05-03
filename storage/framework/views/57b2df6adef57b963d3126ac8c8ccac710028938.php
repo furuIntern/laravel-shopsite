@@ -4,11 +4,11 @@
         <form action="">
             <div class="col-sm-6 form-group">
                 <label class="form-label" for="name">Name</label>
-                <input class="form-control" type="text" name="name" id="name"/>
+                <input class="form-control" type="text" name="name" id="name" value=""/>
             </div>
             <div class="col-sm-6 form-group">
                 <label class="form-label" for="email">Email</label>
-                <input class="form-control" type="text" name="email" id="email"/>
+                <input class="form-control" type="text" name="email" id="email" value=""/>
             </div>
             <div class="col-sm-6 form-group">
                 <label class="form-label" for="subject">Subject</label>

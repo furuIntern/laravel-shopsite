@@ -30,15 +30,30 @@
             }
             $(document).on('change','input[name="qty"]', function() {
                     var qty = $(this).val();
-
+                    var id = $(this).data('id');
                     axios.post('<?php echo e(route("editCart")); ?>', {
+                        id: id,
                         qty: qty
                     })
                      .then(function(data) {
-                        showCart();
+                        
+                        $('#items').html(data.data);
+                        
                      })
                      .catch(function(error) {
                          
+                     })
+                })
+                $(document).on('click','input[name="delete"]',function() {
+                    var id= $(this).data('id');
+                    axios.post('<?php echo e(route("delete")); ?>', {
+                        id: id
+                    })
+                     .then(function(data) {
+                         console.log(data);
+                     })
+                     .catch(function(error) {
+                        alert(error);
                      })
                 }) 
         })

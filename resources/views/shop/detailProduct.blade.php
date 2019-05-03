@@ -1,6 +1,6 @@
-@extends('shop\mainPage')
+@extends('shop\shop')
 
-@section('content')
+@section('main')
     <div class=row>
         <div class="col-sm-5">
             <img src="{{$product->img}}" alt="">

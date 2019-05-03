@@ -9,7 +9,7 @@ class Items
 {
     //
 
-    function __construct($id) {
+    public static function addCart($id) {
         $qty = 1;
         $product = Products::find($id);
             
@@ -31,12 +31,21 @@ class Items
         return true;
     }
 
-    public function edit($id,$amount) {
+    public static function edit($id,$amount) {
+         
+        $rowId = Cart::content()->where('id', $id)->first()->rowId;
         
-        $cart = Cart::content()->where('id', $id)->first();
+        Cart::update($rowId,[ 'qty' => $amount ]);
         
-        Cart::updata($cart->rowId,[ 'qty' => $amount ]);
-        
+        return true;
+    }
+
+    public static function delete($id) {
+
+        $rowId = Cart::content()->where('id', $id)->first()->rowId;
+
+        Cart::remove($rowId);
+
         return true;
     }
 }
