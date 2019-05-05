@@ -18,6 +18,14 @@ Route::get('logout','Auth\LoginController@logout')->name('get-logout');
 
 Route::group(['middleware'=>['permission:manage setting']],function(){
     Route::get('admin/setting','Admin\SettingController@index')->name('show-setting');
+    Route::post('admin/setting/description','Admin\SettingController@store');
+    Route::post('admin/setting/title','Admin\SettingController@update');
+    Route::post('admin/setting/logo','Admin\SettingController@logo');
+    Route::post('admin/setting/sortBy','Admin\SettingController@sort');
+    Route::get('admin/category/show/{category}','Admin\CategoriesController@edit');
+    Route::get('admin/category/hidden/{category}','Admin\CategoriesController@hidden');
+    Route::get('admin/category/delete/{category}','Admin\CategoriesController@destroy');
+    Route::post('admin/category/level/{category}','Admin\CategoriesController@update');
 });
 
 /**
@@ -42,6 +50,8 @@ Route::group(['middleware'=>['permission:manage members']], function(){
 Route::group(['middleware'=>['permission:manage orders']],function(){
     Route::get('admin/orders','Admin\OrderController@index')->name('show-orders');
     Route::get('admin','Admin\OrderController@index')->name('admin-page');
+    Route::view('ajax/add/ProductInOrder','admin\ajax\AddProductInOrder')->name('add-productForm-order');
+    Route::post('admin/order/add','Admin\OrderController@store');
 
 });
 
@@ -54,7 +64,9 @@ Route::group(['middleware'=>['permission:manage products']],function(){
     Route::post('admin/products/add','Admin\ProductController@store')->name('add-product');
     Route::post('admin/category/add','Admin\CategoriesController@store')->name('add-category');
     Route::get('admin/product/{product}','Admin\ProductController@show')->name('display-product');
-    Route::get('admin/product/','Admin\ProductController@update')->name('update-product');
+    Route::post('admin/product/update/{product}','Admin\ProductController@update');
+    Route::post('admin/product/{product}/edit','Admin\ProductController@edit');
+    Route::get('admin/product/delete/{product}','Admin\ProductController@destroy');
 });
 
 

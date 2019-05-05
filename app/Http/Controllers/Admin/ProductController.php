@@ -59,7 +59,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('admin\productdetail',['product' => $product]);
     }
 
     /**
@@ -68,9 +68,20 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Product $product,Request $request)
     {
-        //
+        $request->validate([
+            'img'=>'image',
+            'price'=>['required','min:0','numeric'],
+            'amount'=>['required','min:0','numeric']
+        ]);
+        if($request->file('img')){
+            $request->file('img')->storeAs('public/ImageProduct',$product->id.'.png');
+        }
+        $product->amount = $request->amount;
+        $product->price = $request->price;
+        $product->save();
+        return redirect()->route('show-products');
     }
 
     /**
@@ -82,7 +93,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $request->validate([
+            'amount'=> 'required|numeric|min:0'
+        ]);
+        $product->amount = $request->amount;
+        $product->save();
     }
 
     /**

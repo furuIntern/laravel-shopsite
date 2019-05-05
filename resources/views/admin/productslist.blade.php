@@ -73,7 +73,7 @@
         <div class="modal-dialog" >
             <div class="modal-content">
                 <form action="{{route('add-category')}}" method="post">
-                @csrf
+                    @csrf
                     <div class="modal-header">
                         <h5 class="modal-title">New Category</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -111,7 +111,7 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div>Category</div>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6">
                                     <select class='custom-select categorieslist' id='categoriesPorductForm'>
                                     </select>
@@ -122,14 +122,21 @@
                                 </div>
                             </div>
                             <div>Name</div>
-                            <input type="text" name='name' class="form-control mt-2"/>
+                            <input type="text" name='name' class="form-control mb-2"/>
                             <div>Price</div>
-                            <input type="number" min='0' step='1000' name='price' class="form-control mt-2"/>
-                            <div>Amount</div>
-                            <input type="number" min='0' name='amount' class="form-control mt-2"/>
-                            <div class="custom-file mt-2">
-                                <input type="file" name='img' class="custom-file-input" id="img">
-                                <label class="custom-file-label" for="img">Choose file</label>
+                            <input type="number" min='0' step='1000' name='price' class="form-control mb-2"/>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>Amount</div>
+                                    <input type="number" min='0' name='amount' class="form-control "/>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>Image</div>
+                                    <div class="custom-file">
+                                        <input type="file" name='img' class="custom-file-input" id="img">
+                                        <label class="custom-file-label" for="img">Choose file</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,9 +175,12 @@
             $(this.dataset.apply).show();
         })
         $('.apply').click(function(e){
-            ajax.get('product/'+this.dataset.product).then(function(res){
+            ajax.post('product/update/'+this.dataset.product,{
+                amount: $(this.dataset.apply).val(),
+            }).then(function(res){
                 console.log(res.data);
             })
+            $(this).hide();
         })
     </script>
 @endsection

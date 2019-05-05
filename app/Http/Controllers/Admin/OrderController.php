@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Product;
+use App\Order;
+use App\OrderDetail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 class OrderController extends Controller
@@ -13,8 +17,10 @@ class OrderController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('admin\orderslist');
+    {   
+        $products = Product::all();
+        $orders = Order::all();
+        return view('admin\orderslist',['products'=>$products,'orders'=>$orders]);
     }
 
     /**
@@ -35,7 +41,32 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'product.*'=>['required','exists:products,name'],
+            'name'=>'required',
+            'amount.*'=>['required','numeric','min:0'],
+            'address'=>'required',
+            'phone'=>'required',
+        ]);
+        $products = collect([]);
+        $total = 0;
+            foreach($request->input('product.*') as $key => $productName){
+                $product = Product::where('name',$productName)->first();
+                $OrderDetail = new OrderDetail;
+                $OrderDetail->product_id=$product->id;
+                $OrderDetail->amount=$request->input('amount.'.$key);
+                $total += $product->price*$request->input('amount.'.$key);
+                $product->amount -= $request->input('amount.'.$key);
+                $products->push($OrderDetail);
+            }
+
+            $order = new Order;
+            $order->name = $request->name;
+            $order->address = $request->address;
+            $order->phone = $request->phone;
+            $order->total_price = $total;
+            $order->save();
+            $order->details()->saveMany($products);
     }
 
     /**

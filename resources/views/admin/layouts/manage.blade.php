@@ -14,7 +14,7 @@
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-md-2 bg-info text-light px-4" >
-                <h2 class='text-center my-3'>Company</h2>
+                <h2 class='text-center my-3'>{{ucwords($setting->title)}}</h2>
                 <hr/>
                 <a class='component text-light btn btn-info btn-block' href="{{route('show-setting')}}"><i class="fas fa-cogs"></i> Setting</a>
                 <a href="{{route('show-orders')}}" class='component btn btn-info text-light btn-block'><i class="fas fa-store"></i> Orders</a>

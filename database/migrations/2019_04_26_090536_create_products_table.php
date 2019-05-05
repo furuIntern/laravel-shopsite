@@ -17,6 +17,8 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->unique();
             $table->unsignedBigInteger('parent_id')->nullable();
+            $table->unsignedInteger('level')->default(0);
+            $table->boolean('show')->default(false);
             $table->foreign('parent_id')
                 ->references('id')->on('categories')
                 ->onDelete('cascade');

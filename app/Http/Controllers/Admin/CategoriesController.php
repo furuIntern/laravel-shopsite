@@ -78,7 +78,10 @@ class CategoriesController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $category->show = true;
+        $category->save();
+        return redirect()->route('show-setting');
+
     }
 
     /**
@@ -90,7 +93,12 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $request->validate([
+            'level' => ['required','numeric','min:0']
+        ]);
+        $category->level = $request->level;
+        $category->save();
+        return redirect()->route('show-setting');
     }
 
     /**
@@ -101,11 +109,22 @@ class CategoriesController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return redirect()->route('show-setting');
     }
 
     public function display(){
         $categories=Category::whereNull('parent_id')->get();
         return view('admin\categoriesOption',['categories'=>$categories]);
+    }
+    /**
+     * 
+     * 
+     * Hidden category
+     */
+    public function hidden(Category $category){
+        $category->show = false;
+        $category->save();
+        return redirect()->route('show-setting');
     }
 }
