@@ -1,17 +1,21 @@
 <?php $__env->startSection('content'); ?>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>TotalPrice</th>
-            </tr>
-        </thead>
-        <tbody id="items">
+    <div class="mt-5" id="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>TotalPrice</th>
+                </tr>
+            </thead>
+            <tbody id="items">
+                        
+            </tbody>
             
-        </tbody>
-    </table>
+        </table>
+        <button type="button"><a href="<?php echo e(route('checkout')); ?>">Checkout</a></button>
+    </div>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('script'); ?>
@@ -50,12 +54,19 @@
                         id: id
                     })
                      .then(function(data) {
-                         console.log(data);
+                        $('#items').html(data.data);
                      })
                      .catch(function(error) {
-                        alert(error);
+                        
                      })
-                }) 
+                })
+                /*$('button[type="submit"]').click(function() {
+                    axios.get('<?php echo e(route("checkout")); ?>')
+                        .then(function(data) {
+                            $('#content').html(data.data);
+                        })
+                })
+                */ 
         })
     </script>
 <?php $__env->stopSection(); ?>

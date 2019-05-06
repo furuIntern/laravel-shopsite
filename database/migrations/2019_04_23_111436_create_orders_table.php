@@ -18,11 +18,15 @@ class CreateOrdersTable extends Migration
             $table->string('name',100);
             $table->string('phone',15);
             $table->string('address',100);
-            $table->string('total_amount');
-            $table->string('total_price');
-            $table->bigInteger('user_id')->unsigned()->index();
+            $table->integer('total_amount');
+            $table->integer('total_price');
+            $table->string('instance');
+            $table->bigInteger('user_id')->nullable()->unsigned()->index();
             $table->timestamps();
+
+            
         });
+        
     }
 
     /**

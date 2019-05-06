@@ -10698,3 +10698,85 @@ a.text-dark:focus {
   margin: 0;
 }
 
+.footer {
+  bottom: 0;
+  background-color: #000000;
+  margin-top: 6rem;
+}
+
+footer > .container > div {
+  padding-bottom: 5rem !important;
+  padding-top: 5rem !important;
+}
+
+footer > .container * {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer > .container a {
+  text-decoration: none;
+}
+
+footer > .container ul {
+  list-style-type: none;
+}
+
+.warp {
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+  padding: 0;
+  display: inline-flex;
+}
+
+.social a {
+  padding: 1rem;
+  margin: 0;
+}
+
+.social a:hover {
+  background-color: #3490dc;
+}
+
+.widget > * {
+  width: 100%;
+  float: left;
+}
+
+.widget > span {
+  float: left;
+  line-height: 47px;
+}
+
+.widget > span > i {
+  padding: 1rem;
+  float: left;
+}
+
+.useful_link {
+  width: 100%;
+}
+
+.useful_link > ul {
+  padding: 0;
+}
+
+.useful_link > ul > li {
+  padding: 20px;
+  border-bottom: #8a8591 solid 2px;
+}
+
+.useful_link > ul a {
+  transition: 2s;
+}
+
+.useful_link > ul a:hover {
+  padding-left: 1rem;
+  color: #e3342f;
+  transition: 1s;
+}
+

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
+    <title></title>
 
     <!-- Scripts -->
     <script src="<?php echo e(mix('js/app.js')); ?>" defer></script>
@@ -18,15 +18,14 @@
  
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(mix('/css/app.css')); ?>">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    <?php echo e(config('app.name', 'Laravel')); ?>
-
+                    <img src="" alt="" srcset="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>
@@ -34,8 +33,30 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link" href="<?php echo e(route('shop')); ?>">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <?php $__currentLoopData = App\Categories::with('children')->where('parent_id', NULL)->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $parent): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                           
+                                <li class="dropdown-submenu">
+                                    <a data-id="<?php echo e($parent->id); ?>" class="dropdown-item category" href=""><?php echo e($parent->name); ?></a>
+                                            
+                                        <?php if(!empty($parent->children[0])): ?>
+                                            <ul class="dropdown-menu">
+                                                <?php $__currentLoopData = $parent->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $chill): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <li>
+                                                        <a data-id="<?php echo e($chill->id); ?>" class="dropdown-item category " href=""><?php echo e($chill->name); ?></a>
+                                                    </li>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                            </ul>
+                                        <?php endif; ?>
+                                    </li>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </ul>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -51,6 +72,7 @@
                                 </li>
                             <?php endif; ?>
                         <?php else: ?>
+                            
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
@@ -67,6 +89,7 @@
                                     <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
                                         <?php echo csrf_field(); ?>
                                     </form>
+                                    <a class="dropdown-item" href="<?php echo e(route('home')); ?>">Profile</a>
                                 </div>
                             </li>
                         <?php endif; ?>
@@ -79,11 +102,14 @@
             
         
     </div>
-    <div class="container mb-5">
-        <?php echo $__env->make('element\navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <div class="container mt-5 mb-5">
+       
         <?php echo $__env->yieldContent('content'); ?>
         
     </div>
+    <footer class="footer">
+        <?php echo $__env->make('element\footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    </footer>
 </body>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

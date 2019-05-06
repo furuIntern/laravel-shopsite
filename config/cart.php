@@ -26,9 +26,9 @@ return [
 
     'database' => [
 
-        'connection' => null,
+        'connection' => NULL,
 
-        'table' => 'shoppingcart',
+        'table' => 'orders',
 
     ],
 
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'destroy_on_logout' => false,
+    'destroy_on_logout' => true,
 
     /*
     |--------------------------------------------------------------------------

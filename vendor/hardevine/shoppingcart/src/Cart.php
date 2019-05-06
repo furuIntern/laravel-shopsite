@@ -348,27 +348,40 @@ class Cart
      * Store an the current instance of the cart.
      *
      * @param mixed $identifier
-     * @return void
+     * @return integer
      */
-    public function store($identifier)
+    public function store($information,$identifier = NULL)
     {
         $content = $this->getContent();
 
 
-        $this->getConnection()
+        /*$this->getConnection()
              ->table($this->getTableName())
              ->where('identifier', $identifier)
              ->delete();
 
-
-        $this->getConnection()->table($this->getTableName())->insert([
+        */
+        /*$this->getConnection()->table($this->getTableName())->insert([
             'identifier' => $identifier,
             'instance' => $this->currentInstance(),
             'content' => serialize($content),
             'created_at'=> new \DateTime()
-        ]);
+        ]);*/
+
+        $id = $this->getConnection()->table($this->getTableName())->insertGetId([
+                'name' => $information['name'],
+                'phone' => $information['phone'],
+                'address' => $information['address'],
+                'instance' => $this->currentInstance(),
+                'total_amount' => $this->count(),
+                'total_price' => $this->total(),
+                'user_id' => $identifier,
+                'created_at'=> new \DateTime()
+            ]);
 
         $this->events->dispatch('cart.stored');
+
+        return $id;
     }
 
     /**
@@ -529,7 +542,7 @@ class Cart
      */
     protected function getTableName()
     {
-        return config('cart.database.table', 'shoppingcart');
+        return config('cart.database.table', 'orders');
     }
 
     /**

@@ -26,10 +26,10 @@ return [
 
     'database' => [
 
-        'connection' => 'shopsite',
+        'connection' => 'asdas',
 
-        'table' => 'shoppingcart',
-
+        'table' => 'orders'
+        
     ],
 
     /*

@@ -1,12 +1,5 @@
-@extends('layouts\app')
+@extends('layouts\shop')
     
-        @section('content')
-            
-        @endsection
 
-        @section('aside')
-            
-        @endsection
-        
     
 

@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 
 Auth::routes();
 
@@ -36,8 +36,17 @@ Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
         Route::get('/' ,function() {
             return view('cart\detailCart');
         })->name('detailCart');
-        Route::post( '/delete-item' , 'cart\CartController@deleteItem')->name('delete');    
+        Route::post( '/delete-item' , 'cart\CartController@deleteItem')->name('delete');
+        Route::get('/checkout', function() {
+            return view('checkout\form');
+        })->name('checkout');
+        Route::post('/submitCart', 'OrderController@submit')->name('submitOrder');    
     }); 
+});
+
+Route::group(['prefix' => 'user'], function() {
+    Route::post('/updateProfile', 'user\UserController@updatePro')->name('updateProfile');
+    Route::get('/show-order','user\UserController@ShowOrder')->name('showOrder');
 });
 
 Route::get('/contact', function() {

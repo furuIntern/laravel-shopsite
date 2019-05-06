@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title></title>
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
@@ -18,14 +18,14 @@
  
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="" alt="" srcset="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,30 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link" href="{{route('shop')}}">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
+                                           
+                                <li class="dropdown-submenu">
+                                    <a data-id="{{$parent->id}}" class="dropdown-item category" href="">{{$parent->name}}</a>
+                                            
+                                        @if (!empty($parent->children[0]))
+                                            <ul class="dropdown-menu">
+                                                @foreach ($parent->children as $chill)
+                                                    <li>
+                                                        <a data-id="{{$chill->id}}" class="dropdown-item category " href="">{{$chill->name}}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -50,6 +72,7 @@
                                 </li>
                             @endif
                         @else
+                            
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -65,6 +88,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+                                    <a class="dropdown-item" href="{{route('home')}}">Profile</a>
                                 </div>
                             </li>
                         @endguest
@@ -77,11 +101,14 @@
             
         
     </div>
-    <div class="container mb-5">
-        @include('element\navbar')
+    <div class="container mt-5 mb-5">
+       
         @yield('content')
         
     </div>
+    <footer class="footer">
+        @include('element\footer')
+    </footer>
 </body>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -47,4 +47,6 @@ class CartController extends Controller
             return view('cart\element\table',['items' => Cart::content() , 'total' => Cart::total() , 'subtotal' => Cart::subtotal()]); 
         }
     }
+
+    
 }

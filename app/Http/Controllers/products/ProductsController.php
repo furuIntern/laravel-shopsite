@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\ProductsFilter;
 use App\Products;
+use App\Categories;
 
 class ProductsController extends Controller
 {
@@ -20,8 +21,10 @@ class ProductsController extends Controller
 
     public function category(Request $request) {
         
-        $products = Products::where('category_id', $request->id)->paginate(10);
-
+        $parent = Categories::find($request->id);
+        
+        $products = Products::ItemsCategory($parent)->paginate(10);
+        
         return view('shop\showProduct', [ 'products' => $products]);
     }
 
