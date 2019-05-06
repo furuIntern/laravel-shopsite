@@ -67,6 +67,7 @@ class OrderController extends Controller
             $order->total_price = $total;
             $order->save();
             $order->details()->saveMany($products);
+            return redirect()->route('show-orders');
     }
 
     /**
