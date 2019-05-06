@@ -36842,7 +36842,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); //window.
  */
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -36933,7 +36933,7 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleNotFoundError: Module not found: Error: Can't resolve '@fortawesome/fontawesome-free/css/all.css' in 'D:\\Training\\ShopSite\\resources\\sass'\n    at factory.create (D:\\Training\\ShopSite\\node_modules\\webpack\\lib\\Compilation.js:823:10)\n    at factory (D:\\Training\\ShopSite\\node_modules\\webpack\\lib\\NormalModuleFactory.js:397:22)\n    at resolver (D:\\Training\\ShopSite\\node_modules\\webpack\\lib\\NormalModuleFactory.js:130:21)\n    at asyncLib.parallel (D:\\Training\\ShopSite\\node_modules\\webpack\\lib\\NormalModuleFactory.js:224:22)\n    at D:\\Training\\ShopSite\\node_modules\\neo-async\\async.js:2825:7\n    at D:\\Training\\ShopSite\\node_modules\\neo-async\\async.js:6886:13\n    at normalResolver.resolve (D:\\Training\\ShopSite\\node_modules\\webpack\\lib\\NormalModuleFactory.js:214:25)\n    at doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:184:12)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at resolver.doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\UnsafeCachePlugin.js:37:5)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at resolver.doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:42:38)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn42 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:28:1)\n    at resolver.doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\ModuleKindPlugin.js:23:37)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at args (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\forEachBail.js:30:14)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at resolver.doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\UnsafeCachePlugin.js:37:5)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at resolver.doResolve (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:42:38)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn43 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at hook.callAsync (D:\\Training\\ShopSite\\node_modules\\enhanced-resolve\\lib\\Resolver.js:238:5)\n    at _fn0 (eval at create (D:\\Training\\ShopSite\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)");
 
 /***/ }),
 
@@ -36944,8 +36944,8 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\lavarel\laravel-shopsite\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\lavarel\laravel-shopsite\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Training\ShopSite\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Training\ShopSite\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
