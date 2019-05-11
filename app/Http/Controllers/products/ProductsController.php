@@ -16,7 +16,7 @@ class ProductsController extends Controller
     public function showProducts(Request $request) {
         $products = Products::Paginate(10);
        
-        return view('shop\showProduct', [ 'products' => $products ]);
+        return view('shop\mainPage', [ 'products' => $products ]);
     }
 
     public function category(Request $request) {

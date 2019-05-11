@@ -18,7 +18,9 @@ class CreateDetailOrdersTable extends Migration
             $table->bigInteger('order_id')->unsigned()->index();
             $table->bigInteger('product_id')->unsigned()->index();
             $table->bigInteger('price')->unsigned();
-            $table->bigInteger('amount')->unsigned();
+            $table->bigInteger('qty')->unsigned();
+            $table->string('rowId');
+            $table->decimal('tax',8,2)->unsigned();
             $table->timestamps();
         });
     }

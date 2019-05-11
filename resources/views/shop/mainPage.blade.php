@@ -1,9 +1,30 @@
 @extends('layouts\shop')
 
 @section('main')
-
+ @include('element\navbar')
     <div id="products">
-        
+        <div class="row">
+            @foreach ($products as $product)
+                <div class="card mr-3 ml-3 mb-3" style="width:15rem; text-align:center">
+                    <a href="{{route('detail' , [ 'id' => $product->id])}}">
+                        <img class="" src="{{ $product->img }}" alt="" style="width: 100%">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">{{ $product->name }}</h3>
+                    </div>
+                    <div class="row mb-2">
+                        <strong class="m-auto">${{ $product->price }}</strong>
+                        <button id="{{$product->id}}" class="btn btn-success m-auto ">
+                            Add-To-Cart
+                        </button>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+          
+        <div>
+            {{$products->links()}}
+        </div>
     </div>  
 @endsection
 
@@ -56,7 +77,7 @@
                 <label for="min_price">From</label>
                 <input class="form-control rangePrice" type="number" name="min_price" id="min_price" min="0"  max="{{App\Products::max('price')}}" value="0"/>
                 <label for="max_price">To</label>
-                <input class="form-control rangePrice" type="number" name="max_price" id="max_price" min="0" value="{{App\Products::max('price')}}"/>
+                <input class="form-control rangePrice" type="number" name="max_price" id="max_price" min="0" value="9999999"/>
                 <br/>
                 <input class="fillter" value="desc" type="radio" name="price" id=""/>
                 <span><label for="">Price Down</label></span>
@@ -81,20 +102,9 @@
         <script>
             $(document).ready(function() {
                 
-                axios.post('{{route("product")}}', {
-                   
-                })
-                .then(function(data) {
-                   
-                    $('#products').html(data.data);
-                })
-                .catch(function(error) {
-
-                })
                 
                 function showCart(id) {
   
-
                     axios.post('{{route("addCart")}}' , {
                         id : id
                     })
@@ -106,6 +116,7 @@
 
                         })
                 }
+
                 $(document).on('click','.btn-success' , function() {
                     var id = $(this).attr('id');
                     showCart(id);
@@ -162,10 +173,18 @@
                     if(!checked($(this),e)) {
                         return false;
                     }
-                    
+
+                    var min = $('input[name="min_price"]').val();
+                    var max = $('input[name="max_price"]').val();
+
+                    if(min > max) {
+                        alert('error');
+                        return false;
+                    }
+
                     var rangePrice = [
-                            $('input[name="min_price"]').val(),
-                            $('input[name="max_price"]').val()
+                           min,
+                           max
                     ];
                    
                     axios.get('{{route("filter")}}', {

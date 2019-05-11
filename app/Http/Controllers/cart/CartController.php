@@ -12,14 +12,28 @@ class CartController extends Controller
 {
     //
 
+    protected function getCart() {
+        $data = [
+            'items' => Cart::content(),
+            'total' => Cart::total()
+        ];
+
+        return $data;
+    }
 
     public function addCart(Request $request) {
 
         if(Items::addCart($request->id)) {        
             //Cart::destroy();
 
-            return view('cart\show',['items' => Cart::content() , 'total' => Cart::total() , 'subtotal' => Cart::subtotal()]);
+            return view('cart\show',$this->getCart());
         }   
+    }
+
+    public function showCart(Request $request) {
+        if($request->route()->name('detailCart')) {
+            return view('cart\detailCart',$this->getCart());
+        }
     }
 
     public function editCart(Request $request) {

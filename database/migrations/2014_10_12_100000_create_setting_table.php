@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePasswordResetsTable extends Migration
+class CreateSettingTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,6 +17,14 @@ class CreatePasswordResetsTable extends Migration
             $table->string('emails',100)->index();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
+        });
+
+        Schema::create('Setting', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->longText('description');
+            $table->enum('sort_product',['best sell','newest']);
+            $table->timestamps();
         });
     }
 

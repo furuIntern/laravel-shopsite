@@ -9,6 +9,6 @@ class detailOrder extends Model
     //
 
     protected $fillable = [
-        'id' , 'user_id', 'order_id'
+        'order_id' , 'amount', 'price', 'tax', 'rowId'
     ];
 }

@@ -14,19 +14,16 @@ class Orders extends Model
     ];
 
     public function products() {
-        return $this->belongsToMany('App\Products','detail_orders','order_id','product_id');
+        return $this->belongsToMany('App\Products','detail_orders','order_id','product_id')
+                    ->withPivot('amount','price','tax');
     }
 
-    public function scopeFind($query,$id) {
+    public function scopeFindOrders($query,$id) {
 
-        $query->where('user_id', $id)
-              ->where('status', null);
+        $query->where('user_id', $id);
+              
         
-        if($query) {
-            return true;
-        }
-
-        return false;
+        return $query;
     }
 
 }
