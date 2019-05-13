@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
+class ComposerStaticInitd8b175770f8e015703334622e4f93ffa
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -19,6 +19,7 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
         '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
     );
@@ -101,6 +102,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         array (
             'Illuminate\\' => 11,
         ),
+        'G' => 
+        array (
+            'Gloudemans\\Shoppingcart\\' => 24,
+        ),
         'F' => 
         array (
             'Fideloper\\Proxy\\' => 16,
@@ -116,6 +121,7 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'DeepCopy\\' => 9,
+            'DebugBar\\' => 9,
         ),
         'C' => 
         array (
@@ -125,6 +131,7 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'B' => 
         array (
             'BeyondCode\\DumpServer\\' => 22,
+            'Barryvdh\\Debugbar\\' => 18,
         ),
         'A' => 
         array (
@@ -287,6 +294,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'Gloudemans\\Shoppingcart\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hardevine/shoppingcart/src',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -315,6 +326,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'DebugBar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
@@ -326,6 +341,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'BeyondCode\\DumpServer\\' => 
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
+        ),
+        'Barryvdh\\Debugbar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
         'App\\' => 
         array (
@@ -366,14 +385,8 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
     );
 
     public static $classMap = array (
-        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\Admin\\CategoriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CategoriesController.php',
-        'App\\Http\\Controllers\\Admin\\MemberController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/MemberController.php',
-        'App\\Http\\Controllers\\Admin\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/OrderController.php',
-        'App\\Http\\Controllers\\Admin\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductController.php',
-        'App\\Http\\Controllers\\Admin\\SettingController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SettingController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -381,6 +394,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderController.php',
+        'App\\Http\\Controllers\\cart\\CartController' => __DIR__ . '/../..' . '/app/Http/Controllers/cart/CartController.php',
+        'App\\Http\\Controllers\\products\\ProductsController' => __DIR__ . '/../..' . '/app/Http/Controllers/products/ProductsController.php',
+        'App\\Http\\Controllers\\user\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/user/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -389,20 +406,57 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\AddMemberRequest' => __DIR__ . '/../..' . '/app/Http/Requests/AddMemberRequest.php',
-        'App\\Http\\Requests\\NewProductRequest' => __DIR__ . '/../..' . '/app/Http/Requests/NewProductRequest.php',
-        'App\\Http\\Requests\\ShowCategory' => __DIR__ . '/../..' . '/app/Http/Requests/ShowCategory.php',
-        'App\\Http\\Requests\\UpdateMemberRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateMemberRequest.php',
-        'App\\Order' => __DIR__ . '/../..' . '/app/Order.php',
-        'App\\OrderDetail' => __DIR__ . '/../..' . '/app/OrderDetail.php',
-        'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
+        'App\\Items' => __DIR__ . '/../..' . '/app/Items.php',
+        'App\\Orders' => __DIR__ . '/../..' . '/app/Orders.php',
+        'App\\Products' => __DIR__ . '/../..' . '/app/Products.php',
+        'App\\ProductsFilter' => __DIR__ . '/../..' . '/app/ProductsFilter.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Setting' => __DIR__ . '/../..' . '/app/Setting.php',
+        'App\\QueryFilter' => __DIR__ . '/../..' . '/app/QueryFilter.php',
+        'App\\Services\\Cart\\AddCart' => __DIR__ . '/../..' . '/app/Services/Cart/AddCart.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\categories' => __DIR__ . '/../..' . '/app/Categories.php',
+        'App\\comment' => __DIR__ . '/../..' . '/app/Comment.php',
+        'App\\detailOrder' => __DIR__ . '/../..' . '/app/DetailOrder.php',
+        'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
+        'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
+        'Barryvdh\\Debugbar\\Controllers\\BaseController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/BaseController.php',
+        'Barryvdh\\Debugbar\\Controllers\\CacheController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/CacheController.php',
+        'Barryvdh\\Debugbar\\Controllers\\OpenHandlerController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/OpenHandlerController.php',
+        'Barryvdh\\Debugbar\\Controllers\\TelescopeController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/TelescopeController.php',
+        'Barryvdh\\Debugbar\\DataCollector\\CacheCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/CacheCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\EventCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/EventCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\FilesCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/FilesCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\GateCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/GateCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\LaravelCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/LaravelCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\LogsCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/LogsCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\MultiAuthCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/MultiAuthCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\QueryCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/QueryCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\RequestCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/RequestCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\RouteCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/RouteCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\SessionCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/SessionCollector.php',
+        'Barryvdh\\Debugbar\\DataCollector\\ViewCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataCollector/ViewCollector.php',
+        'Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataFormatter/QueryFormatter.php',
+        'Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/DataFormatter/SimpleFormatter.php',
+        'Barryvdh\\Debugbar\\Facade' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Facade.php',
+        'Barryvdh\\Debugbar\\JavascriptRenderer' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/JavascriptRenderer.php',
+        'Barryvdh\\Debugbar\\LaravelDebugbar' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/LaravelDebugbar.php',
+        'Barryvdh\\Debugbar\\LumenServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/LumenServiceProvider.php',
+        'Barryvdh\\Debugbar\\Middleware\\DebugbarEnabled' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Middleware/DebugbarEnabled.php',
+        'Barryvdh\\Debugbar\\Middleware\\InjectDebugbar' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php',
+        'Barryvdh\\Debugbar\\ServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/ServiceProvider.php',
+        'Barryvdh\\Debugbar\\Storage\\FilesystemStorage' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Storage/FilesystemStorage.php',
+        'Barryvdh\\Debugbar\\Support\\Clockwork\\ClockworkCollector' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Support/Clockwork/ClockworkCollector.php',
+        'Barryvdh\\Debugbar\\Support\\Clockwork\\Converter' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Support/Clockwork/Converter.php',
+        'Barryvdh\\Debugbar\\SymfonyHttpDriver' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/SymfonyHttpDriver.php',
+        'Barryvdh\\Debugbar\\Twig\\Extension\\Debug' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Extension/Debug.php',
+        'Barryvdh\\Debugbar\\Twig\\Extension\\Dump' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Extension/Dump.php',
+        'Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Extension/Stopwatch.php',
+        'Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Node/StopwatchNode.php',
+        'Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/TokenParser/StopwatchTokenParser.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -436,6 +490,7 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'CategoryTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoryTableSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -446,6 +501,56 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+        'DebugBar\\Bridge\\CacheCacheCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/CacheCacheCollector.php',
+        'DebugBar\\Bridge\\DoctrineCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/DoctrineCollector.php',
+        'DebugBar\\Bridge\\MonologCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/MonologCollector.php',
+        'DebugBar\\Bridge\\Propel2Collector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/Propel2Collector.php',
+        'DebugBar\\Bridge\\PropelCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/PropelCollector.php',
+        'DebugBar\\Bridge\\SlimCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/SlimCollector.php',
+        'DebugBar\\Bridge\\SwiftMailer\\SwiftLogCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftLogCollector.php',
+        'DebugBar\\Bridge\\SwiftMailer\\SwiftMailCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftMailCollector.php',
+        'DebugBar\\Bridge\\TwigProfileCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/TwigProfileCollector.php',
+        'DebugBar\\Bridge\\Twig\\TimeableTwigExtensionProfiler' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/Twig/TimeableTwigExtensionProfiler.php',
+        'DebugBar\\Bridge\\Twig\\TraceableTwigEnvironment' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigEnvironment.php',
+        'DebugBar\\Bridge\\Twig\\TraceableTwigTemplate' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigTemplate.php',
+        'DebugBar\\Bridge\\Twig\\TwigCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/Twig/TwigCollector.php',
+        'DebugBar\\DataCollector\\AggregatedCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/AggregatedCollector.php',
+        'DebugBar\\DataCollector\\AssetProvider' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/AssetProvider.php',
+        'DebugBar\\DataCollector\\ConfigCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/ConfigCollector.php',
+        'DebugBar\\DataCollector\\DataCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/DataCollector.php',
+        'DebugBar\\DataCollector\\DataCollectorInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/DataCollectorInterface.php',
+        'DebugBar\\DataCollector\\ExceptionsCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/ExceptionsCollector.php',
+        'DebugBar\\DataCollector\\LocalizationCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/LocalizationCollector.php',
+        'DebugBar\\DataCollector\\MemoryCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/MemoryCollector.php',
+        'DebugBar\\DataCollector\\MessagesAggregateInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/MessagesAggregateInterface.php',
+        'DebugBar\\DataCollector\\MessagesCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/MessagesCollector.php',
+        'DebugBar\\DataCollector\\PDO\\PDOCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/PDO/PDOCollector.php',
+        'DebugBar\\DataCollector\\PDO\\TraceablePDO' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TraceablePDO.php',
+        'DebugBar\\DataCollector\\PDO\\TraceablePDOStatement' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TraceablePDOStatement.php',
+        'DebugBar\\DataCollector\\PDO\\TracedStatement' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TracedStatement.php',
+        'DebugBar\\DataCollector\\PhpInfoCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/PhpInfoCollector.php',
+        'DebugBar\\DataCollector\\Renderable' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/Renderable.php',
+        'DebugBar\\DataCollector\\RequestDataCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/RequestDataCollector.php',
+        'DebugBar\\DataCollector\\TimeDataCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataCollector/TimeDataCollector.php',
+        'DebugBar\\DataFormatter\\DataFormatter' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatter.php',
+        'DebugBar\\DataFormatter\\DataFormatterInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatterInterface.php',
+        'DebugBar\\DataFormatter\\DebugBarVarDumper' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/DebugBarVarDumper.php',
+        'DebugBar\\DataFormatter\\VarDumper\\DebugBarHtmlDumper' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/DebugBarHtmlDumper.php',
+        'DebugBar\\DataFormatter\\VarDumper\\SeekingData' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/SeekingData.php',
+        'DebugBar\\DebugBar' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DebugBar.php',
+        'DebugBar\\DebugBarException' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/DebugBarException.php',
+        'DebugBar\\HttpDriverInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/HttpDriverInterface.php',
+        'DebugBar\\JavascriptRenderer' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/JavascriptRenderer.php',
+        'DebugBar\\OpenHandler' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/OpenHandler.php',
+        'DebugBar\\PhpHttpDriver' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/PhpHttpDriver.php',
+        'DebugBar\\RequestIdGenerator' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/RequestIdGenerator.php',
+        'DebugBar\\RequestIdGeneratorInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/RequestIdGeneratorInterface.php',
+        'DebugBar\\StandardDebugBar' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/StandardDebugBar.php',
+        'DebugBar\\Storage\\FileStorage' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Storage/FileStorage.php',
+        'DebugBar\\Storage\\MemcachedStorage' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Storage/MemcachedStorage.php',
+        'DebugBar\\Storage\\PdoStorage' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Storage/PdoStorage.php',
+        'DebugBar\\Storage\\RedisStorage' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Storage/RedisStorage.php',
+        'DebugBar\\Storage\\StorageInterface' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Storage/StorageInterface.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -1009,6 +1114,16 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Gloudemans\\Shoppingcart\\CanBeBought' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CanBeBought.php',
+        'Gloudemans\\Shoppingcart\\Cart' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Cart.php',
+        'Gloudemans\\Shoppingcart\\CartItem' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CartItem.php',
+        'Gloudemans\\Shoppingcart\\CartItemOptions' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/CartItemOptions.php',
+        'Gloudemans\\Shoppingcart\\Contracts\\Buyable' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Contracts/Buyable.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\CartAlreadyStoredException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/CartAlreadyStoredException.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\InvalidRowIDException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/InvalidRowIDException.php',
+        'Gloudemans\\Shoppingcart\\Exceptions\\UnknownModelException' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Exceptions/UnknownModelException.php',
+        'Gloudemans\\Shoppingcart\\Facades\\Cart' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/Facades/Cart.php',
+        'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider' => __DIR__ . '/..' . '/hardevine/shoppingcart/src/ShoppingcartServiceProvider.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1297,7 +1412,6 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'Illuminate\\Database\\Capsule\\Manager' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Capsule/Manager.php',
         'Illuminate\\Database\\Concerns\\BuildsQueries' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php',
         'Illuminate\\Database\\Concerns\\ManagesTransactions' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php',
-        'Illuminate\\Database\\ConfigurationUrlParser' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php',
         'Illuminate\\Database\\Connection' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Connection.php',
         'Illuminate\\Database\\ConnectionInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/ConnectionInterface.php',
         'Illuminate\\Database\\ConnectionResolver' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/ConnectionResolver.php',
@@ -2811,6 +2925,7 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'ProductsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProductsTableSeeder.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -3101,7 +3216,6 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
-        'RoleAndPermissionSeeder' => __DIR__ . '/../..' . '/database/seeds/RoleAndPermissionSeeder.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -3201,7 +3315,6 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'SettingTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SettingTableSeeder.php',
         'Spatie\\Permission\\Commands\\CacheReset' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CacheReset.php',
         'Spatie\\Permission\\Commands\\CreatePermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
         'Spatie\\Permission\\Commands\\CreateRole' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreateRole.php',
@@ -3847,7 +3960,6 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
-        'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UserTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
@@ -3941,10 +4053,10 @@ class ComposerStaticInitb5de027157d0b519ea00bbd532809a7a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb5de027157d0b519ea00bbd532809a7a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb5de027157d0b519ea00bbd532809a7a::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb5de027157d0b519ea00bbd532809a7a::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb5de027157d0b519ea00bbd532809a7a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd8b175770f8e015703334622e4f93ffa::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd8b175770f8e015703334622e4f93ffa::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd8b175770f8e015703334622e4f93ffa::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitd8b175770f8e015703334622e4f93ffa::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -23,22 +23,6 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-<<<<<<< HEAD
-    22 => 'Barryvdh\\Debugbar\\ServiceProvider',
-    23 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
-    24 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    25 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
-    26 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    27 => 'Carbon\\Laravel\\ServiceProvider',
-    28 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    29 => 'Spatie\\Permission\\PermissionServiceProvider',
-    30 => 'App\\Providers\\AppServiceProvider',
-    31 => 'App\\Providers\\AuthServiceProvider',
-    32 => 'App\\Providers\\EventServiceProvider',
-    33 => 'App\\Providers\\RouteServiceProvider',
-    34 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
-    35 => 'Spatie\\Permission\\PermissionServiceProvider',
-=======
     22 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
     23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     24 => 'Laravel\\Tinker\\TinkerServiceProvider',
@@ -49,8 +33,8 @@
     29 => 'App\\Providers\\AuthServiceProvider',
     30 => 'App\\Providers\\EventServiceProvider',
     31 => 'App\\Providers\\RouteServiceProvider',
-    32 => 'Spatie\\Permission\\PermissionServiceProvider',
->>>>>>> master
+    32 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    33 => 'Spatie\\Permission\\PermissionServiceProvider',
   ),
   'eager' => 
   array (
@@ -64,20 +48,6 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-<<<<<<< HEAD
-    10 => 'Barryvdh\\Debugbar\\ServiceProvider',
-    11 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
-    12 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    13 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
-    14 => 'Carbon\\Laravel\\ServiceProvider',
-    15 => 'Spatie\\Permission\\PermissionServiceProvider',
-    16 => 'App\\Providers\\AppServiceProvider',
-    17 => 'App\\Providers\\AuthServiceProvider',
-    18 => 'App\\Providers\\EventServiceProvider',
-    19 => 'App\\Providers\\RouteServiceProvider',
-    20 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
-    21 => 'Spatie\\Permission\\PermissionServiceProvider',
-=======
     10 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
     11 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     12 => 'Carbon\\Laravel\\ServiceProvider',
@@ -86,8 +56,8 @@
     15 => 'App\\Providers\\AuthServiceProvider',
     16 => 'App\\Providers\\EventServiceProvider',
     17 => 'App\\Providers\\RouteServiceProvider',
-    18 => 'Spatie\\Permission\\PermissionServiceProvider',
->>>>>>> master
+    18 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    19 => 'Spatie\\Permission\\PermissionServiceProvider',
   ),
   'deferred' => 
   array (

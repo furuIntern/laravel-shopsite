@@ -111,6 +111,5 @@
 </body>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="{{asset('public/js/main.js')}}"></script>
     @yield('script')
 </html>

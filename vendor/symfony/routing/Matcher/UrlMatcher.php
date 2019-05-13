@@ -32,7 +32,6 @@ class UrlMatcher implements UrlMatcherInterface, RequestMatcherInterface
     const REQUIREMENT_MISMATCH = 1;
     const ROUTE_MATCH = 2;
 
-    /** @var RequestContext */
     protected $context;
 
     /**
@@ -159,12 +158,20 @@ class UrlMatcher implements UrlMatcherInterface, RequestMatcherInterface
 
             $hasTrailingVar = $trimmedPathinfo !== $pathinfo && preg_match('#\{\w+\}/?$#', $route->getPath());
 
-            if ($hasTrailingVar && ($hasTrailingSlash || (null === $m = $matches[\count($compiledRoute->getPathVariables())] ?? null) || '/' !== ($m[-1] ?? '/')) && preg_match($regex, $trimmedPathinfo, $m)) {
+            if ($hasTrailingVar && ($hasTrailingSlash || '/' !== substr($matches[(\count($matches) - 1) >> 1], -1)) && preg_match($regex, $trimmedPathinfo, $m)) {
                 if ($hasTrailingSlash) {
                     $matches = $m;
                 } else {
                     $hasTrailingVar = false;
                 }
+            }
+
+            if ('/' !== $pathinfo && !$hasTrailingVar && $hasTrailingSlash === ($trimmedPathinfo === $pathinfo)) {
+                if ($supportsTrailingSlash && (!$requiredMethods || \in_array('GET', $requiredMethods))) {
+                    return $this->allow = $this->allowSchemes = [];
+                }
+
+                continue;
             }
 
             $hostMatches = [];
@@ -175,14 +182,6 @@ class UrlMatcher implements UrlMatcherInterface, RequestMatcherInterface
             $status = $this->handleRouteRequirements($pathinfo, $name, $route);
 
             if (self::REQUIREMENT_MISMATCH === $status[0]) {
-                continue;
-            }
-
-            if ('/' !== $pathinfo && !$hasTrailingVar && $hasTrailingSlash === ($trimmedPathinfo === $pathinfo)) {
-                if ($supportsTrailingSlash && (!$requiredMethods || \in_array('GET', $requiredMethods))) {
-                    return $this->allow = $this->allowSchemes = [];
-                }
-
                 continue;
             }
 

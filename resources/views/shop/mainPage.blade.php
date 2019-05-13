@@ -100,9 +100,11 @@
                     var max = $('input[name="max_price"]').val();
 
                     if(min > max) {
-                        alert('error');
+                        $('.eRange').css('display','block');
                         return false;
                     }
+
+                    $('.eRange').css('display','none');
 
                     axios.get('{{route("filter")}}', {
                         params: {
