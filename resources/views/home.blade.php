@@ -37,7 +37,11 @@
                                                     <td>{{$item->total_amount}}</td>
                                                     <td>{{$item->total_price}}</td>
                                                     <td><a class="btn btn-primary" name="detail" data-id="{{$item->id}}" href="">Detail</a></td>
+<<<<<<< HEAD
                                                     <td><a class="btn btn-danger" name="delete" data-id="{{$item->id}}" herf="">Delete</a></td>
+=======
+                                                    <td><a class="btn btn-danger" name="delete" data-id="{{$item->id}}" href="">Delete</a></td>
+>>>>>>> master
                                                 </tr>
                                             @endforeach
                                         
@@ -78,6 +82,7 @@
 
                     $('#content').html(data.data);
                  })
+<<<<<<< HEAD
             })
             
             $(document).on('click','a[name="back"]',function(e) {
@@ -91,6 +96,30 @@
             })
 
             $('a[name="delete"]').click(function() {
+                axios.post('{{route("deleteOrder")}}', {
+
+                    id: $(this).data('id')
+                }).then(function(data) {
+
+                    $('#content').html(data.data);
+                })
+=======
+>>>>>>> master
+            })
+            
+            $(document).on('click','a[name="back"]',function(e) {
+                
+                e.preventDefault();
+                axios.post('{{route("home")}}')
+                 .then(function(data) {
+
+                    $('#content').html(data.data);
+                 })    
+            })
+
+            $('a[name="delete"]').click(function(e) {
+
+                e.preventDefault();
                 axios.post('{{route("deleteOrder")}}', {
 
                     id: $(this).data('id')

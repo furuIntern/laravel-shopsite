@@ -23,6 +23,7 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
+<<<<<<< HEAD
     22 => 'Barryvdh\\Debugbar\\ServiceProvider',
     23 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
     24 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
@@ -37,6 +38,19 @@
     33 => 'App\\Providers\\RouteServiceProvider',
     34 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
     35 => 'Spatie\\Permission\\PermissionServiceProvider',
+=======
+    22 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
+    23 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    24 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    25 => 'Carbon\\Laravel\\ServiceProvider',
+    26 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    27 => 'Spatie\\Permission\\PermissionServiceProvider',
+    28 => 'App\\Providers\\AppServiceProvider',
+    29 => 'App\\Providers\\AuthServiceProvider',
+    30 => 'App\\Providers\\EventServiceProvider',
+    31 => 'App\\Providers\\RouteServiceProvider',
+    32 => 'Spatie\\Permission\\PermissionServiceProvider',
+>>>>>>> master
   ),
   'eager' => 
   array (
@@ -50,6 +64,7 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
+<<<<<<< HEAD
     10 => 'Barryvdh\\Debugbar\\ServiceProvider',
     11 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
     12 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
@@ -62,6 +77,17 @@
     19 => 'App\\Providers\\RouteServiceProvider',
     20 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
     21 => 'Spatie\\Permission\\PermissionServiceProvider',
+=======
+    10 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
+    11 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    12 => 'Carbon\\Laravel\\ServiceProvider',
+    13 => 'Spatie\\Permission\\PermissionServiceProvider',
+    14 => 'App\\Providers\\AppServiceProvider',
+    15 => 'App\\Providers\\AuthServiceProvider',
+    16 => 'App\\Providers\\EventServiceProvider',
+    17 => 'App\\Providers\\RouteServiceProvider',
+    18 => 'Spatie\\Permission\\PermissionServiceProvider',
+>>>>>>> master
   ),
   'deferred' => 
   array (

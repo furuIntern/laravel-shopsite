@@ -16,7 +16,11 @@ class CommentController extends Controller
         if($request->route()->name('showComment'))
         {
 
+<<<<<<< HEAD
             return view('comment',[ 'comments' => Comment::with('user')->paginate(10)]);
+=======
+            return view('comment',[ 'comments' => Comment::with('user')->where('product_id',)->paginate(10)]);
+>>>>>>> master
 
         }
     }
@@ -30,6 +34,10 @@ class CommentController extends Controller
             'product_id' => $request->pro_id
         ]);
 
+<<<<<<< HEAD
         return view('shop\showComment',[$comment => Comment::with('user')->paginate(10)]);
+=======
+        return view('shop\showComment',[$comment => Comment::with('user')->where('product_id',$request->pro_id)->paginate(10)]);
+>>>>>>> master
     }
 }

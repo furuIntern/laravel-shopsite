@@ -10,10 +10,18 @@ class Items
     //
 
     public static function addCart($data) {
+<<<<<<< HEAD
         $qty = $data['qty'] ? $data['qty'] : 1 ;
         $product = Products::find($data['id']);
             
             
+=======
+        
+        $qty = $data['qty'] ? $data['qty'] : 1 ;
+       
+        $product = Products::find($data['id']);
+              
+>>>>>>> master
         if($cart = Cart::content()->where('id', $data['id'])->first())
         {
                 

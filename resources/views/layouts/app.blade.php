@@ -34,11 +34,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('product')}}">
                                 shop
                             </a>
+=======
+                    @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
+                        <li class="nav-item dropdown">
+                            <a data-id="{{$parent->id}}" class="dropdown-item category" href="">{{$parent->name}}</a>
+                                    @if (!empty($parent->children[0]))
+                                        <ul class="dropdown-menu">
+                                            @foreach ($parent->children as $chill)
+                                                <li>
+                                                    <a data-id="{{$chill->id}}" class="dropdown-item category " href="">{{$chill->name}}</a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
+>>>>>>> master
                         </li>
+                        @endforeach
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -56,11 +72,13 @@
                         @else
                             
                             <li class="nav-item dropdown">
+                                
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{route('home')}}">Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -70,7 +88,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                    <a class="dropdown-item" href="{{route('home')}}">Profile</a>
+                                    
                                 </div>
                             </li>
                         @endguest
