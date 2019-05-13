@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-=======
 @extends('layouts.user')
 
 
@@ -14,7 +6,6 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
->>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
@@ -24,10 +15,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-<<<<<<< HEAD
-
-                    You are logged in!
-=======
                     <div id="content" class="table-responsive">
                         @if ($items)
                             <table class="table">
@@ -68,15 +55,10 @@
                         
                     </div>
                        
->>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5
                 </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-</div>
-@endsection
-=======
     
 </div>
 @endsection
@@ -124,4 +106,3 @@
 @endsection
 
 
->>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5

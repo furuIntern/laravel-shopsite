@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','Auth\LoginController@showLoginForm');
+Route::get('/login','Auth\LoginController@showLoginForm');
 Auth::routes(['verify' => true]);
 Route::get('logout','Auth\LoginController@logout')->name('get-logout');
 
