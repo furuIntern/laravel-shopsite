@@ -64,7 +64,14 @@
                                 @endif
                             </div>
                         </div>
+<<<<<<< HEAD
+                        <div>
+                        <a href="{{route('password.request')}}">Forgot password</a>
+                        </div>
+                    </div>
+=======
                     </form>
+>>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5
                 </div>
             </div>
         </div>

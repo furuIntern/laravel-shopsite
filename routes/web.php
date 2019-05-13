@@ -75,6 +75,11 @@ Route::group(['middleware'=>['permission:manage products']],function(){
 
 
 
+<<<<<<< HEAD
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+=======
 
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -125,3 +130,4 @@ Route::get('/contact', function() {
 })->name('contact');
 
 
+>>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5

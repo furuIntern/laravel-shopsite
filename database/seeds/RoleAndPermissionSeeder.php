@@ -12,16 +12,21 @@ class RoleAndPermissionSeeder extends Seeder
      */
     public function run()
     {
-        $setting = Permission::create(['name'=>'manage setting']);
-        $member = Permission::create(['name'=>'manage members']);
-        $orders = Permission::create(['name'=>'manage orders']);
-        $products = Permission::create(['name'=>'manage products']);
+        $setting = Permission::create(['name'=>'setting']);
+        $addMember = Permission::create(['name'=>'add-members']);
+        $showMember = Permission::create(['name'=>'show-members']);
+        $updateMember = Permission::create(['name'=>'update-members']);
+        $editMember = Permission::create(['name'=>'edit-members']);
+        $showOrders = Permission::create(['name'=>'show-orders']);
+        $addOrders = Permission::create(['name'=>'add-orders']);
+        $updateOrders = Permission::create(['name'=>'update-orders']);
+        $deleteOrders = Permission::create(['name'=>'delete-orders']);
+        $addProducts = Permission::create(['name'=>'add-products']);
+        $showProducts = Permission::create(['name'=>'show-products']);
+        $deleteProducts = Permission::create(['name'=>'delete-products']);
+        $updateProducts = Permission::create(['name'=>'update-products']);
         $spadmin = Role::create(['name'=>'super-admin']);
-        $admin = Role::create(['name'=>'admin']);
-        $seller = Role::create(['name'=>'seller']);
         $spadmin->syncPermissions(Permission::all());
-        $admin->syncPermissions($orders,$products);
-        $seller->givePermissionTo($orders);
         $user = Role::create(['name'=>'user']);
     }
 }
