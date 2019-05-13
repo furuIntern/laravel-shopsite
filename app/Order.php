@@ -10,7 +10,7 @@ class Order extends Model
     protected $fillable=[
         'name','phone','address'
     ];
-    public function details(){
+    public function detail(){
         return $this->hasMany('App\OrderDetail');
     }
 }

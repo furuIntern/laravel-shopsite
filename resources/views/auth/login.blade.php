@@ -39,6 +39,9 @@
                             <i class="fas fa-user-edit"></i> Register
                             </a>
                         </div>
+                        <div>
+                        <a href="{{route('password.request')}}">Forgot password</a>
+                        </div>
                     </div>
                 </div>
             </div>

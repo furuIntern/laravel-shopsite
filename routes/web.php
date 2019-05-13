@@ -12,7 +12,7 @@
 */
 
 Route::get('/','Auth\LoginController@showLoginForm');
-Auth::routes();
+Auth::routes(['verify' => true]);
 Route::get('logout','Auth\LoginController@logout')->name('get-logout');
 
 
@@ -40,6 +40,8 @@ Route::group(['middleware'=>['permission:manage members']], function(){
     Route::get('admin/member/{user}','Admin\MemberController@show');
     Route::post('admin/member/update/{user}','Admin\MemberController@update');
     Route::get('admin/member/delete/{user}','Admin\MemberController@destroy');
+    Route::get('admin/role/delete/{role}','Admin\MemberController@deleteRole')->name('delete-role');
+    Route::post('admin/role/add/','Admin\MemberController@addRole')->name('add-role');
 });
 
 /**
@@ -52,7 +54,9 @@ Route::group(['middleware'=>['permission:manage orders']],function(){
     Route::get('admin','Admin\OrderController@index')->name('admin-page');
     Route::view('ajax/add/ProductInOrder','admin\ajax\AddProductInOrder')->name('add-productForm-order');
     Route::post('admin/order/add','Admin\OrderController@store');
-
+    Route::post('admin/order/update/state/{order}','Admin\OrderController@updateState');
+    Route::get('admin/order/detail/{order}','Admin\OrderController@show');
+    Route::get('admin/order/delete/{order}','Admin\OrderController@destroy')->name('delete-order');
 });
 
 
@@ -70,3 +74,7 @@ Route::group(['middleware'=>['permission:manage products']],function(){
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
