@@ -1,7 +1,6 @@
 @extends('layouts\shop')
 
 @section('main')
- @include('element\navbar')
     <div id="products">
         <div class="row">
             @foreach ($products as $product)
@@ -33,11 +32,11 @@
         <script>
             $(document).ready(function() {
                 
-                
-                function showCart(id) {
-  
+                $(document).on('click','.btn-success' , function() {
+                    
                     axios.post('{{route("addCart")}}' , {
-                        id : id
+
+                        id : $(this).attr('id')
                     })
                         .then(function(data) {
       
@@ -46,11 +45,6 @@
                         .catch(function(error) {
 
                         })
-                }
-
-                $(document).on('click','.btn-success' , function() {
-                    var id = $(this).attr('id');
-                    showCart(id);
                 })
                 
                 $(document).on('click','.category',function(e) {
@@ -72,15 +66,12 @@
                 })
 
                 $(document).on('click','.fillter',function() {
-                    var price = $('input[name="price"]:checked').val();
-                    var time = $('input[name="time"]:checked').val();
-                    var popular = $('input[name="popular"]:checked').val();
-                   
+                    
                     axios.get('{{route("filter")}}', {
                         params: {
-                            price: price,
-                            time: time,
-                            popular: popular
+                            price: $('input[name="price"]:checked').val(),
+                            time: $('input[name="time"]:checked').val(),
+                            popular: $('input[name="popular"]:checked').val()
                             
                         }
                     })
@@ -113,14 +104,12 @@
                         return false;
                     }
 
-                    var rangePrice = [
-                           min,
-                           max
-                    ];
-                   
                     axios.get('{{route("filter")}}', {
                         params: {
-                            rangePrice: rangePrice
+                            rangePrice: [
+                                min,
+                                max
+                            ]
                         }
                     })
                      .then(function(data) {

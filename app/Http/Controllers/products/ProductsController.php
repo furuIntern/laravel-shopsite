@@ -34,7 +34,7 @@ class ProductsController extends Controller
         $Product = Products::find($id);
         return view('shop\detailProduct' , [ 
                     'product' => $Product ,
-                    'comments' => Comment::with('user')->paginate(10)
+                    'comments' => Comment::with('user')->where('product_id',$id)->paginate(10)
                 ]);
     }
 

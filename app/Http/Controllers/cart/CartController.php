@@ -24,7 +24,7 @@ class CartController extends Controller
 
     public function addCart(Request $request) {
 
-        if(Items::addCart($request->all())) {        
+        if(Items::addCart($request->id,$request->qty)) {        
 
             return view('cart\show',$this->getCart());
             

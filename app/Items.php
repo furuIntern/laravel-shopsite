@@ -9,12 +9,16 @@ class Items
 {
     //
 
-    public static function addCart($data) {
-        $qty = $data['qty'] ? $data['qty'] : 1 ;
-        $product = Products::find($data['id']);
-            
-            
-        if($cart = Cart::content()->where('id', $data['id'])->first())
+    public static function addCart($id,$qty) {
+        
+        if(is_null($qty))
+        {
+            $qty = 1;
+        }
+
+        $product = Products::find($id);
+              
+        if($cart = Cart::content()->where('id', $id)->first())
         {
                 
             Cart::update($cart->rowId,['qty' => $cart->qty + $qty ]);

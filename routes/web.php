@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
+Route::get('/', 'products\ProductsController@showProducts')->name('product');
+
 
 Auth::routes();
 
@@ -25,8 +24,6 @@ Route::post('show-items' ,'cart\CartController@itemsCart')->name('items');
 Route::post('/edit-cart', 'cart\CartController@editCart')->name('editCart');
 
 Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
-
-    Route::get('', 'products\ProductsController@showProducts')->name('product');
     Route::get('/category', 'products\ProductsController@category')->name('category');
     Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detailProduct');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
