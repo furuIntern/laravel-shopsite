@@ -6,17 +6,17 @@
         <div class="card-body">
             <form id="profile" method="POST">
                 <label for="name">Name</label>
-                <input class="form-control mb-3" type="text" name="name" value="{{$user->name}}"/>
+                <input class="form-control mb-3" type="text" name="name" value="{{$user->name ? $user->name : NULL}}"/>
                 @error('name')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <label for="phone">Phone</label>
-                <input class="form-control  mb-3" type="text" name="phone" value="{{$user->phone}}"/>
+                <input class="form-control  mb-3" type="text" name="phone" value="{{$user->phone ? $user->phone : NULL}}"/>
                 @error('phone')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <label for="address">Address</label>
-                <input class="form-control  mb-3" type="text" name="address" value="{{$user->address}}"/>
+                <input class="form-control  mb-3" type="text" name="address" value="{{$user->address ? $user->address : NULL}}"/>
                 @error('address')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

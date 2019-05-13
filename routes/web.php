@@ -10,12 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/login','Auth\LoginController@showLoginForm');
 Auth::routes(['verify' => true]);
 Route::get('logout','Auth\LoginController@logout')->name('get-logout');
-
-
 Route::group(['middleware'=>['permission:manage setting']],function(){
     Route::get('admin/setting','Admin\SettingController@index')->name('show-setting');
     Route::post('admin/setting/description','Admin\SettingController@store');
@@ -27,7 +24,6 @@ Route::group(['middleware'=>['permission:manage setting']],function(){
     Route::get('admin/category/delete/{category}','Admin\CategoriesController@destroy');
     Route::post('admin/category/level/{category}','Admin\CategoriesController@update');
 });
-
 /**
  * 
  * 
@@ -43,7 +39,6 @@ Route::group(['middleware'=>['permission:manage members']], function(){
     Route::get('admin/role/delete/{role}','Admin\MemberController@deleteRole')->name('delete-role');
     Route::post('admin/role/add/','Admin\MemberController@addRole')->name('add-role');
 });
-
 /**
  * 
  * 
@@ -58,8 +53,6 @@ Route::group(['middleware'=>['permission:manage orders']],function(){
     Route::get('admin/order/detail/{order}','Admin\OrderController@show');
     Route::get('admin/order/delete/{order}','Admin\OrderController@destroy')->name('delete-order');
 });
-
-
 Route::group(['middleware'=>['permission:manage products']],function(){
     Route::get('admin/products','Admin\ProductController@index')->name('show-products');
     Route::post('admin/categories/add','Admin\CategoriesController@create')->name('add-categories');
@@ -74,14 +67,10 @@ Route::group(['middleware'=>['permission:manage products']],function(){
 });
 
 
+Route::get('/', 'products\ProductsController@showProducts')->name('product');
 
 
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
+Auth::routes();
 
 Route::match([ 'get','post' ],'/home', 'HomeController@index')->name('home');
 
@@ -91,8 +80,6 @@ Route::post('show-items' ,'cart\CartController@itemsCart')->name('items');
 Route::post('/edit-cart', 'cart\CartController@editCart')->name('editCart');
 
 Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
-
-    Route::get('', 'products\ProductsController@showProducts')->name('product');
     Route::get('/category', 'products\ProductsController@category')->name('category');
     Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detailProduct');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
@@ -123,3 +110,4 @@ Route::get('/contact', function() {
 
     return view('contact\help'); 
 })->name('contact');
+

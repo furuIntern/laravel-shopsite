@@ -7,18 +7,14 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/css/all.css';
-
-.component{
-  font-size: 18px;
-}
-body,html{
-  height: 100%;
-}
 
 .navbar-laravel {
   background-color: $white;
-  box-shadow: 0 2px 4px $black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -45,12 +41,12 @@ body,html{
 }
 
 .main {
-  height: 200vh;
+  padding-top: 3rem;
 }
 
 .cart {
   overflow: auto;
-  height: 50px;
+  height: 20rem;
 }
 
 .card > p {
@@ -155,3 +151,14 @@ button > a:hover {
   text-decoration: unset;
   color: $white;
 }
+
+.fillter {
+  text-align: center;
+  color: $white;
+  background-color: $gray;
+  padding: 5px;
+  margin: 0;
+}
+
+
+

@@ -33,7 +33,8 @@
     29 => 'App\\Providers\\AuthServiceProvider',
     30 => 'App\\Providers\\EventServiceProvider',
     31 => 'App\\Providers\\RouteServiceProvider',
-    32 => 'Spatie\\Permission\\PermissionServiceProvider',
+    32 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    33 => 'Spatie\\Permission\\PermissionServiceProvider',
   ),
   'eager' => 
   array (
@@ -55,7 +56,8 @@
     15 => 'App\\Providers\\AuthServiceProvider',
     16 => 'App\\Providers\\EventServiceProvider',
     17 => 'App\\Providers\\RouteServiceProvider',
-    18 => 'Spatie\\Permission\\PermissionServiceProvider',
+    18 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    19 => 'Spatie\\Permission\\PermissionServiceProvider',
   ),
   'deferred' => 
   array (

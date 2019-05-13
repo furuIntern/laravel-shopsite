@@ -4,12 +4,9 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Spatie\Permission\Traits\HasRoles;
-use Spatie\Permission\Models\Role;
-
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -19,28 +16,16 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'password','email','phone'
+        'username', 'email', 'password', 'phone', 'address', 'name', 'id'
     ];
 
-
-    /**
-     *Laravel acl package
-     * 
-     * 
-     * 
-     */
-    use HasRoles;
-    protected $guard_name = 'web';
-
-
-    
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
 
     /**
@@ -51,10 +36,6 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    public function username()
-    {
-        return 'username';
-    }
 
     public function comments()
     {

@@ -34,20 +34,26 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                    @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
-                        <li class="nav-item dropdown">
-                            <a data-id="{{$parent->id}}" class="dropdown-item category" href="">{{$parent->name}}</a>
-                                    @if (!empty($parent->children[0]))
-                                        <ul class="dropdown-menu">
-                                            @foreach ($parent->children as $chill)
-                                                <li>
-                                                    <a data-id="{{$chill->id}}" class="dropdown-item category " href="">{{$chill->name}}</a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    @endif
-                        </li>
-                        @endforeach
+                        
+                            
+                                @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
+                                           
+                                <li class="nav-item dropdown">
+                                    <a data-id="{{$parent->id}}" class="nav-link category" href="">{{$parent->name}}</a>
+                                            
+                                        @if (!empty($parent->children[0]))
+                                            <ul class="dropdown-menu">
+                                                @foreach ($parent->children as $chill)
+                                                    <li>
+                                                        <a data-id="{{$chill->id}}" class="dropdown-item category " href="">{{$chill->name}}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                                @endforeach
+                            
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -105,6 +111,5 @@
 </body>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="{{asset('public/js/main.js')}}"></script>
     @yield('script')
 </html>

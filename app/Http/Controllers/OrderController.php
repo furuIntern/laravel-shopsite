@@ -6,7 +6,7 @@ use Auth;
 use App\Orders;
 use Illuminate\Http\Request;
 use Session;
-use UseCart;
+use Facades\UseCart;
 
 
 class OrderController extends Controller
@@ -39,7 +39,7 @@ class OrderController extends Controller
             return 'Caught Expection: '. $e->getMessage();
         } 
             
-        UseCart::destroy();
+        $request->session()->forget('cart');
         
         return redirect()->route('product',['success' => 'success purchase products']);
               
