@@ -1,17 +1,12 @@
 @extends('layouts\shop')
 
 @section('main')
- @include('element\navbar')
     <div id="products">
         <div class="row">
             @foreach ($products as $product)
                 <div class="card mr-3 ml-3 mb-3" style="width:15rem; text-align:center">
                     <a href="{{route('detailProduct' , [ 'id' => $product->id ] )}}">
-<<<<<<< HEAD
                         <img class="" src="{{ $product->img }}" alt="" style="width: 100%">
-=======
-                        <img class="" src="{{asset('storage/'.$product->id)}}" alt="" style="width: 100%">
->>>>>>> master
                     </a>
                     <div class="card-body">
                         <h3 class="card-title">{{ $product->name }}</h3>
@@ -37,11 +32,11 @@
         <script>
             $(document).ready(function() {
                 
-                
-                function showCart(id) {
-  
+                $(document).on('click','.btn-success' , function() {
+                    
                     axios.post('{{route("addCart")}}' , {
-                        id : id
+
+                        id : $(this).attr('id')
                     })
                         .then(function(data) {
       
@@ -50,11 +45,6 @@
                         .catch(function(error) {
 
                         })
-                }
-
-                $(document).on('click','.btn-success' , function() {
-                    var id = $(this).attr('id');
-                    showCart(id);
                 })
                 
                 $(document).on('click','.category',function(e) {
@@ -76,15 +66,12 @@
                 })
 
                 $(document).on('click','.fillter',function() {
-                    var price = $('input[name="price"]:checked').val();
-                    var time = $('input[name="time"]:checked').val();
-                    var popular = $('input[name="popular"]:checked').val();
-                   
+                    
                     axios.get('{{route("filter")}}', {
                         params: {
-                            price: price,
-                            time: time,
-                            popular: popular
+                            price: $('input[name="price"]:checked').val(),
+                            time: $('input[name="time"]:checked').val(),
+                            popular: $('input[name="popular"]:checked').val()
                             
                         }
                     })
@@ -117,14 +104,12 @@
                         return false;
                     }
 
-                    var rangePrice = [
-                           min,
-                           max
-                    ];
-                   
                     axios.get('{{route("filter")}}', {
                         params: {
-                            rangePrice: rangePrice
+                            rangePrice: [
+                                min,
+                                max
+                            ]
                         }
                     })
                      .then(function(data) {
