@@ -49180,8 +49180,13 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! D:\Training\Laravel\shop-site\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! D:\Training\Laravel\shop-site\resources\sass\app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\xampp\htdocs\lavarel\Shop-site-master\laravel-shopsite\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\lavarel\Shop-site-master\laravel-shopsite\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> c9f15990e17e19dced6683e8e892b9c44d964ae5
 
 
 /***/ })
