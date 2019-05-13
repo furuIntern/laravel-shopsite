@@ -28,8 +28,9 @@ Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
 
     Route::get('', 'products\ProductsController@showProducts')->name('product');
     Route::get('/category', 'products\ProductsController@category')->name('category');
-    Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detail');
+    Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detailProduct');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
+    Route::post('/upComment','user\CommentController@upComment')->name('addComment');
     Route::group( ['prefix' => 'cart'] ,function() {
 
         Route::get('/' ,'cart\CartController@showCart')->name('detailCart');
@@ -48,6 +49,8 @@ Route::group(['prefix' => 'user'], function() {
     Route::get('/edit-order/{id}','user\UserController@editOrder')->name('edit');
     Route::get('/profile','user\UserController@showProfile')->name('profile');
     Route::post('/profile','user\UserController@upProfile')->name('upProfile');
+    Route::post('/delete','user\UserController@deleteOrder')->name('deleteOrder');
+
 });
 
 Route::get('/contact', function() {

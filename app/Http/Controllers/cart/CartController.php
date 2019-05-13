@@ -15,7 +15,8 @@ class CartController extends Controller
     protected function getCart() {
         $data = [
             'items' => Cart::content(),
-            'total' => Cart::total()
+            'total' => Cart::total(),
+            'subtotal' => Cart::subtotal()
         ];
 
         return $data;
@@ -23,10 +24,10 @@ class CartController extends Controller
 
     public function addCart(Request $request) {
 
-        if(Items::addCart($request->id)) {        
-            //Cart::destroy();
+        if(Items::addCart($request->all())) {        
 
             return view('cart\show',$this->getCart());
+            
         }   
     }
 
@@ -40,7 +41,7 @@ class CartController extends Controller
         
         $item = $request->all();
         if(Items::edit($item['id'],$item['qty'])) {
-            return view('cart\element\table',['items' => Cart::content() , 'total' => Cart::total() , 'subtotal' => Cart::subtotal()]);
+            return view('cart\element\table',$this->getCart());
         }
     }
 

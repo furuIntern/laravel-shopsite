@@ -8,6 +8,7 @@ use App\User;
 use App\Orders;
 use App\DetailOrder;
 use App\services\Cart\facades\UseCart;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Auth;
 
 class UserController extends Controller
@@ -16,6 +17,7 @@ class UserController extends Controller
     private function user() {
         return User::find(Auth::user()->id);
     }
+
     public function showProfile(Request $request) {
         if($request->route()->name('profile')) {
             return view('user\profile',['user' => $this->user()]);
@@ -51,28 +53,21 @@ class UserController extends Controller
     public function editOrder(Request $request, $id) 
     {
         UseCart::restore($id);
-        return redirect()->route('detailCart');
-        $data = $request->all();
-
-        $order = Orders::find($data['order_id']);
-
-        $order->products()->updateExistingPivot($data['id'],[
-            'qty' => $data['qty']
-        ]);
+        
+        return view('user\order\edit',[ 
+                        'items' => Cart::total(),
+                    ]);
         
     }
 
+    public function deleteOrder(Request $request)
+    {
 
-    public function showRestoreCart(Request $request)
-    {   
-        
-        UseCart::getRestore();
+        Orders::where('id',$request->id)->delete();
 
-        return view('user\editOrder',[
-                                    'items' => Cart::content(),
-                                    'tax' => Cart::tac(),
-                                    'total' => Cart::total()
-                                ]);
+        return view('user\element\table' , [ 
+                'items' => Orders::findOrders(Auth::user()->id)->paginate(4)
+            ]);
 
     }
 

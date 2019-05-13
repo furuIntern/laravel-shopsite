@@ -35,7 +35,7 @@ class Cart
      *
      * @var string
      */
-    private $instance;
+    protected $instance;
 
     /**
      * Cart constructor.
@@ -241,7 +241,7 @@ class Cart
     public function total($decimals = null, $decimalPoint = null, $thousandSeperator = null)
     {
         $content = $this->getContent();
-
+        
         $total = $content->reduce(function ($total, CartItem $cartItem) {
             return $total + ($cartItem->qty * $cartItem->priceTax);
         }, 0);

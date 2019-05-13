@@ -19,8 +19,8 @@
                         <td><img src="{{$info->img}}" alt="" width="50" height="50"/></td>
                         <td>{{$info->name}}</td>
                         <td>{{$info->price}}</td>
-                        <td><input type="text" name="qty" value="{{$info->pivot->amount}}"/></td>
-                        <td>{{$info->pivot->tax}}</td>
+                        <td><input type="text" name="qty" value="{{$info->pivot->qty}}"/></td>
+                        <td>{{$info->pivot->priceTax}}</td>
                         <td>{{$info->pivot->price}}</td>
                     </tr>
                 @endforeach

@@ -10692,6 +10692,16 @@ a.text-dark:focus {
   top: -10px;
 }
 
+.main {
+  max-width: 100%;
+  height: 500vh;
+}
+
+.cart {
+  overflow: auto;
+  height: 300px;
+}
+
 .card > p {
   text-align: justify;
   padding: 20px;

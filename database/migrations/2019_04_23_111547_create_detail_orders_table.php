@@ -20,7 +20,7 @@ class CreateDetailOrdersTable extends Migration
             $table->bigInteger('price')->unsigned();
             $table->bigInteger('qty')->unsigned();
             $table->string('rowId');
-            $table->decimal('tax',8,2)->unsigned();
+            $table->decimal('priceTax',8,2)->unsigned();
             $table->timestamps();
         });
     }

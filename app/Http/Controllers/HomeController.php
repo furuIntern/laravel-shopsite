@@ -27,13 +27,16 @@ class HomeController extends Controller
     {  
         if($request->ajax()) 
         {
-            return view('user\element\table' , [ 
-                'items' => Orders::findOrders(Auth::user()->id)->paginate(4)
-            ]);
+            return view('user\element\table' , $this->items());
         }
 
-        return view('home',[ 
-                'items' => Orders::findOrders(Auth::user()->id)->paginate(4) 
-            ]);
+        return view('home', $this->items());
+    }
+
+    private function items()
+    {
+        return array( 
+            'items' => Orders::findOrders(Auth::user()->id)->paginate(4)
+        );
     }
 }

@@ -2,7 +2,6 @@
 
 namespace App\Services\Cart;
 
-
 use Gloudemans\Shoppingcart\Cart;
 use App\Orders;
 
@@ -51,9 +50,9 @@ class UseCart extends Cart
             $data [$item->id] = array(
                
                     'order_id' => $id,
-                    'amount' => $item->qty,
+                    'qty' => $item->qty,
                     'rowId' => $item->rowId,
-                    'tax' => $item->tax * $item->qty, 
+                    'priceTax' => $item->tax, 
                     'price' => $item->total
                 
             );
@@ -85,17 +84,23 @@ class UseCart extends Cart
 
         $store = $this->getConnection()->table($this->getTableName())->find($id);
 
-        $contentStore = $this->getConnection()->table('detail_orders')->where('order_id',$store->id)->get();
-
-        $content = $this->content();
+        $contentStore = $this->getConnection()->table('detail_orders')->join('products','products.id','=','detail_orders.product_id',)->where('order_id',$store->id)->get();
         
+        $content = $this->getContent();
+
+        $currentInstance = $this->currentInstance();
+        
+        $this->instance($store->instance);
+
         foreach($contentStore as $item) {
 
             $content->put($item->rowId, $item);
         }
         
-        $this->session->put($store->instance, $content);
+        $this->session->put($this->instance, $content);
 
+        $this->instance($currentInstance);
+        
     }
 
     public function getRestore($id)

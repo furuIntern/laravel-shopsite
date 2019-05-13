@@ -9,17 +9,17 @@ class Items
 {
     //
 
-    public static function addCart($id) {
-        $qty = 1;
-        $product = Products::find($id);
+    public static function addCart($data) {
+        $qty = $data['qty'] ? $data['qty'] : 1 ;
+        $product = Products::find($data['id']);
             
             
-        if($cart = Cart::content()->where('id', $id)->first())
+        if($cart = Cart::content()->where('id', $data['id'])->first())
         {
                 
-           
-            Cart::update($cart->rowId,['qty' => ++$cart->qty ]);
+            Cart::update($cart->rowId,['qty' => $cart->qty + $qty ]);
             return true;
+
         }
         Cart::add([
             'id' => $product->id,

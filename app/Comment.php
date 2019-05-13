@@ -9,6 +9,11 @@ class comment extends Model
     //
 
     protected $fillable = [
-        'content'
+        'content' ,'user_id', 'product_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\user');
+    } 
 }

@@ -15,7 +15,7 @@ class Orders extends Model
 
     public function products() {
         return $this->belongsToMany('App\Products','detail_orders','order_id','product_id')
-                    ->withPivot('amount','price','tax');
+                    ->withPivot('qty','price','priceTax');
     }
 
     public function scopeFindOrders($query,$id) {

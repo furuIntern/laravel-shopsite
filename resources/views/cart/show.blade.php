@@ -1,4 +1,9 @@
-
+    <h4 class="d-flex justify-content-between">
+        <strong>Cart</strong>
+       
+            <span class="badge badge-secondary">{{Cart::count()}}</span>
+        
+    </h4>
         <ul class="list-group">
             
             @foreach ($items as $item)

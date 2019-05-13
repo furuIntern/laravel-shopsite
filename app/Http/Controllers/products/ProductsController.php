@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\ProductsFilter;
 use App\Products;
 use App\Categories;
+use App\Comment;
 
 class ProductsController extends Controller
 {
@@ -31,7 +32,10 @@ class ProductsController extends Controller
     public function detailProduct(Request $request , $id) {
 
         $Product = Products::find($id);
-        return view('shop\detailProduct' , [ 'product' => $Product]);
+        return view('shop\detailProduct' , [ 
+                    'product' => $Product ,
+                    'comments' => Comment::with('user')->paginate(10)
+                ]);
     }
 
     public function filter(ProductsFilter $filter) {
