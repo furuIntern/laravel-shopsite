@@ -22,7 +22,7 @@ class MemberController extends Controller
     public function index()
     {
         $users = User::all();
-        $roles = Role::whereNotIn('name',['super-admin'])->get();
+        $roles = Role::whereNotIn('name',['super-admin'])->paginate(15);
         $data = ['users'=> $users,'roles'=> $roles];
         return view('Admin/memberlist',$data);
     }
