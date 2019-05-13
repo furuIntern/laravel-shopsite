@@ -15,3 +15,143 @@
 body,html{
   height: 100%;
 }
+
+.navbar-laravel {
+  background-color: $white;
+  box-shadow: 0 2px 4px $black;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+#bar > li {
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  top: 30px;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu .dropdown-menu {
+  margin-left: 155px;
+  top: -10px;
+  
+}
+
+.main {
+  height: 200vh;
+}
+
+.cart {
+  overflow: auto;
+  height: 50px;
+}
+
+.card > p {
+  text-align: justify;
+  padding: 20px;
+  margin: 0;
+}
+
+.footer {
+  bottom: 0;
+  background-color: $black;
+  margin-top: 6rem;
+}
+footer > .container {
+  
+  > div {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+
+  *{
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.warp{
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+
+  padding:0;
+  display: inline-flex;
+
+  a {
+    padding: 1rem ;
+    margin:0;
+  }
+  a:hover {
+    background-color: $blue;
+    
+  }
+}
+
+.widget {
+   > * {
+    width: 100%;
+    float: left;
+  }
+
+  > span  {
+    float:left;
+    line-height: 47px;
+    > i {
+        padding: 1rem;
+        float:left;
+    }
+  }
+}
+
+.useful_link {
+
+  width: 100%;
+  
+  > ul {
+    padding: 0;
+    > li {
+
+      padding: 20px;
+      border-bottom: $gray solid 2px;
+    }
+    a {
+      transition: 2s;
+    }
+    a:hover {
+      padding-left: 1rem;
+      color: $red;
+      transition: 1s;
+    }
+  }
+
+  
+}
+
+button > a {
+  text-decoration: unset;
+  color: $white;
+}
+
+button > a:hover {
+  text-decoration: unset;
+  color: $white;
+}

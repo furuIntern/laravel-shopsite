@@ -49,11 +49,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:250'],
-            'phone'=>['required','numeric'],
-            'username'=>['required','string','max:100','unique:users'],
-            'email' => ['required', 'string', 'email', 'max:100', 'unique:users'],
+            'username' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'name' => ['required', 'string' , 'max:255'],
+            'phone' => ['required', 'numeric'],
+            'address' => ['required', 'string', 'max:255']
         ]);
     }
 
@@ -65,18 +66,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $user = User::create([
-            'name' => $data['name'],
+        return User::create([
+            'username' => $data['username'],
             'email' => $data['email'],
-            'username'=> $data['username'],
-            'phone'=> $data['phone'],
             'password' => Hash::make($data['password']),
+            'name' => $data['name'],
+            'phone' => $data['phone'],
+            'address' => $data['address']
         ]);
-        $user->assignRole('user');
-        return $user;
     }
 
-    protected function redirectTo(){
-        return 'admin';
-    }
 }
