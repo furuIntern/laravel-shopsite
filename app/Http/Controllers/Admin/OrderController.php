@@ -66,7 +66,7 @@ class OrderController extends Controller
             $order->phone = $request->phone;
             $order->total_price = $total;
             $order->save();
-            $order->details()->saveMany($products);
+            $order->detail()->saveMany($products);
             return redirect()->route('show-orders');
     }
 
@@ -76,9 +76,10 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Order $order)
     {
-        //
+        $data = ['order'=>$order,'orderDetail'=>$order->detail];
+        return view('admin/orderdetail',$data);
     }
 
     /**
@@ -110,8 +111,20 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Order $order)
     {
-        //
+        $order->delete();
+        return redirect()->route('show-orders');
+    }
+
+    /**
+     * 
+     * 
+     * Update state
+     */
+    public function updateState(Order $order){
+        $order->state = 'completed';
+        $order->save();
+        return redirect()->route('show-orders');
     }
 }

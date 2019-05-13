@@ -3,13 +3,63 @@
 @if($errors->any())
     <div class="alert alert-danger text-center w-50 container fixed-top">Your request is invalid</div>
 @endif
-<div class="container mt-3">
-<div class='text-right px-5'>
-    <button class="border rounded-top border-warning bg-warning" data-toggle="modal" data-target="#addMember">
-        <b style='font-size: 16px;'><i class="fas fa-plus-square"></i> Add</b>
-    </button>
+<div class="container mt-3 text-right">
+    <button class='btn btn-light ml-role' data-toggle="collapse" data-target="#role"><i class="fas fa-bars"></i> Role</button>
+    <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addMember"><i class="fas fa-plus"></i> Member</button>
+    <div class="collapse text-left" id='role'>
+        @foreach($roles as $role)
+            <div class="btn-group mt-2">
+                <div class="btn btn-primary">{{$role->name}}</div>
+                <a href="{{route('delete-role',['role'=>$role->id])}}" class ='btn btn-danger'>&times;</a>
+            </div>
+        @endforeach
+        <button class="btn btn-outline-primary mt-2" data-toggle='modal' data-target='#addRole'><i class="fas fa-plus"></i> Add</button>
+    </div>
+<hr/>
+ <!-- Add role form  -->
+<div class="modal fade" id='addRole'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="{{route('add-role')}}" method="post">
+            @csrf
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h5 class='text-dark'><b>New member</b></h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" name='role' placeholder='Name'/>
+                    <div class='d-flex mt-2'>
+                        <div class="custom-control custom-checkbox mr-3">
+                            <input type="checkbox" name='setting' class="custom-control-input" id="setting">
+                            <label class="custom-control-label" for="setting">Setting</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mr-3">
+                            <input type="checkbox" name='products' class="custom-control-input" id="products">
+                            <label class="custom-control-label" for="products">Products</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mr-3">
+                            <input type="checkbox" name='orders' class="custom-control-input" id="orders">
+                            <label class="custom-control-label" for="orders">Orders</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name='members' class="custom-control-input" id="members">
+                            <label class="custom-control-label" for="members">Members</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center justify-content-center">
+                    <button class="btn btn-success">
+                        Confirm
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-
 <!-- Form add member -->
 <div class="modal fade" id='addMember'>
     <div class="modal-dialog">

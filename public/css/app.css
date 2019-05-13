@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Nunito);/*!
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -15,7 +14,6 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1; }
->>>>>>> origin/trung-admin
 
 .fa-lg {
   font-size: 1.33333em;
@@ -4336,10 +4334,6 @@ readers do not read off random characters that represent icons */
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
@@ -6696,7 +6690,6 @@ fieldset:disabled a.btn {
   border-color: #6c757d;
 }
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
->>>>>>> origin/trung-admin
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
@@ -6746,7 +6739,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(97, 157, 206, 0.5);
 }
 .btn-info.disabled, .btn-info:disabled {
->>>>>>> origin/trung-admin
   color: #212529;
   background-color: #6cb2eb;
   border-color: #6cb2eb;
@@ -6910,7 +6902,6 @@ fieldset:disabled a.btn {
   background-color: transparent;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
->>>>>>> origin/trung-admin
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
@@ -7066,7 +7057,7 @@ fieldset:disabled a.btn {
   border-color: #343a40;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 .btn-link {
@@ -7885,7 +7876,6 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
-
 .custom-file-label::after {
   position: absolute;
   top: 0;
@@ -8073,53 +8063,28 @@ input[type=button].btn-block {
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
-<<<<<<< HEAD
-
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
-
-=======
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
->>>>>>> origin/trung-admin
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-
-=======
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
->>>>>>> origin/trung-admin
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
   background-color: #f8fafc;
   border-color: #dee2e6 #dee2e6 #f8fafc;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -8129,10 +8094,6 @@ input[type=button].btn-block {
 .nav-pills .nav-link {
   border-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
@@ -8153,10 +8114,6 @@ input[type=button].btn-block {
 .tab-content > .tab-pane {
   display: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .tab-content > .active {
   display: block;
 }
@@ -8169,10 +8126,6 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar > .container,
 .navbar > .container-fluid {
   display: flex;
@@ -8190,13 +8143,7 @@ input[type=button].btn-block {
   line-height: inherit;
   white-space: nowrap;
 }
-<<<<<<< HEAD
-
-.navbar-brand:hover,
-.navbar-brand:focus {
-=======
 .navbar-brand:hover, .navbar-brand:focus {
->>>>>>> origin/trung-admin
   text-decoration: none;
 }
 
@@ -8207,18 +8154,10 @@ input[type=button].btn-block {
   margin-bottom: 0;
   list-style: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
@@ -8244,13 +8183,7 @@ input[type=button].btn-block {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-.navbar-toggler:hover,
-.navbar-toggler:focus {
-=======
 .navbar-toggler:hover, .navbar-toggler:focus {
->>>>>>> origin/trung-admin
   text-decoration: none;
 }
 
@@ -8266,340 +8199,167 @@ input[type=button].btn-block {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
-<<<<<<< HEAD
-  .navbar-expand-sm > .container-fluid {
-=======
 .navbar-expand-sm > .container-fluid {
->>>>>>> origin/trung-admin
     padding-right: 0;
     padding-left: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-sm .navbar-nav {
-    flex-direction: row;
-  }
-
-  .navbar-expand-sm .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-=======
   .navbar-expand-sm .navbar-nav {
     flex-direction: row;
   }
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
-    flex-wrap: nowrap;
-  }
-
-=======
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid {
     flex-wrap: nowrap;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
 }
-<<<<<<< HEAD
-
-@media (max-width: 767.98px) {
-  .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
-=======
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid {
->>>>>>> origin/trung-admin
     padding-right: 0;
     padding-left: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-md .navbar-nav {
-    flex-direction: row;
-  }
-
-  .navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-=======
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
-    flex-wrap: nowrap;
-  }
-
-=======
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid {
     flex-wrap: nowrap;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
 }
-<<<<<<< HEAD
-
-@media (max-width: 991.98px) {
-  .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
-=======
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid {
->>>>>>> origin/trung-admin
     padding-right: 0;
     padding-left: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-  }
-
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-=======
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
-    flex-wrap: nowrap;
-  }
-
-=======
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
 }
-<<<<<<< HEAD
-
-@media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
-=======
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid {
->>>>>>> origin/trung-admin
     padding-right: 0;
     padding-left: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-xl .navbar-nav {
-    flex-direction: row;
-  }
-
-  .navbar-expand-xl .navbar-nav .dropdown-menu {
-    position: absolute;
-  }
-
-=======
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
   }
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-<<<<<<< HEAD
-
-  .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
-    flex-wrap: nowrap;
-  }
-
-=======
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
->>>>>>> origin/trung-admin
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .navbar-expand-xl .navbar-toggler {
     display: none;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
 }
-<<<<<<< HEAD
-
-.navbar-expand .navbar-nav {
-  flex-direction: row;
-}
-
-.navbar-expand .navbar-nav .dropdown-menu {
-  position: absolute;
-}
-
-=======
 .navbar-expand .navbar-nav {
   flex-direction: row;
 }
 .navbar-expand .navbar-nav .dropdown-menu {
   position: absolute;
 }
->>>>>>> origin/trung-admin
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-expand .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-expand .navbar-toggler {
   display: none;
 }
@@ -8607,27 +8367,6 @@ input[type=button].btn-block {
 .navbar-light .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
 }
-<<<<<<< HEAD
-
-.navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-=======
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
@@ -8640,38 +8379,16 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
->>>>>>> origin/trung-admin
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar-light .navbar-text a {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-=======
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -8682,34 +8399,12 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
->>>>>>> origin/trung-admin
   color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-dark .navbar-brand {
   color: #fff;
 }
-<<<<<<< HEAD
-
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .navbar-brand:focus {
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-=======
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
@@ -8722,38 +8417,16 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
->>>>>>> origin/trung-admin
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
 }
-<<<<<<< HEAD
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-dark .navbar-text a {
-  color: #fff;
-}
-
-.navbar-dark .navbar-text a:hover,
-.navbar-dark .navbar-text a:focus {
-=======
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -8764,7 +8437,6 @@ input[type=button].btn-block {
   color: #fff;
 }
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
->>>>>>> origin/trung-admin
   color: #fff;
 }
 
@@ -8779,26 +8451,14 @@ input[type=button].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .card > hr {
   margin-right: 0;
   margin-left: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .card > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .card > .list-group:last-child .list-group-item:last-child {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -8825,10 +8485,6 @@ input[type=button].btn-block {
 .card-link:hover {
   text-decoration: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .card-link + .card-link {
   margin-left: 1.25rem;
 }
@@ -8839,17 +8495,9 @@ input[type=button].btn-block {
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-<<<<<<< HEAD
-
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
-
-=======
-.card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-}
->>>>>>> origin/trung-admin
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;
 }
@@ -8859,10 +8507,6 @@ input[type=button].btn-block {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
 }
@@ -8909,27 +8553,15 @@ input[type=button].btn-block {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-
 .card-deck .card {
   margin-bottom: 15px;
 }
-
-=======
-.card-deck .card {
-  margin-bottom: 15px;
-}
->>>>>>> origin/trung-admin
 @media (min-width: 576px) {
   .card-deck {
     flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
@@ -8944,58 +8576,25 @@ input[type=button].btn-block {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-
 .card-group > .card {
   margin-bottom: 15px;
 }
-
-=======
-.card-group > .card {
-  margin-bottom: 15px;
-}
->>>>>>> origin/trung-admin
 @media (min-width: 576px) {
   .card-group {
     flex-flow: row wrap;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .card-group > .card {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .card-group > .card + .card {
     margin-left: 0;
     border-left: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .card-group > .card:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-<<<<<<< HEAD
-
-  .card-group > .card:not(:last-child) .card-img-top,
-  .card-group > .card:not(:last-child) .card-header {
-    border-top-right-radius: 0;
-  }
-
-  .card-group > .card:not(:last-child) .card-img-bottom,
-  .card-group > .card:not(:last-child) .card-footer {
-    border-bottom-right-radius: 0;
-  }
-
-=======
   .card-group > .card:not(:last-child) .card-img-top,
 .card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
@@ -9004,28 +8603,16 @@ input[type=button].btn-block {
 .card-group > .card:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
->>>>>>> origin/trung-admin
   .card-group > .card:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-<<<<<<< HEAD
-
-  .card-group > .card:not(:first-child) .card-img-top,
-  .card-group > .card:not(:first-child) .card-header {
-    border-top-left-radius: 0;
-  }
-
-  .card-group > .card:not(:first-child) .card-img-bottom,
-  .card-group > .card:not(:first-child) .card-footer {
-=======
   .card-group > .card:not(:first-child) .card-img-top,
 .card-group > .card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-bottom,
 .card-group > .card:not(:first-child) .card-footer {
->>>>>>> origin/trung-admin
     border-bottom-left-radius: 0;
   }
 }
@@ -9033,10 +8620,6 @@ input[type=button].btn-block {
 .card-columns .card {
   margin-bottom: 0.75rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
@@ -9048,10 +8631,6 @@ input[type=button].btn-block {
     orphans: 1;
     widows: 1;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .card-columns .card {
     display: inline-block;
     width: 100%;
@@ -9061,42 +8640,22 @@ input[type=button].btn-block {
 .accordion > .card {
   overflow: hidden;
 }
-<<<<<<< HEAD
-
 .accordion > .card:not(:first-of-type) .card-header:first-child {
   border-radius: 0;
 }
-
-=======
-.accordion > .card:not(:first-of-type) .card-header:first-child {
-  border-radius: 0;
-}
->>>>>>> origin/trung-admin
 .accordion > .card:not(:first-of-type):not(:last-of-type) {
   border-bottom: 0;
   border-radius: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .accordion > .card:first-of-type {
   border-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .accordion > .card:last-of-type {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .accordion > .card .card-header {
   margin-bottom: -1px;
 }
@@ -9114,34 +8673,18 @@ input[type=button].btn-block {
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 0.5rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
   content: "/";
 }
-<<<<<<< HEAD
-
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline;
-}
-
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none;
-}
-
-=======
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline;
 }
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: none;
 }
->>>>>>> origin/trung-admin
 .breadcrumb-item.active {
   color: #6c757d;
 }
@@ -9163,10 +8706,6 @@ input[type=button].btn-block {
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .page-link:hover {
   z-index: 2;
   color: #1d68a7;
@@ -9174,10 +8713,6 @@ input[type=button].btn-block {
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .page-link:focus {
   z-index: 2;
   outline: 0;
@@ -9189,28 +8724,16 @@ input[type=button].btn-block {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .page-item:last-child .page-link {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
   background-color: #3490dc;
   border-color: #3490dc;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .page-item.disabled .page-link {
   color: #6c757d;
   pointer-events: none;
@@ -9224,18 +8747,10 @@ input[type=button].btn-block {
   font-size: 1.125rem;
   line-height: 1.5;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .pagination-lg .page-item:last-child .page-link {
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
@@ -9246,18 +8761,10 @@ input[type=button].btn-block {
   font-size: 0.7875rem;
   line-height: 1.5;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .pagination-sm .page-item:last-child .page-link {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
@@ -9275,22 +8782,12 @@ input[type=button].btn-block {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (prefers-reduced-motion: reduce) {
   .badge {
     transition: none;
   }
 }
-<<<<<<< HEAD
-
-a.badge:hover,
-a.badge:focus {
-=======
 a.badge:hover, a.badge:focus {
->>>>>>> origin/trung-admin
   text-decoration: none;
 }
 
@@ -9313,23 +8810,11 @@ a.badge:hover, a.badge:focus {
   color: #fff;
   background-color: #3490dc;
 }
-<<<<<<< HEAD
-
-a.badge-primary:hover,
-a.badge-primary:focus {
-  color: #fff;
-  background-color: #2176bd;
-}
-
-a.badge-primary:focus,
-a.badge-primary.focus {
-=======
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
   background-color: #2176bd;
 }
 a.badge-primary:focus, a.badge-primary.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.5);
 }
@@ -9338,23 +8823,11 @@ a.badge-primary:focus, a.badge-primary.focus {
   color: #fff;
   background-color: #6c757d;
 }
-<<<<<<< HEAD
-
-a.badge-secondary:hover,
-a.badge-secondary:focus {
-  color: #fff;
-  background-color: #545b62;
-}
-
-a.badge-secondary:focus,
-a.badge-secondary.focus {
-=======
 a.badge-secondary:hover, a.badge-secondary:focus {
   color: #fff;
   background-color: #545b62;
 }
 a.badge-secondary:focus, a.badge-secondary.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
@@ -9363,23 +8836,11 @@ a.badge-secondary:focus, a.badge-secondary.focus {
   color: #fff;
   background-color: #38c172;
 }
-<<<<<<< HEAD
-
-a.badge-success:hover,
-a.badge-success:focus {
-  color: #fff;
-  background-color: #2d995b;
-}
-
-a.badge-success:focus,
-a.badge-success.focus {
-=======
 a.badge-success:hover, a.badge-success:focus {
   color: #fff;
   background-color: #2d995b;
 }
 a.badge-success:focus, a.badge-success.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(56, 193, 114, 0.5);
 }
@@ -9388,23 +8849,11 @@ a.badge-success:focus, a.badge-success.focus {
   color: #212529;
   background-color: #6cb2eb;
 }
-<<<<<<< HEAD
-
-a.badge-info:hover,
-a.badge-info:focus {
-  color: #212529;
-  background-color: #3f9ae5;
-}
-
-a.badge-info:focus,
-a.badge-info.focus {
-=======
 a.badge-info:hover, a.badge-info:focus {
   color: #212529;
   background-color: #3f9ae5;
 }
 a.badge-info:focus, a.badge-info.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(108, 178, 235, 0.5);
 }
@@ -9413,23 +8862,11 @@ a.badge-info:focus, a.badge-info.focus {
   color: #212529;
   background-color: #ffed4a;
 }
-<<<<<<< HEAD
-
-a.badge-warning:hover,
-a.badge-warning:focus {
-  color: #212529;
-  background-color: #ffe817;
-}
-
-a.badge-warning:focus,
-a.badge-warning.focus {
-=======
 a.badge-warning:hover, a.badge-warning:focus {
   color: #212529;
   background-color: #ffe817;
 }
 a.badge-warning:focus, a.badge-warning.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 237, 74, 0.5);
 }
@@ -9438,23 +8875,11 @@ a.badge-warning:focus, a.badge-warning.focus {
   color: #fff;
   background-color: #e3342f;
 }
-<<<<<<< HEAD
-
-a.badge-danger:hover,
-a.badge-danger:focus {
-  color: #fff;
-  background-color: #c51f1a;
-}
-
-a.badge-danger:focus,
-a.badge-danger.focus {
-=======
 a.badge-danger:hover, a.badge-danger:focus {
   color: #fff;
   background-color: #c51f1a;
 }
 a.badge-danger:focus, a.badge-danger.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(227, 52, 47, 0.5);
 }
@@ -9463,23 +8888,11 @@ a.badge-danger:focus, a.badge-danger.focus {
   color: #212529;
   background-color: #f8f9fa;
 }
-<<<<<<< HEAD
-
-a.badge-light:hover,
-a.badge-light:focus {
-  color: #212529;
-  background-color: #dae0e5;
-}
-
-a.badge-light:focus,
-a.badge-light.focus {
-=======
 a.badge-light:hover, a.badge-light:focus {
   color: #212529;
   background-color: #dae0e5;
 }
 a.badge-light:focus, a.badge-light.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
@@ -9488,23 +8901,11 @@ a.badge-light:focus, a.badge-light.focus {
   color: #fff;
   background-color: #343a40;
 }
-<<<<<<< HEAD
-
-a.badge-dark:hover,
-a.badge-dark:focus {
-  color: #fff;
-  background-color: #1d2124;
-}
-
-a.badge-dark:focus,
-a.badge-dark.focus {
-=======
 a.badge-dark:hover, a.badge-dark:focus {
   color: #fff;
   background-color: #1d2124;
 }
 a.badge-dark:focus, a.badge-dark.focus {
->>>>>>> origin/trung-admin
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
@@ -9515,10 +8916,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 2rem;
@@ -9550,10 +8947,6 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-dismissible {
   padding-right: 3.85rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .alert-dismissible .close {
   position: absolute;
   top: 0;
@@ -9567,17 +8960,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #d6e9f8;
   border-color: #c6e0f5;
 }
-<<<<<<< HEAD
-
 .alert-primary hr {
   border-top-color: #b0d4f1;
 }
-
-=======
-.alert-primary hr {
-  border-top-color: #b0d4f1;
-}
->>>>>>> origin/trung-admin
 .alert-primary .alert-link {
   color: #113049;
 }
@@ -9587,17 +8972,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #e2e3e5;
   border-color: #d6d8db;
 }
-<<<<<<< HEAD
-
 .alert-secondary hr {
   border-top-color: #c8cbcf;
 }
-
-=======
-.alert-secondary hr {
-  border-top-color: #c8cbcf;
-}
->>>>>>> origin/trung-admin
 .alert-secondary .alert-link {
   color: #202326;
 }
@@ -9607,17 +8984,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #d7f3e3;
   border-color: #c7eed8;
 }
-<<<<<<< HEAD
-
 .alert-success hr {
   border-top-color: #b3e8ca;
 }
-
-=======
-.alert-success hr {
-  border-top-color: #b3e8ca;
-}
->>>>>>> origin/trung-admin
 .alert-success .alert-link {
   color: #123c24;
 }
@@ -9627,17 +8996,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #e2f0fb;
   border-color: #d6e9f9;
 }
-<<<<<<< HEAD
-
 .alert-info hr {
   border-top-color: #c0ddf6;
 }
-
-=======
-.alert-info hr {
-  border-top-color: #c0ddf6;
-}
->>>>>>> origin/trung-admin
 .alert-info .alert-link {
   color: #284257;
 }
@@ -9647,17 +9008,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #fffbdb;
   border-color: #fffacc;
 }
-<<<<<<< HEAD
-
 .alert-warning hr {
   border-top-color: #fff8b3;
 }
-
-=======
-.alert-warning hr {
-  border-top-color: #fff8b3;
-}
->>>>>>> origin/trung-admin
 .alert-warning .alert-link {
   color: #5d561b;
 }
@@ -9667,17 +9020,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #f9d6d5;
   border-color: #f7c6c5;
 }
-<<<<<<< HEAD
-
 .alert-danger hr {
   border-top-color: #f4b0af;
 }
-
-=======
-.alert-danger hr {
-  border-top-color: #f4b0af;
-}
->>>>>>> origin/trung-admin
 .alert-danger .alert-link {
   color: #4c110f;
 }
@@ -9687,17 +9032,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #fefefe;
   border-color: #fdfdfe;
 }
-<<<<<<< HEAD
-
 .alert-light hr {
   border-top-color: #ececf6;
 }
-
-=======
-.alert-light hr {
-  border-top-color: #ececf6;
-}
->>>>>>> origin/trung-admin
 .alert-light .alert-link {
   color: #686868;
 }
@@ -9707,17 +9044,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #d6d8d9;
   border-color: #c6c8ca;
 }
-<<<<<<< HEAD
-
 .alert-dark hr {
   border-top-color: #b9bbbe;
 }
-
-=======
-.alert-dark hr {
-  border-top-color: #b9bbbe;
-}
->>>>>>> origin/trung-admin
 .alert-dark .alert-link {
   color: #040505;
 }
@@ -9726,10 +9055,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   from {
     background-position: 1rem 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   to {
     background-position: 0 0;
   }
@@ -9739,18 +9064,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   from {
     background-position: 1rem 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   to {
     background-position: 0 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .progress {
   display: flex;
   height: 1rem;
@@ -9770,7 +9087,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #3490dc;
   transition: width 0.6s ease;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
     transition: none;
@@ -9786,7 +9102,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
           animation: progress-bar-stripes 1s linear infinite;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .progress-bar-animated {
     -webkit-animation: none;
@@ -9815,22 +9130,12 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #495057;
   text-align: inherit;
 }
-<<<<<<< HEAD
-
-.list-group-item-action:hover,
-.list-group-item-action:focus {
-=======
 .list-group-item-action:hover, .list-group-item-action:focus {
->>>>>>> origin/trung-admin
   z-index: 1;
   color: #495057;
   text-decoration: none;
   background-color: #f8f9fa;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-item-action:active {
   color: #212529;
   background-color: #e9ecef;
@@ -9844,38 +9149,20 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-.list-group-item.disabled,
-.list-group-item:disabled {
-=======
 .list-group-item.disabled, .list-group-item:disabled {
->>>>>>> origin/trung-admin
   color: #6c757d;
   pointer-events: none;
   background-color: #fff;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-item.active {
   z-index: 2;
   color: #fff;
@@ -9886,27 +9173,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-horizontal {
   flex-direction: row;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-horizontal .list-group-item {
   margin-right: -1px;
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-horizontal .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   border-top-right-radius: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-horizontal .list-group-item:last-child {
   margin-right: 0;
   border-top-right-radius: 0.25rem;
@@ -9918,27 +9193,15 @@ a.badge-dark:focus, a.badge-dark.focus {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-sm .list-group-item {
     margin-right: -1px;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-sm .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-sm .list-group-item:last-child {
     margin-right: 0;
     border-top-right-radius: 0.25rem;
@@ -9946,35 +9209,19 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-bottom-left-radius: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .list-group-horizontal-md {
     flex-direction: row;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-md .list-group-item {
     margin-right: -1px;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-md .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-md .list-group-item:last-child {
     margin-right: 0;
     border-top-right-radius: 0.25rem;
@@ -9982,35 +9229,19 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-bottom-left-radius: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-lg .list-group-item {
     margin-right: -1px;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-lg .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-lg .list-group-item:last-child {
     margin-right: 0;
     border-top-right-radius: 0.25rem;
@@ -10018,35 +9249,19 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-bottom-left-radius: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .list-group-horizontal-xl {
     flex-direction: row;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-xl .list-group-item {
     margin-right: -1px;
     margin-bottom: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-xl .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .list-group-horizontal-xl .list-group-item:last-child {
     margin-right: 0;
     border-top-right-radius: 0.25rem;
@@ -10054,33 +9269,17 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-bottom-left-radius: 0;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .list-group-flush .list-group-item {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
-<<<<<<< HEAD
-
-.list-group-flush .list-group-item:last-child {
-  margin-bottom: -1px;
-}
-
-.list-group-flush:first-child .list-group-item:first-child {
-  border-top: 0;
-}
-
-=======
 .list-group-flush .list-group-item:last-child {
   margin-bottom: -1px;
 }
 .list-group-flush:first-child .list-group-item:first-child {
   border-top: 0;
 }
->>>>>>> origin/trung-admin
 .list-group-flush:last-child .list-group-item:last-child {
   margin-bottom: 0;
   border-bottom: 0;
@@ -10090,20 +9289,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #1b4b72;
   background-color: #c6e0f5;
 }
-<<<<<<< HEAD
-
-.list-group-item-primary.list-group-item-action:hover,
-.list-group-item-primary.list-group-item-action:focus {
-  color: #1b4b72;
-  background-color: #b0d4f1;
-}
-
-=======
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
   color: #1b4b72;
   background-color: #b0d4f1;
 }
->>>>>>> origin/trung-admin
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
   background-color: #1b4b72;
@@ -10114,20 +9303,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #383d41;
   background-color: #d6d8db;
 }
-<<<<<<< HEAD
-
-.list-group-item-secondary.list-group-item-action:hover,
-.list-group-item-secondary.list-group-item-action:focus {
-  color: #383d41;
-  background-color: #c8cbcf;
-}
-
-=======
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
   color: #383d41;
   background-color: #c8cbcf;
 }
->>>>>>> origin/trung-admin
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
   background-color: #383d41;
@@ -10138,20 +9317,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #1d643b;
   background-color: #c7eed8;
 }
-<<<<<<< HEAD
-
-.list-group-item-success.list-group-item-action:hover,
-.list-group-item-success.list-group-item-action:focus {
-  color: #1d643b;
-  background-color: #b3e8ca;
-}
-
-=======
 .list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
   color: #1d643b;
   background-color: #b3e8ca;
 }
->>>>>>> origin/trung-admin
 .list-group-item-success.list-group-item-action.active {
   color: #fff;
   background-color: #1d643b;
@@ -10162,20 +9331,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #385d7a;
   background-color: #d6e9f9;
 }
-<<<<<<< HEAD
-
-.list-group-item-info.list-group-item-action:hover,
-.list-group-item-info.list-group-item-action:focus {
-  color: #385d7a;
-  background-color: #c0ddf6;
-}
-
-=======
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
   color: #385d7a;
   background-color: #c0ddf6;
 }
->>>>>>> origin/trung-admin
 .list-group-item-info.list-group-item-action.active {
   color: #fff;
   background-color: #385d7a;
@@ -10186,20 +9345,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #857b26;
   background-color: #fffacc;
 }
-<<<<<<< HEAD
-
-.list-group-item-warning.list-group-item-action:hover,
-.list-group-item-warning.list-group-item-action:focus {
-  color: #857b26;
-  background-color: #fff8b3;
-}
-
-=======
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
   color: #857b26;
   background-color: #fff8b3;
 }
->>>>>>> origin/trung-admin
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
   background-color: #857b26;
@@ -10210,20 +9359,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #761b18;
   background-color: #f7c6c5;
 }
-<<<<<<< HEAD
-
-.list-group-item-danger.list-group-item-action:hover,
-.list-group-item-danger.list-group-item-action:focus {
-  color: #761b18;
-  background-color: #f4b0af;
-}
-
-=======
 .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
   color: #761b18;
   background-color: #f4b0af;
 }
->>>>>>> origin/trung-admin
 .list-group-item-danger.list-group-item-action.active {
   color: #fff;
   background-color: #761b18;
@@ -10234,20 +9373,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #818182;
   background-color: #fdfdfe;
 }
-<<<<<<< HEAD
-
-.list-group-item-light.list-group-item-action:hover,
-.list-group-item-light.list-group-item-action:focus {
-  color: #818182;
-  background-color: #ececf6;
-}
-
-=======
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
   color: #818182;
   background-color: #ececf6;
 }
->>>>>>> origin/trung-admin
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
   background-color: #818182;
@@ -10258,20 +9387,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #1b1e21;
   background-color: #c6c8ca;
 }
-<<<<<<< HEAD
-
-.list-group-item-dark.list-group-item-action:hover,
-.list-group-item-dark.list-group-item-action:focus {
-  color: #1b1e21;
-  background-color: #b9bbbe;
-}
-
-=======
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
   color: #1b1e21;
   background-color: #b9bbbe;
 }
->>>>>>> origin/trung-admin
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
   background-color: #1b1e21;
@@ -10287,21 +9406,11 @@ a.badge-dark:focus, a.badge-dark.focus {
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .close:hover {
   color: #000;
   text-decoration: none;
 }
-<<<<<<< HEAD
-
-.close:not(:disabled):not(.disabled):hover,
-.close:not(:disabled):not(.disabled):focus {
-=======
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
->>>>>>> origin/trung-admin
   opacity: 0.75;
 }
 
@@ -10331,32 +9440,16 @@ a.close.disabled {
   opacity: 0;
   border-radius: 0.25rem;
 }
-<<<<<<< HEAD
-
-.toast:not(:last-child) {
-  margin-bottom: 0.75rem;
-}
-
-.toast.showing {
-  opacity: 1;
-}
-
-=======
 .toast:not(:last-child) {
   margin-bottom: 0.75rem;
 }
 .toast.showing {
   opacity: 1;
 }
->>>>>>> origin/trung-admin
 .toast.show {
   display: block;
   opacity: 1;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .toast.hide {
   display: none;
 }
@@ -10378,10 +9471,6 @@ a.close.disabled {
 .modal-open {
   overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -10405,10 +9494,6 @@ a.close.disabled {
   margin: 0.5rem;
   pointer-events: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal.fade .modal-dialog {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -10416,19 +9501,11 @@ a.close.disabled {
   -webkit-transform: translate(0, -50px);
           transform: translate(0, -50px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal.show .modal-dialog {
   -webkit-transform: none;
           transform: none;
@@ -10438,26 +9515,14 @@ a.close.disabled {
   display: flex;
   max-height: calc(100% - 1rem);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-dialog-scrollable .modal-content {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-dialog-scrollable .modal-header,
 .modal-dialog-scrollable .modal-footer {
   flex-shrink: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
@@ -10467,35 +9532,19 @@ a.close.disabled {
   align-items: center;
   min-height: calc(100% - 1rem);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-dialog-centered.modal-dialog-scrollable {
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
-<<<<<<< HEAD
-
 .modal-dialog-centered.modal-dialog-scrollable .modal-content {
   max-height: none;
 }
-
-=======
-.modal-dialog-centered.modal-dialog-scrollable .modal-content {
-  max-height: none;
-}
->>>>>>> origin/trung-admin
 .modal-dialog-centered.modal-dialog-scrollable::before {
   content: none;
 }
@@ -10522,17 +9571,9 @@ a.close.disabled {
   height: 100vh;
   background-color: #000;
 }
-<<<<<<< HEAD
-
 .modal-backdrop.fade {
   opacity: 0;
 }
-
-=======
-.modal-backdrop.fade {
-  opacity: 0;
-}
->>>>>>> origin/trung-admin
 .modal-backdrop.show {
   opacity: 0.5;
 }
@@ -10546,10 +9587,6 @@ a.close.disabled {
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .modal-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
@@ -10575,17 +9612,9 @@ a.close.disabled {
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
-<<<<<<< HEAD
-
 .modal-footer > :not(:first-child) {
   margin-left: 0.25rem;
 }
-
-=======
-.modal-footer > :not(:first-child) {
-  margin-left: 0.25rem;
-}
->>>>>>> origin/trung-admin
 .modal-footer > :not(:last-child) {
   margin-right: 0.25rem;
 }
@@ -10607,10 +9636,6 @@ a.close.disabled {
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem);
   }
@@ -10618,10 +9643,6 @@ a.close.disabled {
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem);
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);
   }
@@ -10630,32 +9651,17 @@ a.close.disabled {
     max-width: 300px;
   }
 }
-<<<<<<< HEAD
-
-@media (min-width: 992px) {
-  .modal-lg,
-  .modal-xl {
-    max-width: 800px;
-  }
-}
-
-=======
 @media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
   }
 }
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -10679,27 +9685,15 @@ a.close.disabled {
   word-wrap: break-word;
   opacity: 0;
 }
-<<<<<<< HEAD
-
 .tooltip.show {
   opacity: 0.9;
 }
-
-=======
-.tooltip.show {
-  opacity: 0.9;
-}
->>>>>>> origin/trung-admin
 .tooltip .arrow {
   position: absolute;
   display: block;
   width: 0.8rem;
   height: 0.4rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .tooltip .arrow::before {
   position: absolute;
   content: "";
@@ -10707,20 +9701,6 @@ a.close.disabled {
   border-style: solid;
 }
 
-<<<<<<< HEAD
-.bs-tooltip-top,
-.bs-tooltip-auto[x-placement^=top] {
-  padding: 0.4rem 0;
-}
-
-.bs-tooltip-top .arrow,
-.bs-tooltip-auto[x-placement^=top] .arrow {
-  bottom: 0;
-}
-
-.bs-tooltip-top .arrow::before,
-.bs-tooltip-auto[x-placement^=top] .arrow::before {
-=======
 .bs-tooltip-top, .bs-tooltip-auto[x-placement^=top] {
   padding: 0.4rem 0;
 }
@@ -10728,56 +9708,25 @@ a.close.disabled {
   bottom: 0;
 }
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^=top] .arrow::before {
->>>>>>> origin/trung-admin
   top: 0;
   border-width: 0.4rem 0.4rem 0;
   border-top-color: #000;
 }
 
-<<<<<<< HEAD
-.bs-tooltip-right,
-.bs-tooltip-auto[x-placement^=right] {
-  padding: 0 0.4rem;
-}
-
-.bs-tooltip-right .arrow,
-.bs-tooltip-auto[x-placement^=right] .arrow {
-=======
 .bs-tooltip-right, .bs-tooltip-auto[x-placement^=right] {
   padding: 0 0.4rem;
 }
 .bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^=right] .arrow {
->>>>>>> origin/trung-admin
   left: 0;
   width: 0.4rem;
   height: 0.8rem;
 }
-<<<<<<< HEAD
-
-.bs-tooltip-right .arrow::before,
-.bs-tooltip-auto[x-placement^=right] .arrow::before {
-=======
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^=right] .arrow::before {
->>>>>>> origin/trung-admin
   right: 0;
   border-width: 0.4rem 0.4rem 0.4rem 0;
   border-right-color: #000;
 }
 
-<<<<<<< HEAD
-.bs-tooltip-bottom,
-.bs-tooltip-auto[x-placement^=bottom] {
-  padding: 0.4rem 0;
-}
-
-.bs-tooltip-bottom .arrow,
-.bs-tooltip-auto[x-placement^=bottom] .arrow {
-  top: 0;
-}
-
-.bs-tooltip-bottom .arrow::before,
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before {
-=======
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^=bottom] {
   padding: 0.4rem 0;
 }
@@ -10785,37 +9734,20 @@ a.close.disabled {
   top: 0;
 }
 .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^=bottom] .arrow::before {
->>>>>>> origin/trung-admin
   bottom: 0;
   border-width: 0 0.4rem 0.4rem;
   border-bottom-color: #000;
 }
 
-<<<<<<< HEAD
-.bs-tooltip-left,
-.bs-tooltip-auto[x-placement^=left] {
-  padding: 0 0.4rem;
-}
-
-.bs-tooltip-left .arrow,
-.bs-tooltip-auto[x-placement^=left] .arrow {
-=======
 .bs-tooltip-left, .bs-tooltip-auto[x-placement^=left] {
   padding: 0 0.4rem;
 }
 .bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^=left] .arrow {
->>>>>>> origin/trung-admin
   right: 0;
   width: 0.4rem;
   height: 0.8rem;
 }
-<<<<<<< HEAD
-
-.bs-tooltip-left .arrow::before,
-.bs-tooltip-auto[x-placement^=left] .arrow::before {
-=======
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^=left] .arrow::before {
->>>>>>> origin/trung-admin
   left: 0;
   border-width: 0.4rem 0 0.4rem 0.4rem;
   border-left-color: #000;
@@ -10858,10 +9790,6 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .popover .arrow {
   position: absolute;
   display: block;
@@ -10869,13 +9797,7 @@ a.close.disabled {
   height: 0.5rem;
   margin: 0 0.3rem;
 }
-<<<<<<< HEAD
-
-.popover .arrow::before,
-.popover .arrow::after {
-=======
 .popover .arrow::before, .popover .arrow::after {
->>>>>>> origin/trung-admin
   position: absolute;
   display: block;
   content: "";
@@ -10883,20 +9805,6 @@ a.close.disabled {
   border-style: solid;
 }
 
-<<<<<<< HEAD
-.bs-popover-top,
-.bs-popover-auto[x-placement^=top] {
-  margin-bottom: 0.5rem;
-}
-
-.bs-popover-top > .arrow,
-.bs-popover-auto[x-placement^=top] > .arrow {
-  bottom: calc((0.5rem + 1px) * -1);
-}
-
-.bs-popover-top > .arrow::before,
-.bs-popover-auto[x-placement^=top] > .arrow::before {
-=======
 .bs-popover-top, .bs-popover-auto[x-placement^=top] {
   margin-bottom: 0.5rem;
 }
@@ -10904,79 +9812,36 @@ a.close.disabled {
   bottom: calc((0.5rem + 1px) * -1);
 }
 .bs-popover-top > .arrow::before, .bs-popover-auto[x-placement^=top] > .arrow::before {
->>>>>>> origin/trung-admin
   bottom: 0;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
-
-.bs-popover-top > .arrow::after,
-.bs-popover-auto[x-placement^=top] > .arrow::after {
-=======
 .bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^=top] > .arrow::after {
->>>>>>> origin/trung-admin
   bottom: 1px;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: #fff;
 }
 
-<<<<<<< HEAD
-.bs-popover-right,
-.bs-popover-auto[x-placement^=right] {
-  margin-left: 0.5rem;
-}
-
-.bs-popover-right > .arrow,
-.bs-popover-auto[x-placement^=right] > .arrow {
-=======
 .bs-popover-right, .bs-popover-auto[x-placement^=right] {
   margin-left: 0.5rem;
 }
 .bs-popover-right > .arrow, .bs-popover-auto[x-placement^=right] > .arrow {
->>>>>>> origin/trung-admin
   left: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
   margin: 0.3rem 0;
 }
-<<<<<<< HEAD
-
-.bs-popover-right > .arrow::before,
-.bs-popover-auto[x-placement^=right] > .arrow::before {
-=======
 .bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^=right] > .arrow::before {
->>>>>>> origin/trung-admin
   left: 0;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
-
-.bs-popover-right > .arrow::after,
-.bs-popover-auto[x-placement^=right] > .arrow::after {
-=======
 .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^=right] > .arrow::after {
->>>>>>> origin/trung-admin
   left: 1px;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-right-color: #fff;
 }
 
-<<<<<<< HEAD
-.bs-popover-bottom,
-.bs-popover-auto[x-placement^=bottom] {
-  margin-top: 0.5rem;
-}
-
-.bs-popover-bottom > .arrow,
-.bs-popover-auto[x-placement^=bottom] > .arrow {
-  top: calc((0.5rem + 1px) * -1);
-}
-
-.bs-popover-bottom > .arrow::before,
-.bs-popover-auto[x-placement^=bottom] > .arrow::before {
-=======
 .bs-popover-bottom, .bs-popover-auto[x-placement^=bottom] {
   margin-top: 0.5rem;
 }
@@ -10984,29 +9849,16 @@ a.close.disabled {
   top: calc((0.5rem + 1px) * -1);
 }
 .bs-popover-bottom > .arrow::before, .bs-popover-auto[x-placement^=bottom] > .arrow::before {
->>>>>>> origin/trung-admin
   top: 0;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
-
-.bs-popover-bottom > .arrow::after,
-.bs-popover-auto[x-placement^=bottom] > .arrow::after {
-=======
 .bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^=bottom] > .arrow::after {
->>>>>>> origin/trung-admin
   top: 1px;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: #fff;
 }
-<<<<<<< HEAD
-
-.bs-popover-bottom .popover-header::before,
-.bs-popover-auto[x-placement^=bottom] .popover-header::before {
-=======
 .bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^=bottom] .popover-header::before {
->>>>>>> origin/trung-admin
   position: absolute;
   top: 0;
   left: 50%;
@@ -11017,43 +9869,21 @@ a.close.disabled {
   border-bottom: 1px solid #f7f7f7;
 }
 
-<<<<<<< HEAD
-.bs-popover-left,
-.bs-popover-auto[x-placement^=left] {
-  margin-right: 0.5rem;
-}
-
-.bs-popover-left > .arrow,
-.bs-popover-auto[x-placement^=left] > .arrow {
-=======
 .bs-popover-left, .bs-popover-auto[x-placement^=left] {
   margin-right: 0.5rem;
 }
 .bs-popover-left > .arrow, .bs-popover-auto[x-placement^=left] > .arrow {
->>>>>>> origin/trung-admin
   right: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
   margin: 0.3rem 0;
 }
-<<<<<<< HEAD
-
-.bs-popover-left > .arrow::before,
-.bs-popover-auto[x-placement^=left] > .arrow::before {
-=======
 .bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^=left] > .arrow::before {
->>>>>>> origin/trung-admin
   right: 0;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
-<<<<<<< HEAD
-
-.bs-popover-left > .arrow::after,
-.bs-popover-auto[x-placement^=left] > .arrow::after {
-=======
 .bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^=left] > .arrow::after {
->>>>>>> origin/trung-admin
   right: 1px;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-left-color: #fff;
@@ -11068,10 +9898,6 @@ a.close.disabled {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .popover-header:empty {
   display: none;
 }
@@ -11094,10 +9920,6 @@ a.close.disabled {
   width: 100%;
   overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .carousel-inner::after {
   display: block;
   clear: both;
@@ -11116,10 +9938,6 @@ a.close.disabled {
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -11150,36 +9968,21 @@ a.close.disabled {
   -webkit-transform: none;
           transform: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
   z-index: 1;
   opacity: 1;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
   opacity: 0;
   transition: 0s 0.6s opacity;
 }
-<<<<<<< HEAD
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
-=======
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
->>>>>>> origin/trung-admin
     transition: none;
   }
 }
@@ -11199,18 +10002,6 @@ a.close.disabled {
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
-<<<<<<< HEAD
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    transition: none;
-  }
-}
-
-.carousel-control-prev:hover,
-.carousel-control-prev:focus,
-=======
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
 .carousel-control-next {
@@ -11218,7 +10009,6 @@ a.close.disabled {
   }
 }
 .carousel-control-prev:hover, .carousel-control-prev:focus,
->>>>>>> origin/trung-admin
 .carousel-control-next:hover,
 .carousel-control-next:focus {
   color: #fff;
@@ -11264,10 +10054,6 @@ a.close.disabled {
   margin-left: 15%;
   list-style: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .carousel-indicators li {
   box-sizing: content-box;
   flex: 0 1 auto;
@@ -11284,19 +10070,11 @@ a.close.disabled {
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators li {
     transition: none;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .carousel-indicators .active {
   opacity: 1;
 }
@@ -11326,10 +10104,6 @@ a.close.disabled {
             transform: rotate(360deg);
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .spinner-border {
   display: inline-block;
   width: 2rem;
@@ -11353,10 +10127,6 @@ a.close.disabled {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   50% {
     opacity: 1;
   }
@@ -11367,18 +10137,10 @@ a.close.disabled {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
   50% {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .spinner-grow {
   display: inline-block;
   width: 2rem;
@@ -11424,12 +10186,7 @@ a.close.disabled {
   background-color: #3490dc !important;
 }
 
-<<<<<<< HEAD
-a.bg-primary:hover,
-a.bg-primary:focus,
-=======
 a.bg-primary:hover, a.bg-primary:focus,
->>>>>>> origin/trung-admin
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #2176bd !important;
@@ -11439,12 +10196,7 @@ button.bg-primary:focus {
   background-color: #6c757d !important;
 }
 
-<<<<<<< HEAD
-a.bg-secondary:hover,
-a.bg-secondary:focus,
-=======
 a.bg-secondary:hover, a.bg-secondary:focus,
->>>>>>> origin/trung-admin
 button.bg-secondary:hover,
 button.bg-secondary:focus {
   background-color: #545b62 !important;
@@ -11454,12 +10206,7 @@ button.bg-secondary:focus {
   background-color: #38c172 !important;
 }
 
-<<<<<<< HEAD
-a.bg-success:hover,
-a.bg-success:focus,
-=======
 a.bg-success:hover, a.bg-success:focus,
->>>>>>> origin/trung-admin
 button.bg-success:hover,
 button.bg-success:focus {
   background-color: #2d995b !important;
@@ -11469,12 +10216,7 @@ button.bg-success:focus {
   background-color: #6cb2eb !important;
 }
 
-<<<<<<< HEAD
-a.bg-info:hover,
-a.bg-info:focus,
-=======
 a.bg-info:hover, a.bg-info:focus,
->>>>>>> origin/trung-admin
 button.bg-info:hover,
 button.bg-info:focus {
   background-color: #3f9ae5 !important;
@@ -11484,12 +10226,7 @@ button.bg-info:focus {
   background-color: #ffed4a !important;
 }
 
-<<<<<<< HEAD
-a.bg-warning:hover,
-a.bg-warning:focus,
-=======
 a.bg-warning:hover, a.bg-warning:focus,
->>>>>>> origin/trung-admin
 button.bg-warning:hover,
 button.bg-warning:focus {
   background-color: #ffe817 !important;
@@ -11499,12 +10236,7 @@ button.bg-warning:focus {
   background-color: #e3342f !important;
 }
 
-<<<<<<< HEAD
-a.bg-danger:hover,
-a.bg-danger:focus,
-=======
 a.bg-danger:hover, a.bg-danger:focus,
->>>>>>> origin/trung-admin
 button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #c51f1a !important;
@@ -11514,12 +10246,7 @@ button.bg-danger:focus {
   background-color: #f8f9fa !important;
 }
 
-<<<<<<< HEAD
-a.bg-light:hover,
-a.bg-light:focus,
-=======
 a.bg-light:hover, a.bg-light:focus,
->>>>>>> origin/trung-admin
 button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important;
@@ -11529,12 +10256,7 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
-<<<<<<< HEAD
-a.bg-dark:hover,
-a.bg-dark:focus,
-=======
 a.bg-dark:hover, a.bg-dark:focus,
->>>>>>> origin/trung-admin
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important;
@@ -11747,10 +10469,6 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .d-md-none {
     display: none !important;
@@ -11788,10 +10506,6 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .d-lg-none {
     display: none !important;
@@ -11829,10 +10543,6 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important;
@@ -11870,10 +10580,6 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media print {
   .d-print-none {
     display: none !important;
@@ -11911,10 +10617,6 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .embed-responsive {
   position: relative;
   display: block;
@@ -11922,18 +10624,10 @@ button.bg-dark:focus {
   padding: 0;
   overflow: hidden;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .embed-responsive::before {
   display: block;
   content: "";
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
@@ -12237,10 +10931,6 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .flex-md-row {
     flex-direction: row !important;
@@ -12378,10 +11068,6 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .flex-lg-row {
     flex-direction: row !important;
@@ -12519,10 +11205,6 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .flex-xl-row {
     flex-direction: row !important;
@@ -12660,10 +11342,6 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .float-left {
   float: left !important;
 }
@@ -12689,10 +11367,6 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .float-md-left {
     float: left !important;
@@ -12706,10 +11380,6 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .float-lg-left {
     float: left !important;
@@ -12723,10 +11393,6 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .float-xl-left {
     float: left !important;
@@ -12740,10 +11406,6 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .overflow-auto {
   overflow: auto !important;
 }
@@ -12809,12 +11471,7 @@ button.bg-dark:focus {
   border: 0;
 }
 
-<<<<<<< HEAD
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-=======
 .sr-only-focusable:active, .sr-only-focusable:focus {
->>>>>>> origin/trung-admin
   position: static;
   width: auto;
   height: auto;
@@ -13353,38 +12010,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-0,
-<<<<<<< HEAD
-  .my-sm-0 {
-=======
 .my-sm-0 {
->>>>>>> origin/trung-admin
     margin-top: 0 !important;
   }
 
   .mr-sm-0,
-<<<<<<< HEAD
-  .mx-sm-0 {
-=======
 .mx-sm-0 {
->>>>>>> origin/trung-admin
     margin-right: 0 !important;
   }
 
   .mb-sm-0,
-<<<<<<< HEAD
-  .my-sm-0 {
-=======
 .my-sm-0 {
->>>>>>> origin/trung-admin
     margin-bottom: 0 !important;
   }
 
   .ml-sm-0,
-<<<<<<< HEAD
-  .mx-sm-0 {
-=======
 .mx-sm-0 {
->>>>>>> origin/trung-admin
     margin-left: 0 !important;
   }
 
@@ -13393,38 +12034,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-1,
-<<<<<<< HEAD
-  .my-sm-1 {
-=======
 .my-sm-1 {
->>>>>>> origin/trung-admin
     margin-top: 0.25rem !important;
   }
 
   .mr-sm-1,
-<<<<<<< HEAD
-  .mx-sm-1 {
-=======
 .mx-sm-1 {
->>>>>>> origin/trung-admin
     margin-right: 0.25rem !important;
   }
 
   .mb-sm-1,
-<<<<<<< HEAD
-  .my-sm-1 {
-=======
 .my-sm-1 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.25rem !important;
   }
 
   .ml-sm-1,
-<<<<<<< HEAD
-  .mx-sm-1 {
-=======
 .mx-sm-1 {
->>>>>>> origin/trung-admin
     margin-left: 0.25rem !important;
   }
 
@@ -13433,38 +12058,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-2,
-<<<<<<< HEAD
-  .my-sm-2 {
-=======
 .my-sm-2 {
->>>>>>> origin/trung-admin
     margin-top: 0.5rem !important;
   }
 
   .mr-sm-2,
-<<<<<<< HEAD
-  .mx-sm-2 {
-=======
 .mx-sm-2 {
->>>>>>> origin/trung-admin
     margin-right: 0.5rem !important;
   }
 
   .mb-sm-2,
-<<<<<<< HEAD
-  .my-sm-2 {
-=======
 .my-sm-2 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.5rem !important;
   }
 
   .ml-sm-2,
-<<<<<<< HEAD
-  .mx-sm-2 {
-=======
 .mx-sm-2 {
->>>>>>> origin/trung-admin
     margin-left: 0.5rem !important;
   }
 
@@ -13473,38 +12082,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-3,
-<<<<<<< HEAD
-  .my-sm-3 {
-=======
 .my-sm-3 {
->>>>>>> origin/trung-admin
     margin-top: 1rem !important;
   }
 
   .mr-sm-3,
-<<<<<<< HEAD
-  .mx-sm-3 {
-=======
 .mx-sm-3 {
->>>>>>> origin/trung-admin
     margin-right: 1rem !important;
   }
 
   .mb-sm-3,
-<<<<<<< HEAD
-  .my-sm-3 {
-=======
 .my-sm-3 {
->>>>>>> origin/trung-admin
     margin-bottom: 1rem !important;
   }
 
   .ml-sm-3,
-<<<<<<< HEAD
-  .mx-sm-3 {
-=======
 .mx-sm-3 {
->>>>>>> origin/trung-admin
     margin-left: 1rem !important;
   }
 
@@ -13513,38 +12106,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-4,
-<<<<<<< HEAD
-  .my-sm-4 {
-=======
 .my-sm-4 {
->>>>>>> origin/trung-admin
     margin-top: 1.5rem !important;
   }
 
   .mr-sm-4,
-<<<<<<< HEAD
-  .mx-sm-4 {
-=======
 .mx-sm-4 {
->>>>>>> origin/trung-admin
     margin-right: 1.5rem !important;
   }
 
   .mb-sm-4,
-<<<<<<< HEAD
-  .my-sm-4 {
-=======
 .my-sm-4 {
->>>>>>> origin/trung-admin
     margin-bottom: 1.5rem !important;
   }
 
   .ml-sm-4,
-<<<<<<< HEAD
-  .mx-sm-4 {
-=======
 .mx-sm-4 {
->>>>>>> origin/trung-admin
     margin-left: 1.5rem !important;
   }
 
@@ -13553,38 +12130,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-5,
-<<<<<<< HEAD
-  .my-sm-5 {
-=======
 .my-sm-5 {
->>>>>>> origin/trung-admin
     margin-top: 3rem !important;
   }
 
   .mr-sm-5,
-<<<<<<< HEAD
-  .mx-sm-5 {
-=======
 .mx-sm-5 {
->>>>>>> origin/trung-admin
     margin-right: 3rem !important;
   }
 
   .mb-sm-5,
-<<<<<<< HEAD
-  .my-sm-5 {
-=======
 .my-sm-5 {
->>>>>>> origin/trung-admin
     margin-bottom: 3rem !important;
   }
 
   .ml-sm-5,
-<<<<<<< HEAD
-  .mx-sm-5 {
-=======
 .mx-sm-5 {
->>>>>>> origin/trung-admin
     margin-left: 3rem !important;
   }
 
@@ -13593,38 +12154,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-0,
-<<<<<<< HEAD
-  .py-sm-0 {
-=======
 .py-sm-0 {
->>>>>>> origin/trung-admin
     padding-top: 0 !important;
   }
 
   .pr-sm-0,
-<<<<<<< HEAD
-  .px-sm-0 {
-=======
 .px-sm-0 {
->>>>>>> origin/trung-admin
     padding-right: 0 !important;
   }
 
   .pb-sm-0,
-<<<<<<< HEAD
-  .py-sm-0 {
-=======
 .py-sm-0 {
->>>>>>> origin/trung-admin
     padding-bottom: 0 !important;
   }
 
   .pl-sm-0,
-<<<<<<< HEAD
-  .px-sm-0 {
-=======
 .px-sm-0 {
->>>>>>> origin/trung-admin
     padding-left: 0 !important;
   }
 
@@ -13633,38 +12178,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-1,
-<<<<<<< HEAD
-  .py-sm-1 {
-=======
 .py-sm-1 {
->>>>>>> origin/trung-admin
     padding-top: 0.25rem !important;
   }
 
   .pr-sm-1,
-<<<<<<< HEAD
-  .px-sm-1 {
-=======
 .px-sm-1 {
->>>>>>> origin/trung-admin
     padding-right: 0.25rem !important;
   }
 
   .pb-sm-1,
-<<<<<<< HEAD
-  .py-sm-1 {
-=======
 .py-sm-1 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.25rem !important;
   }
 
   .pl-sm-1,
-<<<<<<< HEAD
-  .px-sm-1 {
-=======
 .px-sm-1 {
->>>>>>> origin/trung-admin
     padding-left: 0.25rem !important;
   }
 
@@ -13673,38 +12202,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-2,
-<<<<<<< HEAD
-  .py-sm-2 {
-=======
 .py-sm-2 {
->>>>>>> origin/trung-admin
     padding-top: 0.5rem !important;
   }
 
   .pr-sm-2,
-<<<<<<< HEAD
-  .px-sm-2 {
-=======
 .px-sm-2 {
->>>>>>> origin/trung-admin
     padding-right: 0.5rem !important;
   }
 
   .pb-sm-2,
-<<<<<<< HEAD
-  .py-sm-2 {
-=======
 .py-sm-2 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.5rem !important;
   }
 
   .pl-sm-2,
-<<<<<<< HEAD
-  .px-sm-2 {
-=======
 .px-sm-2 {
->>>>>>> origin/trung-admin
     padding-left: 0.5rem !important;
   }
 
@@ -13713,38 +12226,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-3,
-<<<<<<< HEAD
-  .py-sm-3 {
-=======
 .py-sm-3 {
->>>>>>> origin/trung-admin
     padding-top: 1rem !important;
   }
 
   .pr-sm-3,
-<<<<<<< HEAD
-  .px-sm-3 {
-=======
 .px-sm-3 {
->>>>>>> origin/trung-admin
     padding-right: 1rem !important;
   }
 
   .pb-sm-3,
-<<<<<<< HEAD
-  .py-sm-3 {
-=======
 .py-sm-3 {
->>>>>>> origin/trung-admin
     padding-bottom: 1rem !important;
   }
 
   .pl-sm-3,
-<<<<<<< HEAD
-  .px-sm-3 {
-=======
 .px-sm-3 {
->>>>>>> origin/trung-admin
     padding-left: 1rem !important;
   }
 
@@ -13753,38 +12250,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-4,
-<<<<<<< HEAD
-  .py-sm-4 {
-=======
 .py-sm-4 {
->>>>>>> origin/trung-admin
     padding-top: 1.5rem !important;
   }
 
   .pr-sm-4,
-<<<<<<< HEAD
-  .px-sm-4 {
-=======
 .px-sm-4 {
->>>>>>> origin/trung-admin
     padding-right: 1.5rem !important;
   }
 
   .pb-sm-4,
-<<<<<<< HEAD
-  .py-sm-4 {
-=======
 .py-sm-4 {
->>>>>>> origin/trung-admin
     padding-bottom: 1.5rem !important;
   }
 
   .pl-sm-4,
-<<<<<<< HEAD
-  .px-sm-4 {
-=======
 .px-sm-4 {
->>>>>>> origin/trung-admin
     padding-left: 1.5rem !important;
   }
 
@@ -13793,38 +12274,22 @@ button.bg-dark:focus {
   }
 
   .pt-sm-5,
-<<<<<<< HEAD
-  .py-sm-5 {
-=======
 .py-sm-5 {
->>>>>>> origin/trung-admin
     padding-top: 3rem !important;
   }
 
   .pr-sm-5,
-<<<<<<< HEAD
-  .px-sm-5 {
-=======
 .px-sm-5 {
->>>>>>> origin/trung-admin
     padding-right: 3rem !important;
   }
 
   .pb-sm-5,
-<<<<<<< HEAD
-  .py-sm-5 {
-=======
 .py-sm-5 {
->>>>>>> origin/trung-admin
     padding-bottom: 3rem !important;
   }
 
   .pl-sm-5,
-<<<<<<< HEAD
-  .px-sm-5 {
-=======
 .px-sm-5 {
->>>>>>> origin/trung-admin
     padding-left: 3rem !important;
   }
 
@@ -13833,38 +12298,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-n1,
-<<<<<<< HEAD
-  .my-sm-n1 {
-=======
 .my-sm-n1 {
->>>>>>> origin/trung-admin
     margin-top: -0.25rem !important;
   }
 
   .mr-sm-n1,
-<<<<<<< HEAD
-  .mx-sm-n1 {
-=======
 .mx-sm-n1 {
->>>>>>> origin/trung-admin
     margin-right: -0.25rem !important;
   }
 
   .mb-sm-n1,
-<<<<<<< HEAD
-  .my-sm-n1 {
-=======
 .my-sm-n1 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.25rem !important;
   }
 
   .ml-sm-n1,
-<<<<<<< HEAD
-  .mx-sm-n1 {
-=======
 .mx-sm-n1 {
->>>>>>> origin/trung-admin
     margin-left: -0.25rem !important;
   }
 
@@ -13873,38 +12322,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-n2,
-<<<<<<< HEAD
-  .my-sm-n2 {
-=======
 .my-sm-n2 {
->>>>>>> origin/trung-admin
     margin-top: -0.5rem !important;
   }
 
   .mr-sm-n2,
-<<<<<<< HEAD
-  .mx-sm-n2 {
-=======
 .mx-sm-n2 {
->>>>>>> origin/trung-admin
     margin-right: -0.5rem !important;
   }
 
   .mb-sm-n2,
-<<<<<<< HEAD
-  .my-sm-n2 {
-=======
 .my-sm-n2 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.5rem !important;
   }
 
   .ml-sm-n2,
-<<<<<<< HEAD
-  .mx-sm-n2 {
-=======
 .mx-sm-n2 {
->>>>>>> origin/trung-admin
     margin-left: -0.5rem !important;
   }
 
@@ -13913,38 +12346,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-n3,
-<<<<<<< HEAD
-  .my-sm-n3 {
-=======
 .my-sm-n3 {
->>>>>>> origin/trung-admin
     margin-top: -1rem !important;
   }
 
   .mr-sm-n3,
-<<<<<<< HEAD
-  .mx-sm-n3 {
-=======
 .mx-sm-n3 {
->>>>>>> origin/trung-admin
     margin-right: -1rem !important;
   }
 
   .mb-sm-n3,
-<<<<<<< HEAD
-  .my-sm-n3 {
-=======
 .my-sm-n3 {
->>>>>>> origin/trung-admin
     margin-bottom: -1rem !important;
   }
 
   .ml-sm-n3,
-<<<<<<< HEAD
-  .mx-sm-n3 {
-=======
 .mx-sm-n3 {
->>>>>>> origin/trung-admin
     margin-left: -1rem !important;
   }
 
@@ -13953,38 +12370,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-n4,
-<<<<<<< HEAD
-  .my-sm-n4 {
-=======
 .my-sm-n4 {
->>>>>>> origin/trung-admin
     margin-top: -1.5rem !important;
   }
 
   .mr-sm-n4,
-<<<<<<< HEAD
-  .mx-sm-n4 {
-=======
 .mx-sm-n4 {
->>>>>>> origin/trung-admin
     margin-right: -1.5rem !important;
   }
 
   .mb-sm-n4,
-<<<<<<< HEAD
-  .my-sm-n4 {
-=======
 .my-sm-n4 {
->>>>>>> origin/trung-admin
     margin-bottom: -1.5rem !important;
   }
 
   .ml-sm-n4,
-<<<<<<< HEAD
-  .mx-sm-n4 {
-=======
 .mx-sm-n4 {
->>>>>>> origin/trung-admin
     margin-left: -1.5rem !important;
   }
 
@@ -13993,38 +12394,22 @@ button.bg-dark:focus {
   }
 
   .mt-sm-n5,
-<<<<<<< HEAD
-  .my-sm-n5 {
-=======
 .my-sm-n5 {
->>>>>>> origin/trung-admin
     margin-top: -3rem !important;
   }
 
   .mr-sm-n5,
-<<<<<<< HEAD
-  .mx-sm-n5 {
-=======
 .mx-sm-n5 {
->>>>>>> origin/trung-admin
     margin-right: -3rem !important;
   }
 
   .mb-sm-n5,
-<<<<<<< HEAD
-  .my-sm-n5 {
-=======
 .my-sm-n5 {
->>>>>>> origin/trung-admin
     margin-bottom: -3rem !important;
   }
 
   .ml-sm-n5,
-<<<<<<< HEAD
-  .mx-sm-n5 {
-=======
 .mx-sm-n5 {
->>>>>>> origin/trung-admin
     margin-left: -3rem !important;
   }
 
@@ -14033,83 +12418,47 @@ button.bg-dark:focus {
   }
 
   .mt-sm-auto,
-<<<<<<< HEAD
-  .my-sm-auto {
-=======
 .my-sm-auto {
->>>>>>> origin/trung-admin
     margin-top: auto !important;
   }
 
   .mr-sm-auto,
-<<<<<<< HEAD
-  .mx-sm-auto {
-=======
 .mx-sm-auto {
->>>>>>> origin/trung-admin
     margin-right: auto !important;
   }
 
   .mb-sm-auto,
-<<<<<<< HEAD
-  .my-sm-auto {
-=======
 .my-sm-auto {
->>>>>>> origin/trung-admin
     margin-bottom: auto !important;
   }
 
   .ml-sm-auto,
-<<<<<<< HEAD
-  .mx-sm-auto {
-    margin-left: auto !important;
-  }
-}
-
-=======
 .mx-sm-auto {
     margin-left: auto !important;
   }
 }
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .m-md-0 {
     margin: 0 !important;
   }
 
   .mt-md-0,
-<<<<<<< HEAD
-  .my-md-0 {
-=======
 .my-md-0 {
->>>>>>> origin/trung-admin
     margin-top: 0 !important;
   }
 
   .mr-md-0,
-<<<<<<< HEAD
-  .mx-md-0 {
-=======
 .mx-md-0 {
->>>>>>> origin/trung-admin
     margin-right: 0 !important;
   }
 
   .mb-md-0,
-<<<<<<< HEAD
-  .my-md-0 {
-=======
 .my-md-0 {
->>>>>>> origin/trung-admin
     margin-bottom: 0 !important;
   }
 
   .ml-md-0,
-<<<<<<< HEAD
-  .mx-md-0 {
-=======
 .mx-md-0 {
->>>>>>> origin/trung-admin
     margin-left: 0 !important;
   }
 
@@ -14118,38 +12467,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-1,
-<<<<<<< HEAD
-  .my-md-1 {
-=======
 .my-md-1 {
->>>>>>> origin/trung-admin
     margin-top: 0.25rem !important;
   }
 
   .mr-md-1,
-<<<<<<< HEAD
-  .mx-md-1 {
-=======
 .mx-md-1 {
->>>>>>> origin/trung-admin
     margin-right: 0.25rem !important;
   }
 
   .mb-md-1,
-<<<<<<< HEAD
-  .my-md-1 {
-=======
 .my-md-1 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.25rem !important;
   }
 
   .ml-md-1,
-<<<<<<< HEAD
-  .mx-md-1 {
-=======
 .mx-md-1 {
->>>>>>> origin/trung-admin
     margin-left: 0.25rem !important;
   }
 
@@ -14158,38 +12491,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-2,
-<<<<<<< HEAD
-  .my-md-2 {
-=======
 .my-md-2 {
->>>>>>> origin/trung-admin
     margin-top: 0.5rem !important;
   }
 
   .mr-md-2,
-<<<<<<< HEAD
-  .mx-md-2 {
-=======
 .mx-md-2 {
->>>>>>> origin/trung-admin
     margin-right: 0.5rem !important;
   }
 
   .mb-md-2,
-<<<<<<< HEAD
-  .my-md-2 {
-=======
 .my-md-2 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.5rem !important;
   }
 
   .ml-md-2,
-<<<<<<< HEAD
-  .mx-md-2 {
-=======
 .mx-md-2 {
->>>>>>> origin/trung-admin
     margin-left: 0.5rem !important;
   }
 
@@ -14198,38 +12515,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-3,
-<<<<<<< HEAD
-  .my-md-3 {
-=======
 .my-md-3 {
->>>>>>> origin/trung-admin
     margin-top: 1rem !important;
   }
 
   .mr-md-3,
-<<<<<<< HEAD
-  .mx-md-3 {
-=======
 .mx-md-3 {
->>>>>>> origin/trung-admin
     margin-right: 1rem !important;
   }
 
   .mb-md-3,
-<<<<<<< HEAD
-  .my-md-3 {
-=======
 .my-md-3 {
->>>>>>> origin/trung-admin
     margin-bottom: 1rem !important;
   }
 
   .ml-md-3,
-<<<<<<< HEAD
-  .mx-md-3 {
-=======
 .mx-md-3 {
->>>>>>> origin/trung-admin
     margin-left: 1rem !important;
   }
 
@@ -14238,38 +12539,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-4,
-<<<<<<< HEAD
-  .my-md-4 {
-=======
 .my-md-4 {
->>>>>>> origin/trung-admin
     margin-top: 1.5rem !important;
   }
 
   .mr-md-4,
-<<<<<<< HEAD
-  .mx-md-4 {
-=======
 .mx-md-4 {
->>>>>>> origin/trung-admin
     margin-right: 1.5rem !important;
   }
 
   .mb-md-4,
-<<<<<<< HEAD
-  .my-md-4 {
-=======
 .my-md-4 {
->>>>>>> origin/trung-admin
     margin-bottom: 1.5rem !important;
   }
 
   .ml-md-4,
-<<<<<<< HEAD
-  .mx-md-4 {
-=======
 .mx-md-4 {
->>>>>>> origin/trung-admin
     margin-left: 1.5rem !important;
   }
 
@@ -14278,38 +12563,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-5,
-<<<<<<< HEAD
-  .my-md-5 {
-=======
 .my-md-5 {
->>>>>>> origin/trung-admin
     margin-top: 3rem !important;
   }
 
   .mr-md-5,
-<<<<<<< HEAD
-  .mx-md-5 {
-=======
 .mx-md-5 {
->>>>>>> origin/trung-admin
     margin-right: 3rem !important;
   }
 
   .mb-md-5,
-<<<<<<< HEAD
-  .my-md-5 {
-=======
 .my-md-5 {
->>>>>>> origin/trung-admin
     margin-bottom: 3rem !important;
   }
 
   .ml-md-5,
-<<<<<<< HEAD
-  .mx-md-5 {
-=======
 .mx-md-5 {
->>>>>>> origin/trung-admin
     margin-left: 3rem !important;
   }
 
@@ -14318,38 +12587,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-0,
-<<<<<<< HEAD
-  .py-md-0 {
-=======
 .py-md-0 {
->>>>>>> origin/trung-admin
     padding-top: 0 !important;
   }
 
   .pr-md-0,
-<<<<<<< HEAD
-  .px-md-0 {
-=======
 .px-md-0 {
->>>>>>> origin/trung-admin
     padding-right: 0 !important;
   }
 
   .pb-md-0,
-<<<<<<< HEAD
-  .py-md-0 {
-=======
 .py-md-0 {
->>>>>>> origin/trung-admin
     padding-bottom: 0 !important;
   }
 
   .pl-md-0,
-<<<<<<< HEAD
-  .px-md-0 {
-=======
 .px-md-0 {
->>>>>>> origin/trung-admin
     padding-left: 0 !important;
   }
 
@@ -14358,38 +12611,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-1,
-<<<<<<< HEAD
-  .py-md-1 {
-=======
 .py-md-1 {
->>>>>>> origin/trung-admin
     padding-top: 0.25rem !important;
   }
 
   .pr-md-1,
-<<<<<<< HEAD
-  .px-md-1 {
-=======
 .px-md-1 {
->>>>>>> origin/trung-admin
     padding-right: 0.25rem !important;
   }
 
   .pb-md-1,
-<<<<<<< HEAD
-  .py-md-1 {
-=======
 .py-md-1 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.25rem !important;
   }
 
   .pl-md-1,
-<<<<<<< HEAD
-  .px-md-1 {
-=======
 .px-md-1 {
->>>>>>> origin/trung-admin
     padding-left: 0.25rem !important;
   }
 
@@ -14398,38 +12635,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-2,
-<<<<<<< HEAD
-  .py-md-2 {
-=======
 .py-md-2 {
->>>>>>> origin/trung-admin
     padding-top: 0.5rem !important;
   }
 
   .pr-md-2,
-<<<<<<< HEAD
-  .px-md-2 {
-=======
 .px-md-2 {
->>>>>>> origin/trung-admin
     padding-right: 0.5rem !important;
   }
 
   .pb-md-2,
-<<<<<<< HEAD
-  .py-md-2 {
-=======
 .py-md-2 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.5rem !important;
   }
 
   .pl-md-2,
-<<<<<<< HEAD
-  .px-md-2 {
-=======
 .px-md-2 {
->>>>>>> origin/trung-admin
     padding-left: 0.5rem !important;
   }
 
@@ -14438,38 +12659,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-3,
-<<<<<<< HEAD
-  .py-md-3 {
-=======
 .py-md-3 {
->>>>>>> origin/trung-admin
     padding-top: 1rem !important;
   }
 
   .pr-md-3,
-<<<<<<< HEAD
-  .px-md-3 {
-=======
 .px-md-3 {
->>>>>>> origin/trung-admin
     padding-right: 1rem !important;
   }
 
   .pb-md-3,
-<<<<<<< HEAD
-  .py-md-3 {
-=======
 .py-md-3 {
->>>>>>> origin/trung-admin
     padding-bottom: 1rem !important;
   }
 
   .pl-md-3,
-<<<<<<< HEAD
-  .px-md-3 {
-=======
 .px-md-3 {
->>>>>>> origin/trung-admin
     padding-left: 1rem !important;
   }
 
@@ -14478,38 +12683,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-4,
-<<<<<<< HEAD
-  .py-md-4 {
-=======
 .py-md-4 {
->>>>>>> origin/trung-admin
     padding-top: 1.5rem !important;
   }
 
   .pr-md-4,
-<<<<<<< HEAD
-  .px-md-4 {
-=======
 .px-md-4 {
->>>>>>> origin/trung-admin
     padding-right: 1.5rem !important;
   }
 
   .pb-md-4,
-<<<<<<< HEAD
-  .py-md-4 {
-=======
 .py-md-4 {
->>>>>>> origin/trung-admin
     padding-bottom: 1.5rem !important;
   }
 
   .pl-md-4,
-<<<<<<< HEAD
-  .px-md-4 {
-=======
 .px-md-4 {
->>>>>>> origin/trung-admin
     padding-left: 1.5rem !important;
   }
 
@@ -14518,38 +12707,22 @@ button.bg-dark:focus {
   }
 
   .pt-md-5,
-<<<<<<< HEAD
-  .py-md-5 {
-=======
 .py-md-5 {
->>>>>>> origin/trung-admin
     padding-top: 3rem !important;
   }
 
   .pr-md-5,
-<<<<<<< HEAD
-  .px-md-5 {
-=======
 .px-md-5 {
->>>>>>> origin/trung-admin
     padding-right: 3rem !important;
   }
 
   .pb-md-5,
-<<<<<<< HEAD
-  .py-md-5 {
-=======
 .py-md-5 {
->>>>>>> origin/trung-admin
     padding-bottom: 3rem !important;
   }
 
   .pl-md-5,
-<<<<<<< HEAD
-  .px-md-5 {
-=======
 .px-md-5 {
->>>>>>> origin/trung-admin
     padding-left: 3rem !important;
   }
 
@@ -14558,38 +12731,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-n1,
-<<<<<<< HEAD
-  .my-md-n1 {
-=======
 .my-md-n1 {
->>>>>>> origin/trung-admin
     margin-top: -0.25rem !important;
   }
 
   .mr-md-n1,
-<<<<<<< HEAD
-  .mx-md-n1 {
-=======
 .mx-md-n1 {
->>>>>>> origin/trung-admin
     margin-right: -0.25rem !important;
   }
 
   .mb-md-n1,
-<<<<<<< HEAD
-  .my-md-n1 {
-=======
 .my-md-n1 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.25rem !important;
   }
 
   .ml-md-n1,
-<<<<<<< HEAD
-  .mx-md-n1 {
-=======
 .mx-md-n1 {
->>>>>>> origin/trung-admin
     margin-left: -0.25rem !important;
   }
 
@@ -14598,38 +12755,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-n2,
-<<<<<<< HEAD
-  .my-md-n2 {
-=======
 .my-md-n2 {
->>>>>>> origin/trung-admin
     margin-top: -0.5rem !important;
   }
 
   .mr-md-n2,
-<<<<<<< HEAD
-  .mx-md-n2 {
-=======
 .mx-md-n2 {
->>>>>>> origin/trung-admin
     margin-right: -0.5rem !important;
   }
 
   .mb-md-n2,
-<<<<<<< HEAD
-  .my-md-n2 {
-=======
 .my-md-n2 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.5rem !important;
   }
 
   .ml-md-n2,
-<<<<<<< HEAD
-  .mx-md-n2 {
-=======
 .mx-md-n2 {
->>>>>>> origin/trung-admin
     margin-left: -0.5rem !important;
   }
 
@@ -14638,38 +12779,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-n3,
-<<<<<<< HEAD
-  .my-md-n3 {
-=======
 .my-md-n3 {
->>>>>>> origin/trung-admin
     margin-top: -1rem !important;
   }
 
   .mr-md-n3,
-<<<<<<< HEAD
-  .mx-md-n3 {
-=======
 .mx-md-n3 {
->>>>>>> origin/trung-admin
     margin-right: -1rem !important;
   }
 
   .mb-md-n3,
-<<<<<<< HEAD
-  .my-md-n3 {
-=======
 .my-md-n3 {
->>>>>>> origin/trung-admin
     margin-bottom: -1rem !important;
   }
 
   .ml-md-n3,
-<<<<<<< HEAD
-  .mx-md-n3 {
-=======
 .mx-md-n3 {
->>>>>>> origin/trung-admin
     margin-left: -1rem !important;
   }
 
@@ -14678,38 +12803,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-n4,
-<<<<<<< HEAD
-  .my-md-n4 {
-=======
 .my-md-n4 {
->>>>>>> origin/trung-admin
     margin-top: -1.5rem !important;
   }
 
   .mr-md-n4,
-<<<<<<< HEAD
-  .mx-md-n4 {
-=======
 .mx-md-n4 {
->>>>>>> origin/trung-admin
     margin-right: -1.5rem !important;
   }
 
   .mb-md-n4,
-<<<<<<< HEAD
-  .my-md-n4 {
-=======
 .my-md-n4 {
->>>>>>> origin/trung-admin
     margin-bottom: -1.5rem !important;
   }
 
   .ml-md-n4,
-<<<<<<< HEAD
-  .mx-md-n4 {
-=======
 .mx-md-n4 {
->>>>>>> origin/trung-admin
     margin-left: -1.5rem !important;
   }
 
@@ -14718,38 +12827,22 @@ button.bg-dark:focus {
   }
 
   .mt-md-n5,
-<<<<<<< HEAD
-  .my-md-n5 {
-=======
 .my-md-n5 {
->>>>>>> origin/trung-admin
     margin-top: -3rem !important;
   }
 
   .mr-md-n5,
-<<<<<<< HEAD
-  .mx-md-n5 {
-=======
 .mx-md-n5 {
->>>>>>> origin/trung-admin
     margin-right: -3rem !important;
   }
 
   .mb-md-n5,
-<<<<<<< HEAD
-  .my-md-n5 {
-=======
 .my-md-n5 {
->>>>>>> origin/trung-admin
     margin-bottom: -3rem !important;
   }
 
   .ml-md-n5,
-<<<<<<< HEAD
-  .mx-md-n5 {
-=======
 .mx-md-n5 {
->>>>>>> origin/trung-admin
     margin-left: -3rem !important;
   }
 
@@ -14758,83 +12851,47 @@ button.bg-dark:focus {
   }
 
   .mt-md-auto,
-<<<<<<< HEAD
-  .my-md-auto {
-=======
 .my-md-auto {
->>>>>>> origin/trung-admin
     margin-top: auto !important;
   }
 
   .mr-md-auto,
-<<<<<<< HEAD
-  .mx-md-auto {
-=======
 .mx-md-auto {
->>>>>>> origin/trung-admin
     margin-right: auto !important;
   }
 
   .mb-md-auto,
-<<<<<<< HEAD
-  .my-md-auto {
-=======
 .my-md-auto {
->>>>>>> origin/trung-admin
     margin-bottom: auto !important;
   }
 
   .ml-md-auto,
-<<<<<<< HEAD
-  .mx-md-auto {
-    margin-left: auto !important;
-  }
-}
-
-=======
 .mx-md-auto {
     margin-left: auto !important;
   }
 }
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .m-lg-0 {
     margin: 0 !important;
   }
 
   .mt-lg-0,
-<<<<<<< HEAD
-  .my-lg-0 {
-=======
 .my-lg-0 {
->>>>>>> origin/trung-admin
     margin-top: 0 !important;
   }
 
   .mr-lg-0,
-<<<<<<< HEAD
-  .mx-lg-0 {
-=======
 .mx-lg-0 {
->>>>>>> origin/trung-admin
     margin-right: 0 !important;
   }
 
   .mb-lg-0,
-<<<<<<< HEAD
-  .my-lg-0 {
-=======
 .my-lg-0 {
->>>>>>> origin/trung-admin
     margin-bottom: 0 !important;
   }
 
   .ml-lg-0,
-<<<<<<< HEAD
-  .mx-lg-0 {
-=======
 .mx-lg-0 {
->>>>>>> origin/trung-admin
     margin-left: 0 !important;
   }
 
@@ -14843,38 +12900,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-1,
-<<<<<<< HEAD
-  .my-lg-1 {
-=======
 .my-lg-1 {
->>>>>>> origin/trung-admin
     margin-top: 0.25rem !important;
   }
 
   .mr-lg-1,
-<<<<<<< HEAD
-  .mx-lg-1 {
-=======
 .mx-lg-1 {
->>>>>>> origin/trung-admin
     margin-right: 0.25rem !important;
   }
 
   .mb-lg-1,
-<<<<<<< HEAD
-  .my-lg-1 {
-=======
 .my-lg-1 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.25rem !important;
   }
 
   .ml-lg-1,
-<<<<<<< HEAD
-  .mx-lg-1 {
-=======
 .mx-lg-1 {
->>>>>>> origin/trung-admin
     margin-left: 0.25rem !important;
   }
 
@@ -14883,38 +12924,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-2,
-<<<<<<< HEAD
-  .my-lg-2 {
-=======
 .my-lg-2 {
->>>>>>> origin/trung-admin
     margin-top: 0.5rem !important;
   }
 
   .mr-lg-2,
-<<<<<<< HEAD
-  .mx-lg-2 {
-=======
 .mx-lg-2 {
->>>>>>> origin/trung-admin
     margin-right: 0.5rem !important;
   }
 
   .mb-lg-2,
-<<<<<<< HEAD
-  .my-lg-2 {
-=======
 .my-lg-2 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.5rem !important;
   }
 
   .ml-lg-2,
-<<<<<<< HEAD
-  .mx-lg-2 {
-=======
 .mx-lg-2 {
->>>>>>> origin/trung-admin
     margin-left: 0.5rem !important;
   }
 
@@ -14923,38 +12948,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-3,
-<<<<<<< HEAD
-  .my-lg-3 {
-=======
 .my-lg-3 {
->>>>>>> origin/trung-admin
     margin-top: 1rem !important;
   }
 
   .mr-lg-3,
-<<<<<<< HEAD
-  .mx-lg-3 {
-=======
 .mx-lg-3 {
->>>>>>> origin/trung-admin
     margin-right: 1rem !important;
   }
 
   .mb-lg-3,
-<<<<<<< HEAD
-  .my-lg-3 {
-=======
 .my-lg-3 {
->>>>>>> origin/trung-admin
     margin-bottom: 1rem !important;
   }
 
   .ml-lg-3,
-<<<<<<< HEAD
-  .mx-lg-3 {
-=======
 .mx-lg-3 {
->>>>>>> origin/trung-admin
     margin-left: 1rem !important;
   }
 
@@ -14963,38 +12972,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-4,
-<<<<<<< HEAD
-  .my-lg-4 {
-=======
 .my-lg-4 {
->>>>>>> origin/trung-admin
     margin-top: 1.5rem !important;
   }
 
   .mr-lg-4,
-<<<<<<< HEAD
-  .mx-lg-4 {
-=======
 .mx-lg-4 {
->>>>>>> origin/trung-admin
     margin-right: 1.5rem !important;
   }
 
   .mb-lg-4,
-<<<<<<< HEAD
-  .my-lg-4 {
-=======
 .my-lg-4 {
->>>>>>> origin/trung-admin
     margin-bottom: 1.5rem !important;
   }
 
   .ml-lg-4,
-<<<<<<< HEAD
-  .mx-lg-4 {
-=======
 .mx-lg-4 {
->>>>>>> origin/trung-admin
     margin-left: 1.5rem !important;
   }
 
@@ -15003,38 +12996,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-5,
-<<<<<<< HEAD
-  .my-lg-5 {
-=======
 .my-lg-5 {
->>>>>>> origin/trung-admin
     margin-top: 3rem !important;
   }
 
   .mr-lg-5,
-<<<<<<< HEAD
-  .mx-lg-5 {
-=======
 .mx-lg-5 {
->>>>>>> origin/trung-admin
     margin-right: 3rem !important;
   }
 
   .mb-lg-5,
-<<<<<<< HEAD
-  .my-lg-5 {
-=======
 .my-lg-5 {
->>>>>>> origin/trung-admin
     margin-bottom: 3rem !important;
   }
 
   .ml-lg-5,
-<<<<<<< HEAD
-  .mx-lg-5 {
-=======
 .mx-lg-5 {
->>>>>>> origin/trung-admin
     margin-left: 3rem !important;
   }
 
@@ -15043,38 +13020,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-0,
-<<<<<<< HEAD
-  .py-lg-0 {
-=======
 .py-lg-0 {
->>>>>>> origin/trung-admin
     padding-top: 0 !important;
   }
 
   .pr-lg-0,
-<<<<<<< HEAD
-  .px-lg-0 {
-=======
 .px-lg-0 {
->>>>>>> origin/trung-admin
     padding-right: 0 !important;
   }
 
   .pb-lg-0,
-<<<<<<< HEAD
-  .py-lg-0 {
-=======
 .py-lg-0 {
->>>>>>> origin/trung-admin
     padding-bottom: 0 !important;
   }
 
   .pl-lg-0,
-<<<<<<< HEAD
-  .px-lg-0 {
-=======
 .px-lg-0 {
->>>>>>> origin/trung-admin
     padding-left: 0 !important;
   }
 
@@ -15083,38 +13044,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-1,
-<<<<<<< HEAD
-  .py-lg-1 {
-=======
 .py-lg-1 {
->>>>>>> origin/trung-admin
     padding-top: 0.25rem !important;
   }
 
   .pr-lg-1,
-<<<<<<< HEAD
-  .px-lg-1 {
-=======
 .px-lg-1 {
->>>>>>> origin/trung-admin
     padding-right: 0.25rem !important;
   }
 
   .pb-lg-1,
-<<<<<<< HEAD
-  .py-lg-1 {
-=======
 .py-lg-1 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.25rem !important;
   }
 
   .pl-lg-1,
-<<<<<<< HEAD
-  .px-lg-1 {
-=======
 .px-lg-1 {
->>>>>>> origin/trung-admin
     padding-left: 0.25rem !important;
   }
 
@@ -15123,38 +13068,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-2,
-<<<<<<< HEAD
-  .py-lg-2 {
-=======
 .py-lg-2 {
->>>>>>> origin/trung-admin
     padding-top: 0.5rem !important;
   }
 
   .pr-lg-2,
-<<<<<<< HEAD
-  .px-lg-2 {
-=======
 .px-lg-2 {
->>>>>>> origin/trung-admin
     padding-right: 0.5rem !important;
   }
 
   .pb-lg-2,
-<<<<<<< HEAD
-  .py-lg-2 {
-=======
 .py-lg-2 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.5rem !important;
   }
 
   .pl-lg-2,
-<<<<<<< HEAD
-  .px-lg-2 {
-=======
 .px-lg-2 {
->>>>>>> origin/trung-admin
     padding-left: 0.5rem !important;
   }
 
@@ -15163,38 +13092,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-3,
-<<<<<<< HEAD
-  .py-lg-3 {
-=======
 .py-lg-3 {
->>>>>>> origin/trung-admin
     padding-top: 1rem !important;
   }
 
   .pr-lg-3,
-<<<<<<< HEAD
-  .px-lg-3 {
-=======
 .px-lg-3 {
->>>>>>> origin/trung-admin
     padding-right: 1rem !important;
   }
 
   .pb-lg-3,
-<<<<<<< HEAD
-  .py-lg-3 {
-=======
 .py-lg-3 {
->>>>>>> origin/trung-admin
     padding-bottom: 1rem !important;
   }
 
   .pl-lg-3,
-<<<<<<< HEAD
-  .px-lg-3 {
-=======
 .px-lg-3 {
->>>>>>> origin/trung-admin
     padding-left: 1rem !important;
   }
 
@@ -15203,38 +13116,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-4,
-<<<<<<< HEAD
-  .py-lg-4 {
-=======
 .py-lg-4 {
->>>>>>> origin/trung-admin
     padding-top: 1.5rem !important;
   }
 
   .pr-lg-4,
-<<<<<<< HEAD
-  .px-lg-4 {
-=======
 .px-lg-4 {
->>>>>>> origin/trung-admin
     padding-right: 1.5rem !important;
   }
 
   .pb-lg-4,
-<<<<<<< HEAD
-  .py-lg-4 {
-=======
 .py-lg-4 {
->>>>>>> origin/trung-admin
     padding-bottom: 1.5rem !important;
   }
 
   .pl-lg-4,
-<<<<<<< HEAD
-  .px-lg-4 {
-=======
 .px-lg-4 {
->>>>>>> origin/trung-admin
     padding-left: 1.5rem !important;
   }
 
@@ -15243,38 +13140,22 @@ button.bg-dark:focus {
   }
 
   .pt-lg-5,
-<<<<<<< HEAD
-  .py-lg-5 {
-=======
 .py-lg-5 {
->>>>>>> origin/trung-admin
     padding-top: 3rem !important;
   }
 
   .pr-lg-5,
-<<<<<<< HEAD
-  .px-lg-5 {
-=======
 .px-lg-5 {
->>>>>>> origin/trung-admin
     padding-right: 3rem !important;
   }
 
   .pb-lg-5,
-<<<<<<< HEAD
-  .py-lg-5 {
-=======
 .py-lg-5 {
->>>>>>> origin/trung-admin
     padding-bottom: 3rem !important;
   }
 
   .pl-lg-5,
-<<<<<<< HEAD
-  .px-lg-5 {
-=======
 .px-lg-5 {
->>>>>>> origin/trung-admin
     padding-left: 3rem !important;
   }
 
@@ -15283,38 +13164,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-n1,
-<<<<<<< HEAD
-  .my-lg-n1 {
-=======
 .my-lg-n1 {
->>>>>>> origin/trung-admin
     margin-top: -0.25rem !important;
   }
 
   .mr-lg-n1,
-<<<<<<< HEAD
-  .mx-lg-n1 {
-=======
 .mx-lg-n1 {
->>>>>>> origin/trung-admin
     margin-right: -0.25rem !important;
   }
 
   .mb-lg-n1,
-<<<<<<< HEAD
-  .my-lg-n1 {
-=======
 .my-lg-n1 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.25rem !important;
   }
 
   .ml-lg-n1,
-<<<<<<< HEAD
-  .mx-lg-n1 {
-=======
 .mx-lg-n1 {
->>>>>>> origin/trung-admin
     margin-left: -0.25rem !important;
   }
 
@@ -15323,38 +13188,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-n2,
-<<<<<<< HEAD
-  .my-lg-n2 {
-=======
 .my-lg-n2 {
->>>>>>> origin/trung-admin
     margin-top: -0.5rem !important;
   }
 
   .mr-lg-n2,
-<<<<<<< HEAD
-  .mx-lg-n2 {
-=======
 .mx-lg-n2 {
->>>>>>> origin/trung-admin
     margin-right: -0.5rem !important;
   }
 
   .mb-lg-n2,
-<<<<<<< HEAD
-  .my-lg-n2 {
-=======
 .my-lg-n2 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.5rem !important;
   }
 
   .ml-lg-n2,
-<<<<<<< HEAD
-  .mx-lg-n2 {
-=======
 .mx-lg-n2 {
->>>>>>> origin/trung-admin
     margin-left: -0.5rem !important;
   }
 
@@ -15363,38 +13212,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-n3,
-<<<<<<< HEAD
-  .my-lg-n3 {
-=======
 .my-lg-n3 {
->>>>>>> origin/trung-admin
     margin-top: -1rem !important;
   }
 
   .mr-lg-n3,
-<<<<<<< HEAD
-  .mx-lg-n3 {
-=======
 .mx-lg-n3 {
->>>>>>> origin/trung-admin
     margin-right: -1rem !important;
   }
 
   .mb-lg-n3,
-<<<<<<< HEAD
-  .my-lg-n3 {
-=======
 .my-lg-n3 {
->>>>>>> origin/trung-admin
     margin-bottom: -1rem !important;
   }
 
   .ml-lg-n3,
-<<<<<<< HEAD
-  .mx-lg-n3 {
-=======
 .mx-lg-n3 {
->>>>>>> origin/trung-admin
     margin-left: -1rem !important;
   }
 
@@ -15403,38 +13236,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-n4,
-<<<<<<< HEAD
-  .my-lg-n4 {
-=======
 .my-lg-n4 {
->>>>>>> origin/trung-admin
     margin-top: -1.5rem !important;
   }
 
   .mr-lg-n4,
-<<<<<<< HEAD
-  .mx-lg-n4 {
-=======
 .mx-lg-n4 {
->>>>>>> origin/trung-admin
     margin-right: -1.5rem !important;
   }
 
   .mb-lg-n4,
-<<<<<<< HEAD
-  .my-lg-n4 {
-=======
 .my-lg-n4 {
->>>>>>> origin/trung-admin
     margin-bottom: -1.5rem !important;
   }
 
   .ml-lg-n4,
-<<<<<<< HEAD
-  .mx-lg-n4 {
-=======
 .mx-lg-n4 {
->>>>>>> origin/trung-admin
     margin-left: -1.5rem !important;
   }
 
@@ -15443,38 +13260,22 @@ button.bg-dark:focus {
   }
 
   .mt-lg-n5,
-<<<<<<< HEAD
-  .my-lg-n5 {
-=======
 .my-lg-n5 {
->>>>>>> origin/trung-admin
     margin-top: -3rem !important;
   }
 
   .mr-lg-n5,
-<<<<<<< HEAD
-  .mx-lg-n5 {
-=======
 .mx-lg-n5 {
->>>>>>> origin/trung-admin
     margin-right: -3rem !important;
   }
 
   .mb-lg-n5,
-<<<<<<< HEAD
-  .my-lg-n5 {
-=======
 .my-lg-n5 {
->>>>>>> origin/trung-admin
     margin-bottom: -3rem !important;
   }
 
   .ml-lg-n5,
-<<<<<<< HEAD
-  .mx-lg-n5 {
-=======
 .mx-lg-n5 {
->>>>>>> origin/trung-admin
     margin-left: -3rem !important;
   }
 
@@ -15483,83 +13284,47 @@ button.bg-dark:focus {
   }
 
   .mt-lg-auto,
-<<<<<<< HEAD
-  .my-lg-auto {
-=======
 .my-lg-auto {
->>>>>>> origin/trung-admin
     margin-top: auto !important;
   }
 
   .mr-lg-auto,
-<<<<<<< HEAD
-  .mx-lg-auto {
-=======
 .mx-lg-auto {
->>>>>>> origin/trung-admin
     margin-right: auto !important;
   }
 
   .mb-lg-auto,
-<<<<<<< HEAD
-  .my-lg-auto {
-=======
 .my-lg-auto {
->>>>>>> origin/trung-admin
     margin-bottom: auto !important;
   }
 
   .ml-lg-auto,
-<<<<<<< HEAD
-  .mx-lg-auto {
-    margin-left: auto !important;
-  }
-}
-
-=======
 .mx-lg-auto {
     margin-left: auto !important;
   }
 }
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .m-xl-0 {
     margin: 0 !important;
   }
 
   .mt-xl-0,
-<<<<<<< HEAD
-  .my-xl-0 {
-=======
 .my-xl-0 {
->>>>>>> origin/trung-admin
     margin-top: 0 !important;
   }
 
   .mr-xl-0,
-<<<<<<< HEAD
-  .mx-xl-0 {
-=======
 .mx-xl-0 {
->>>>>>> origin/trung-admin
     margin-right: 0 !important;
   }
 
   .mb-xl-0,
-<<<<<<< HEAD
-  .my-xl-0 {
-=======
 .my-xl-0 {
->>>>>>> origin/trung-admin
     margin-bottom: 0 !important;
   }
 
   .ml-xl-0,
-<<<<<<< HEAD
-  .mx-xl-0 {
-=======
 .mx-xl-0 {
->>>>>>> origin/trung-admin
     margin-left: 0 !important;
   }
 
@@ -15568,38 +13333,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-1,
-<<<<<<< HEAD
-  .my-xl-1 {
-=======
 .my-xl-1 {
->>>>>>> origin/trung-admin
     margin-top: 0.25rem !important;
   }
 
   .mr-xl-1,
-<<<<<<< HEAD
-  .mx-xl-1 {
-=======
 .mx-xl-1 {
->>>>>>> origin/trung-admin
     margin-right: 0.25rem !important;
   }
 
   .mb-xl-1,
-<<<<<<< HEAD
-  .my-xl-1 {
-=======
 .my-xl-1 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.25rem !important;
   }
 
   .ml-xl-1,
-<<<<<<< HEAD
-  .mx-xl-1 {
-=======
 .mx-xl-1 {
->>>>>>> origin/trung-admin
     margin-left: 0.25rem !important;
   }
 
@@ -15608,38 +13357,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-2,
-<<<<<<< HEAD
-  .my-xl-2 {
-=======
 .my-xl-2 {
->>>>>>> origin/trung-admin
     margin-top: 0.5rem !important;
   }
 
   .mr-xl-2,
-<<<<<<< HEAD
-  .mx-xl-2 {
-=======
 .mx-xl-2 {
->>>>>>> origin/trung-admin
     margin-right: 0.5rem !important;
   }
 
   .mb-xl-2,
-<<<<<<< HEAD
-  .my-xl-2 {
-=======
 .my-xl-2 {
->>>>>>> origin/trung-admin
     margin-bottom: 0.5rem !important;
   }
 
   .ml-xl-2,
-<<<<<<< HEAD
-  .mx-xl-2 {
-=======
 .mx-xl-2 {
->>>>>>> origin/trung-admin
     margin-left: 0.5rem !important;
   }
 
@@ -15648,38 +13381,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-3,
-<<<<<<< HEAD
-  .my-xl-3 {
-=======
 .my-xl-3 {
->>>>>>> origin/trung-admin
     margin-top: 1rem !important;
   }
 
   .mr-xl-3,
-<<<<<<< HEAD
-  .mx-xl-3 {
-=======
 .mx-xl-3 {
->>>>>>> origin/trung-admin
     margin-right: 1rem !important;
   }
 
   .mb-xl-3,
-<<<<<<< HEAD
-  .my-xl-3 {
-=======
 .my-xl-3 {
->>>>>>> origin/trung-admin
     margin-bottom: 1rem !important;
   }
 
   .ml-xl-3,
-<<<<<<< HEAD
-  .mx-xl-3 {
-=======
 .mx-xl-3 {
->>>>>>> origin/trung-admin
     margin-left: 1rem !important;
   }
 
@@ -15688,38 +13405,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-4,
-<<<<<<< HEAD
-  .my-xl-4 {
-=======
 .my-xl-4 {
->>>>>>> origin/trung-admin
     margin-top: 1.5rem !important;
   }
 
   .mr-xl-4,
-<<<<<<< HEAD
-  .mx-xl-4 {
-=======
 .mx-xl-4 {
->>>>>>> origin/trung-admin
     margin-right: 1.5rem !important;
   }
 
   .mb-xl-4,
-<<<<<<< HEAD
-  .my-xl-4 {
-=======
 .my-xl-4 {
->>>>>>> origin/trung-admin
     margin-bottom: 1.5rem !important;
   }
 
   .ml-xl-4,
-<<<<<<< HEAD
-  .mx-xl-4 {
-=======
 .mx-xl-4 {
->>>>>>> origin/trung-admin
     margin-left: 1.5rem !important;
   }
 
@@ -15728,38 +13429,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-5,
-<<<<<<< HEAD
-  .my-xl-5 {
-=======
 .my-xl-5 {
->>>>>>> origin/trung-admin
     margin-top: 3rem !important;
   }
 
   .mr-xl-5,
-<<<<<<< HEAD
-  .mx-xl-5 {
-=======
 .mx-xl-5 {
->>>>>>> origin/trung-admin
     margin-right: 3rem !important;
   }
 
   .mb-xl-5,
-<<<<<<< HEAD
-  .my-xl-5 {
-=======
 .my-xl-5 {
->>>>>>> origin/trung-admin
     margin-bottom: 3rem !important;
   }
 
   .ml-xl-5,
-<<<<<<< HEAD
-  .mx-xl-5 {
-=======
 .mx-xl-5 {
->>>>>>> origin/trung-admin
     margin-left: 3rem !important;
   }
 
@@ -15768,38 +13453,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-0,
-<<<<<<< HEAD
-  .py-xl-0 {
-=======
 .py-xl-0 {
->>>>>>> origin/trung-admin
     padding-top: 0 !important;
   }
 
   .pr-xl-0,
-<<<<<<< HEAD
-  .px-xl-0 {
-=======
 .px-xl-0 {
->>>>>>> origin/trung-admin
     padding-right: 0 !important;
   }
 
   .pb-xl-0,
-<<<<<<< HEAD
-  .py-xl-0 {
-=======
 .py-xl-0 {
->>>>>>> origin/trung-admin
     padding-bottom: 0 !important;
   }
 
   .pl-xl-0,
-<<<<<<< HEAD
-  .px-xl-0 {
-=======
 .px-xl-0 {
->>>>>>> origin/trung-admin
     padding-left: 0 !important;
   }
 
@@ -15808,38 +13477,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-1,
-<<<<<<< HEAD
-  .py-xl-1 {
-=======
 .py-xl-1 {
->>>>>>> origin/trung-admin
     padding-top: 0.25rem !important;
   }
 
   .pr-xl-1,
-<<<<<<< HEAD
-  .px-xl-1 {
-=======
 .px-xl-1 {
->>>>>>> origin/trung-admin
     padding-right: 0.25rem !important;
   }
 
   .pb-xl-1,
-<<<<<<< HEAD
-  .py-xl-1 {
-=======
 .py-xl-1 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.25rem !important;
   }
 
   .pl-xl-1,
-<<<<<<< HEAD
-  .px-xl-1 {
-=======
 .px-xl-1 {
->>>>>>> origin/trung-admin
     padding-left: 0.25rem !important;
   }
 
@@ -15848,38 +13501,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-2,
-<<<<<<< HEAD
-  .py-xl-2 {
-=======
 .py-xl-2 {
->>>>>>> origin/trung-admin
     padding-top: 0.5rem !important;
   }
 
   .pr-xl-2,
-<<<<<<< HEAD
-  .px-xl-2 {
-=======
 .px-xl-2 {
->>>>>>> origin/trung-admin
     padding-right: 0.5rem !important;
   }
 
   .pb-xl-2,
-<<<<<<< HEAD
-  .py-xl-2 {
-=======
 .py-xl-2 {
->>>>>>> origin/trung-admin
     padding-bottom: 0.5rem !important;
   }
 
   .pl-xl-2,
-<<<<<<< HEAD
-  .px-xl-2 {
-=======
 .px-xl-2 {
->>>>>>> origin/trung-admin
     padding-left: 0.5rem !important;
   }
 
@@ -15888,38 +13525,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-3,
-<<<<<<< HEAD
-  .py-xl-3 {
-=======
 .py-xl-3 {
->>>>>>> origin/trung-admin
     padding-top: 1rem !important;
   }
 
   .pr-xl-3,
-<<<<<<< HEAD
-  .px-xl-3 {
-=======
 .px-xl-3 {
->>>>>>> origin/trung-admin
     padding-right: 1rem !important;
   }
 
   .pb-xl-3,
-<<<<<<< HEAD
-  .py-xl-3 {
-=======
 .py-xl-3 {
->>>>>>> origin/trung-admin
     padding-bottom: 1rem !important;
   }
 
   .pl-xl-3,
-<<<<<<< HEAD
-  .px-xl-3 {
-=======
 .px-xl-3 {
->>>>>>> origin/trung-admin
     padding-left: 1rem !important;
   }
 
@@ -15928,38 +13549,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-4,
-<<<<<<< HEAD
-  .py-xl-4 {
-=======
 .py-xl-4 {
->>>>>>> origin/trung-admin
     padding-top: 1.5rem !important;
   }
 
   .pr-xl-4,
-<<<<<<< HEAD
-  .px-xl-4 {
-=======
 .px-xl-4 {
->>>>>>> origin/trung-admin
     padding-right: 1.5rem !important;
   }
 
   .pb-xl-4,
-<<<<<<< HEAD
-  .py-xl-4 {
-=======
 .py-xl-4 {
->>>>>>> origin/trung-admin
     padding-bottom: 1.5rem !important;
   }
 
   .pl-xl-4,
-<<<<<<< HEAD
-  .px-xl-4 {
-=======
 .px-xl-4 {
->>>>>>> origin/trung-admin
     padding-left: 1.5rem !important;
   }
 
@@ -15968,38 +13573,22 @@ button.bg-dark:focus {
   }
 
   .pt-xl-5,
-<<<<<<< HEAD
-  .py-xl-5 {
-=======
 .py-xl-5 {
->>>>>>> origin/trung-admin
     padding-top: 3rem !important;
   }
 
   .pr-xl-5,
-<<<<<<< HEAD
-  .px-xl-5 {
-=======
 .px-xl-5 {
->>>>>>> origin/trung-admin
     padding-right: 3rem !important;
   }
 
   .pb-xl-5,
-<<<<<<< HEAD
-  .py-xl-5 {
-=======
 .py-xl-5 {
->>>>>>> origin/trung-admin
     padding-bottom: 3rem !important;
   }
 
   .pl-xl-5,
-<<<<<<< HEAD
-  .px-xl-5 {
-=======
 .px-xl-5 {
->>>>>>> origin/trung-admin
     padding-left: 3rem !important;
   }
 
@@ -16008,38 +13597,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-n1,
-<<<<<<< HEAD
-  .my-xl-n1 {
-=======
 .my-xl-n1 {
->>>>>>> origin/trung-admin
     margin-top: -0.25rem !important;
   }
 
   .mr-xl-n1,
-<<<<<<< HEAD
-  .mx-xl-n1 {
-=======
 .mx-xl-n1 {
->>>>>>> origin/trung-admin
     margin-right: -0.25rem !important;
   }
 
   .mb-xl-n1,
-<<<<<<< HEAD
-  .my-xl-n1 {
-=======
 .my-xl-n1 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.25rem !important;
   }
 
   .ml-xl-n1,
-<<<<<<< HEAD
-  .mx-xl-n1 {
-=======
 .mx-xl-n1 {
->>>>>>> origin/trung-admin
     margin-left: -0.25rem !important;
   }
 
@@ -16048,38 +13621,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-n2,
-<<<<<<< HEAD
-  .my-xl-n2 {
-=======
 .my-xl-n2 {
->>>>>>> origin/trung-admin
     margin-top: -0.5rem !important;
   }
 
   .mr-xl-n2,
-<<<<<<< HEAD
-  .mx-xl-n2 {
-=======
 .mx-xl-n2 {
->>>>>>> origin/trung-admin
     margin-right: -0.5rem !important;
   }
 
   .mb-xl-n2,
-<<<<<<< HEAD
-  .my-xl-n2 {
-=======
 .my-xl-n2 {
->>>>>>> origin/trung-admin
     margin-bottom: -0.5rem !important;
   }
 
   .ml-xl-n2,
-<<<<<<< HEAD
-  .mx-xl-n2 {
-=======
 .mx-xl-n2 {
->>>>>>> origin/trung-admin
     margin-left: -0.5rem !important;
   }
 
@@ -16088,38 +13645,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-n3,
-<<<<<<< HEAD
-  .my-xl-n3 {
-=======
 .my-xl-n3 {
->>>>>>> origin/trung-admin
     margin-top: -1rem !important;
   }
 
   .mr-xl-n3,
-<<<<<<< HEAD
-  .mx-xl-n3 {
-=======
 .mx-xl-n3 {
->>>>>>> origin/trung-admin
     margin-right: -1rem !important;
   }
 
   .mb-xl-n3,
-<<<<<<< HEAD
-  .my-xl-n3 {
-=======
 .my-xl-n3 {
->>>>>>> origin/trung-admin
     margin-bottom: -1rem !important;
   }
 
   .ml-xl-n3,
-<<<<<<< HEAD
-  .mx-xl-n3 {
-=======
 .mx-xl-n3 {
->>>>>>> origin/trung-admin
     margin-left: -1rem !important;
   }
 
@@ -16128,38 +13669,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-n4,
-<<<<<<< HEAD
-  .my-xl-n4 {
-=======
 .my-xl-n4 {
->>>>>>> origin/trung-admin
     margin-top: -1.5rem !important;
   }
 
   .mr-xl-n4,
-<<<<<<< HEAD
-  .mx-xl-n4 {
-=======
 .mx-xl-n4 {
->>>>>>> origin/trung-admin
     margin-right: -1.5rem !important;
   }
 
   .mb-xl-n4,
-<<<<<<< HEAD
-  .my-xl-n4 {
-=======
 .my-xl-n4 {
->>>>>>> origin/trung-admin
     margin-bottom: -1.5rem !important;
   }
 
   .ml-xl-n4,
-<<<<<<< HEAD
-  .mx-xl-n4 {
-=======
 .mx-xl-n4 {
->>>>>>> origin/trung-admin
     margin-left: -1.5rem !important;
   }
 
@@ -16168,38 +13693,22 @@ button.bg-dark:focus {
   }
 
   .mt-xl-n5,
-<<<<<<< HEAD
-  .my-xl-n5 {
-=======
 .my-xl-n5 {
->>>>>>> origin/trung-admin
     margin-top: -3rem !important;
   }
 
   .mr-xl-n5,
-<<<<<<< HEAD
-  .mx-xl-n5 {
-=======
 .mx-xl-n5 {
->>>>>>> origin/trung-admin
     margin-right: -3rem !important;
   }
 
   .mb-xl-n5,
-<<<<<<< HEAD
-  .my-xl-n5 {
-=======
 .my-xl-n5 {
->>>>>>> origin/trung-admin
     margin-bottom: -3rem !important;
   }
 
   .ml-xl-n5,
-<<<<<<< HEAD
-  .mx-xl-n5 {
-=======
 .mx-xl-n5 {
->>>>>>> origin/trung-admin
     margin-left: -3rem !important;
   }
 
@@ -16208,45 +13717,25 @@ button.bg-dark:focus {
   }
 
   .mt-xl-auto,
-<<<<<<< HEAD
-  .my-xl-auto {
-=======
 .my-xl-auto {
->>>>>>> origin/trung-admin
     margin-top: auto !important;
   }
 
   .mr-xl-auto,
-<<<<<<< HEAD
-  .mx-xl-auto {
-=======
 .mx-xl-auto {
->>>>>>> origin/trung-admin
     margin-right: auto !important;
   }
 
   .mb-xl-auto,
-<<<<<<< HEAD
-  .my-xl-auto {
-=======
 .my-xl-auto {
->>>>>>> origin/trung-admin
     margin-bottom: auto !important;
   }
 
   .ml-xl-auto,
-<<<<<<< HEAD
-  .mx-xl-auto {
-    margin-left: auto !important;
-  }
-}
-
-=======
 .mx-xl-auto {
     margin-left: auto !important;
   }
 }
->>>>>>> origin/trung-admin
 .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
@@ -16294,10 +13783,6 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 768px) {
   .text-md-left {
     text-align: left !important;
@@ -16311,10 +13796,6 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 992px) {
   .text-lg-left {
     text-align: left !important;
@@ -16328,10 +13809,6 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 @media (min-width: 1200px) {
   .text-xl-left {
     text-align: left !important;
@@ -16345,10 +13822,6 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/trung-admin
 .text-lowercase {
   text-transform: lowercase !important;
 }
@@ -16393,12 +13866,7 @@ button.bg-dark:focus {
   color: #3490dc !important;
 }
 
-<<<<<<< HEAD
-a.text-primary:hover,
-a.text-primary:focus {
-=======
 a.text-primary:hover, a.text-primary:focus {
->>>>>>> origin/trung-admin
   color: #1d68a7 !important;
 }
 
@@ -16406,12 +13874,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: #6c757d !important;
 }
 
-<<<<<<< HEAD
-a.text-secondary:hover,
-a.text-secondary:focus {
-=======
 a.text-secondary:hover, a.text-secondary:focus {
->>>>>>> origin/trung-admin
   color: #494f54 !important;
 }
 
@@ -16419,12 +13882,7 @@ a.text-secondary:hover, a.text-secondary:focus {
   color: #38c172 !important;
 }
 
-<<<<<<< HEAD
-a.text-success:hover,
-a.text-success:focus {
-=======
 a.text-success:hover, a.text-success:focus {
->>>>>>> origin/trung-admin
   color: #27864f !important;
 }
 
@@ -16432,12 +13890,7 @@ a.text-success:hover, a.text-success:focus {
   color: #6cb2eb !important;
 }
 
-<<<<<<< HEAD
-a.text-info:hover,
-a.text-info:focus {
-=======
 a.text-info:hover, a.text-info:focus {
->>>>>>> origin/trung-admin
   color: #298fe2 !important;
 }
 
@@ -16445,12 +13898,7 @@ a.text-info:hover, a.text-info:focus {
   color: #ffed4a !important;
 }
 
-<<<<<<< HEAD
-a.text-warning:hover,
-a.text-warning:focus {
-=======
 a.text-warning:hover, a.text-warning:focus {
->>>>>>> origin/trung-admin
   color: #fde300 !important;
 }
 
@@ -16458,12 +13906,7 @@ a.text-warning:hover, a.text-warning:focus {
   color: #e3342f !important;
 }
 
-<<<<<<< HEAD
-a.text-danger:hover,
-a.text-danger:focus {
-=======
 a.text-danger:hover, a.text-danger:focus {
->>>>>>> origin/trung-admin
   color: #ae1c17 !important;
 }
 
@@ -16471,12 +13914,7 @@ a.text-danger:hover, a.text-danger:focus {
   color: #f8f9fa !important;
 }
 
-<<<<<<< HEAD
-a.text-light:hover,
-a.text-light:focus {
-=======
 a.text-light:hover, a.text-light:focus {
->>>>>>> origin/trung-admin
   color: #cbd3da !important;
 }
 
@@ -16484,12 +13922,7 @@ a.text-light:hover, a.text-light:focus {
   color: #343a40 !important;
 }
 
-<<<<<<< HEAD
-a.text-dark:hover,
-a.text-dark:focus {
-=======
 a.text-dark:hover, a.text-dark:focus {
->>>>>>> origin/trung-admin
   color: #121416 !important;
 }
 
@@ -16540,13 +13973,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media print {
   *,
-<<<<<<< HEAD
-  *::before,
-  *::after {
-=======
 *::before,
 *::after {
->>>>>>> origin/trung-admin
     text-shadow: none !important;
     box-shadow: none !important;
   }
@@ -16564,11 +13992,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   pre,
-<<<<<<< HEAD
-  blockquote {
-=======
 blockquote {
->>>>>>> origin/trung-admin
     border: 1px solid #adb5bd;
     page-break-inside: avoid;
   }
@@ -16578,37 +14002,18 @@ blockquote {
   }
 
   tr,
-<<<<<<< HEAD
-  img {
-=======
 img {
->>>>>>> origin/trung-admin
     page-break-inside: avoid;
   }
 
   p,
-<<<<<<< HEAD
-  h2,
-  h3 {
-=======
 h2,
 h3 {
->>>>>>> origin/trung-admin
     orphans: 3;
     widows: 3;
   }
 
   h2,
-<<<<<<< HEAD
-  h3 {
-    page-break-after: avoid;
-  }
-
-@page {
-    size: a3;
-}
-
-=======
 h3 {
     page-break-after: avoid;
   }
@@ -16616,7 +14021,6 @@ h3 {
   @page {
     size: a3;
   }
->>>>>>> origin/trung-admin
   body {
     min-width: 992px !important;
   }
@@ -16636,41 +14040,23 @@ h3 {
   .table {
     border-collapse: collapse !important;
   }
-<<<<<<< HEAD
-
-  .table td,
-  .table th {
-=======
   .table td,
 .table th {
->>>>>>> origin/trung-admin
     background-color: #fff !important;
   }
 
   .table-bordered th,
-<<<<<<< HEAD
-  .table-bordered td {
-=======
 .table-bordered td {
->>>>>>> origin/trung-admin
     border: 1px solid #dee2e6 !important;
   }
 
   .table-dark {
     color: inherit;
   }
-<<<<<<< HEAD
-
-  .table-dark th,
-  .table-dark td,
-  .table-dark thead th,
-  .table-dark tbody + tbody {
-=======
   .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
->>>>>>> origin/trung-admin
     border-color: #dee2e6;
   }
 
@@ -16679,127 +14065,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-<<<<<<< HEAD
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-#bar > li {
-  text-transform: uppercase;
-}
-
-.dropdown-menu {
-  top: 30px;
-}
-
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu .dropdown-menu {
-  margin-left: 155px;
-  top: -10px;
-}
-
-.card > p {
-  text-align: justify;
-  padding: 20px;
-  margin: 0;
-}
-
-.footer {
-  bottom: 0;
-  background-color: #000000;
-  margin-top: 6rem;
-}
-
-footer > .container > div {
-  padding-bottom: 5rem !important;
-  padding-top: 5rem !important;
-}
-
-footer > .container * {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1rem;
-}
-
-footer > .container a {
-  text-decoration: none;
-}
-
-footer > .container ul {
-  list-style-type: none;
-}
-
-.warp {
-  padding: 0;
-  margin: 0;
-}
-
-.social {
-  padding: 0;
-  display: inline-flex;
-}
-
-.social a {
-  padding: 1rem;
-  margin: 0;
-}
-
-.social a:hover {
-  background-color: #3490dc;
-}
-
-.widget > * {
-  width: 100%;
-  float: left;
-}
-
-.widget > span {
-  float: left;
-  line-height: 47px;
-}
-
-.widget > span > i {
-  padding: 1rem;
-  float: left;
-}
-
-.useful_link {
-  width: 100%;
-}
-
-.useful_link > ul {
-  padding: 0;
-}
-
-.useful_link > ul > li {
-  padding: 20px;
-  border-bottom: #8a8591 solid 2px;
-}
-
-.useful_link > ul a {
-  transition: 2s;
-}
-
-.useful_link > ul a:hover {
-  padding-left: 1rem;
-  color: #e3342f;
-  transition: 1s;
-}
-
-=======
 .component {
   font-size: 18px;
 }
@@ -16807,4 +14072,3 @@ footer > .container ul {
 body, html {
   height: 100%;
 }
->>>>>>> origin/trung-admin

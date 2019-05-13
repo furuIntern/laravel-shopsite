@@ -65,13 +65,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-<<<<<<< HEAD
-        return User::create([
-            'username' => $data['name'],
-=======
         $user = User::create([
             'name' => $data['name'],
->>>>>>> origin/trung-admin
             'email' => $data['email'],
             'username'=> $data['username'],
             'phone'=> $data['phone'],
@@ -84,5 +79,4 @@ class RegisterController extends Controller
     protected function redirectTo(){
         return 'admin';
     }
-
 }

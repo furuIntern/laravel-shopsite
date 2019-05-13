@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Role;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
 
@@ -19,8 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password', 'phone', 'address', 'name'
-
+        'name', 'username', 'password','email','phone'
     ];
 
 

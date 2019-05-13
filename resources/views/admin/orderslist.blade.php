@@ -83,11 +83,12 @@
                 </div>
                 <div class='col-3 text-center'>{{$order->total_price}}</div>
                 <div class='col-2 text-center'>
-                    <button class="btn btn-outline-primary btn-sm">
+                    <button data-order='{{$order->id}}' class="state btn btn-outline-primary btn-sm">
                     {{$order->state}}
                     </button>
                 </div>
-            </div>    
+            </div>   
+            <hr/>
             @endforeach
         </div>
     </div>
@@ -101,6 +102,10 @@
         axios.get("{{route('add-productForm-order')}}").then((res)=>{
             $('#ProductInOrder').append(res.data);
         })
+    });
+    $('.state').click(function(e){
+        axios.post('order/update/state/'+this.dataset.order);
+        $(this).html('completed');
     });
 </script>
 @endsection

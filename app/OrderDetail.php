@@ -10,4 +10,10 @@ class OrderDetail extends Model
     protected $fillable=[
         'product_id','order_id','amount'
     ];
+    public function product(){
+        return $this->belongsTo('App\Product');
+    }
+    public function order(){
+        return $this->belongsTo('App\Order');
+    }
 }

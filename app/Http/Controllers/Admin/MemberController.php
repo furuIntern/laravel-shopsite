@@ -8,6 +8,9 @@ use App\Http\Requests\UpdateMemberRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\DB;
+
 
 class MemberController extends Controller
 {
@@ -19,7 +22,9 @@ class MemberController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('Admin/memberlist',['users'=>$users]);
+        $roles = Role::whereNotIn('name',['super-admin'])->get();
+        $data = ['users'=> $users,'roles'=> $roles];
+        return view('Admin/memberlist',$data);
     }
 
     /**
@@ -100,4 +105,49 @@ class MemberController extends Controller
         $user->delete();
         return redirect()->route('show-members');
     }
+    
+    /**
+     * 
+     * 
+     * 
+     * Add role
+     */
+    public function addRole(Request $request){
+        $request->validate([
+            'role' => 'required|unique:roles,name'
+        ]);
+        try{
+            DB::beginTransaction();
+            $role = new Role;
+            $role->name = $request->role;
+            $role->save();
+            $permissions = collect([]);
+            if($request->products){
+                $permissions->push('manage products');
+            }
+            if($request->members){
+                $permissions->push('manage members');
+            }
+
+            if($request->orders){
+                $permissions->push('manage orders');
+            }
+
+            if($request->setting){
+                $permissions->push('manage setting');
+            }
+            $role->syncPermissions($permissions);
+            DB::commit();
+        }
+        catch (Exception $e){
+            DB::rollBack();
+        }
+        return redirect()->route('show-members');
+    }
+
+    public function deleteRole(Role $role){
+        $role->delete();
+        return redirect()->route('show-members');
+    }
+    
 }
