@@ -26,20 +26,14 @@
                     <li><a href="">home</a></li>
                     <li><a href="">about us</a></li>
                     <li><a href="">service</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="{{ route('contact') }}">{{ __('Contact') }}</a></li>
                     <li><a href="">portfolio</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-4">
-            <h4>subscribe us</h4>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+            <h4>description</h4>
+            <p class="description">{{Facades\App\Services\Setting\UseSetting::description()}}</p>
         </div>
     </div>
 </div>

@@ -6,7 +6,7 @@
             @foreach ($products as $product)
                 <div class="card mr-3 ml-3 mb-3" style="width:15rem; text-align:center">
                     <a href="{{route('detailProduct' , [ 'id' => $product->id ] )}}">
-                        <img class="" src="{{ $product->img }}" alt="" style="width: 100%">
+                        <img class="" src="{{ asset('storage/ImageProduct/'.$product->id.'.png') }}" alt="" style="width: 100%">
                     </a>
                     <div class="card-body">
                         <h3 class="card-title">{{ $product->name }}</h3>
@@ -122,6 +122,16 @@
 
                      })
                 })
+
+                $(document).on('click','a[name="deleteCart"]',function(e) {
+            
+                    e.preventDefault();
+                    axios.post('{{route("deleteCart")}}')
+                        .then(function(data) {
+                            $('#shoppingCart').html(data.data);
+                        }) 
+                })
+
                 $(document).on('click','.page-link' , function(e) {
                     e.preventDefault();
 

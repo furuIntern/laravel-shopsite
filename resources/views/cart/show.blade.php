@@ -4,6 +4,7 @@
             <span class="badge badge-secondary">{{Cart::count()}}</span>
         
     </h4>
+    @if (Session::has('cart'))
         <ul class="list-group">
             
             @foreach ($items as $item)
@@ -20,6 +21,20 @@
                 <strong>{{$total}}</strong>
             </li>
             <li class="list-group-item text-center p-0">
-                <button class="btn btn-success btn-block"><a href="{{route('detailCart')}}" style="text-decoration:none ; color:#fff">Detail</a></button>
+                <a  class="btn btn-success btn-block link" 
+                    href="{{route('detailCart')}}">
+                    Detail
+                </a>
+                <a  class="btn btn-danger btn-block link mt-2" 
+                    href="{{route('deleteCart')}}" name="deleteCart">
+                    Delete Cart
+                </a>
             </li>
         </ul>
+    @else
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h4>Empty Cart</h4> 
+            </li>
+        </ul>
+    @endif 

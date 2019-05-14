@@ -6,7 +6,7 @@ use App\Products;
 use App\Items;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Gloudemans\Shoppingcart\Facades\Cart;
+use Cart;
 
 class CartController extends Controller
 {
@@ -60,6 +60,20 @@ class CartController extends Controller
         
         if(Items::delete($request->id)) {
             return view('cart\element\table',['items' => Cart::content() , 'total' => Cart::total() , 'subtotal' => Cart::subtotal()]); 
+        }
+    }
+
+    public function deleteCart(Request $request) 
+    {   
+        if($request->route()->name('deleteCart'))
+        {
+            
+            if($request->ajax())
+            {
+                $request->session()->forget('cart');
+            }
+
+            return view('cart\show',$this->getCart());
         }
     }
 

@@ -8,13 +8,21 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+
+
 .navbar-laravel {
   background-color: $white;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.description {
+  font-size: 14px !important;
+  text-align: justify;
+  padding-top: 1rem;
+  line-height: 1.5;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -149,6 +157,15 @@ button > a {
 
 button > a:hover {
   text-decoration: unset;
+  color: $white;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.link {
+  text-decoration: none;
   color: $white;
 }
 
