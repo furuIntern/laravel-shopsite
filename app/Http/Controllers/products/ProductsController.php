@@ -8,6 +8,8 @@ use App\ProductsFilter;
 use App\Products;
 use App\Categories;
 use App\Comment;
+use Cart;
+use App\Setting;
 
 class ProductsController extends Controller
 {
@@ -16,8 +18,8 @@ class ProductsController extends Controller
 
     public function showProducts(Request $request) {
         $products = Products::Paginate(10);
-       
-        return view('shop\mainPage', [ 'products' => $products ]);
+        
+        return view('shop\mainPage', $this->showShop($products));
     }
 
     public function category(Request $request) {
@@ -26,7 +28,7 @@ class ProductsController extends Controller
         
         $products = Products::ItemsCategory($parent)->paginate(10);
         
-        return view('shop\showProduct', [ 'products' => $products]);
+        return view('shop\showProduct', $this->showShop($products));
     }
 
     public function detailProduct(Request $request , $id) {
@@ -56,5 +58,14 @@ class ProductsController extends Controller
         );
        
 
+    }
+
+    protected function showShop($products)
+    {
+        return [
+            'products' => $products,
+            'items' => Cart::content(),
+            'total' => Cart::total()
+        ];
     }
 }

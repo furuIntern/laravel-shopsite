@@ -11,4 +11,5 @@ class Setting extends Model
     protected $fillable =[
         'title','description','sort_product'
     ];
+    
 }

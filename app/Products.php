@@ -33,6 +33,16 @@ class Products extends Model
         return $query;
     }
 
+    public function scopeSort($query,$sort)
+    {
+        if($sort == 'newest')
+        {
+            return $query->orderBy('update_at');
+        }
+
+        return $query->orderBy('update_at','ASC');
+    }
+    
     public function comments()
     {
         return $this->hasMany('App\comment');

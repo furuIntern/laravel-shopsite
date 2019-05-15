@@ -3,6 +3,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="widget">
+                <img src="" alt="">
                 <p></p>
                 <ul class="social">
                     <li><a href=""><i class="fab fa-facebook"></i></a></li>
@@ -18,7 +19,14 @@
                         
             </div>
         </div>
-        
+        <div>
+            <h4>{{Facades\App\Services\Setting\UseSetting::sort()}}</h4>
+            <div class="row">
+                @foreach (App\Products::sort(Facades\App\Services\Setting\UseSetting::sort()) as $item)
+                    
+                @endforeach                
+            </div>
+        </div>
         <div class="col-md-4">
             <div class="useful_link">
                 <h4>useful link</h4>
@@ -26,20 +34,14 @@
                     <li><a href="">home</a></li>
                     <li><a href="">about us</a></li>
                     <li><a href="">service</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="{{ route('contact') }}">{{ __('Contact') }}</a></li>
                     <li><a href="">portfolio</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-4">
-            <h4>subscribe us</h4>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+            <h4>description</h4>
+            <p class="description">{{Facades\App\Services\Setting\UseSetting::description()}}</p>
         </div>
     </div>
 </div>

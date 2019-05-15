@@ -35,7 +35,7 @@ class Cart
      *
      * @var string
      */
-    protected $instance;
+    private $instance;
 
     /**
      * Cart constructor.
@@ -241,7 +241,7 @@ class Cart
     public function total($decimals = null, $decimalPoint = null, $thousandSeperator = null)
     {
         $content = $this->getContent();
-        
+
         $total = $content->reduce(function ($total, CartItem $cartItem) {
             return $total + ($cartItem->qty * $cartItem->priceTax);
         }, 0);
@@ -360,7 +360,7 @@ class Cart
              ->where('identifier', $identifier)
              ->delete();
 
-        
+
         $this->getConnection()->table($this->getTableName())->insert([
             'identifier' => $identifier,
             'instance' => $this->currentInstance(),
@@ -368,10 +368,7 @@ class Cart
             'created_at'=> new \DateTime()
         ]);
 
-        
         $this->events->dispatch('cart.stored');
-
-        
     }
 
     /**
@@ -532,7 +529,7 @@ class Cart
      */
     protected function getTableName()
     {
-        return config('cart.database.table', 'orders');
+        return config('cart.database.table', 'shoppingcart');
     }
 
     /**
