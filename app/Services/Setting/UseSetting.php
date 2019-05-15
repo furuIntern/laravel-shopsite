@@ -11,9 +11,9 @@ class UseSetting
 
     function __construct()
     {
-        foreach (Setting::get() as $value) {
-            $this->setting = $value;
-        }
+        Setting::get()->map(function($record) {
+            return $this->setting = $record;
+        });
     }
 
     public function title()
@@ -26,4 +26,8 @@ class UseSetting
         return $this->setting->description;
     }
 
+    public function sort()
+    {
+        return $this->setting->sort;
+    }
 }
