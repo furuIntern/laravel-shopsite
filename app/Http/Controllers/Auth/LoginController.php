@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Spatie\Permission\Models\Permission;
+
 
 class LoginController extends Controller
 {
@@ -25,19 +28,18 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
+    protected $redirectTo = '/';
+    
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
     }
-    
-
 
     public function username() {
         return 'username';

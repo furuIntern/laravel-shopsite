@@ -44,7 +44,7 @@ Route::group(['middleware'=>['permission:manage members']], function(){
  * 
  * Order
  */
-Route::group(['middleware'=>['permission:manage orders']],function(){
+Route::group(['middleware'=>['permission:show-orders']],function(){
     Route::get('admin/orders','Admin\OrderController@index')->name('show-orders');
     Route::get('admin','Admin\OrderController@index')->name('admin-page');
     Route::view('ajax/add/ProductInOrder','admin\ajax\AddProductInOrder')->name('add-productForm-order');
@@ -53,7 +53,7 @@ Route::group(['middleware'=>['permission:manage orders']],function(){
     Route::get('admin/order/detail/{order}','Admin\OrderController@show');
     Route::get('admin/order/delete/{order}','Admin\OrderController@destroy')->name('delete-order');
 });
-Route::group(['middleware'=>['permission:manage products']],function(){
+Route::group(['middleware'=>['permission:show-products']],function(){
     Route::get('admin/products','Admin\ProductController@index')->name('show-products');
     Route::post('admin/categories/add','Admin\CategoriesController@create')->name('add-categories');
     Route::get('admin/categories/option','Admin\CategoriesController@display')->name('option-categories');
@@ -67,7 +67,7 @@ Route::group(['middleware'=>['permission:manage products']],function(){
 });
 
 
-Route::get('/', 'products\ProductsController@showProducts')->name('product');
+Route::get('/', 'products\ProductsController@showProducts')->name('product')->middleware('home');
 
 
 Auth::routes();
