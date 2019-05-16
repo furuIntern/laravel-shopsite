@@ -14,16 +14,22 @@ class Orders extends Model
     ];
 
     public function products() {
-        return $this->belongsToMany('App\Products','detail_orders','order_id','product_id')
+        return $this->belongsToMany('App\Products','order-detail','order_id','product_id')
                     ->withPivot('qty','price','priceTax');
     }
 
     public function scopeFindOrders($query,$id) {
 
         $query->where('user_id', $id);
-              
-        
+             
+
         return $query;
+    }
+
+    public function scopeOrderGuest($query)
+    {
+        return $query->where('user_id', null)
+                        ->where('state', 'waiting');
     }
 
 }

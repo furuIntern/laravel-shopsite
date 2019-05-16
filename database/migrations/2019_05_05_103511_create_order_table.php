@@ -19,7 +19,8 @@ class CreateOrderTable extends Migration
             $table->string('phone',11);
             $table->string('address');
             $table->enum('state',['waiting','completed'])->default('waiting');
-            $table->unsignedBigInteger('user_id')->index();
+            $table->unsignedBigInteger('total_amount');
+            $table->unsignedBigInteger('user_id')->index()->nullable();
             $table->unsignedBigInteger('total_price');
             $table->timestamps();
         });
@@ -27,7 +28,10 @@ class CreateOrderTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('order_id');
-            $table->unsignedInteger('amount');
+            $table->unsignedInteger('qty');
+            $table->string('rowId');
+            $table->unsignedInteger('price');
+            $table->unsignedInteger('priceTax');
             $table->foreign('product_id')
                 ->references('id')->on('products');
             $table->foreign('order_id')
