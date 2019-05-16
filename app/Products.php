@@ -35,16 +35,17 @@ class Products extends Model
 
     public function scopeSort($query,$sort)
     {
-        if($sort == 'newest')
+        if($sort == 'NEWEST')
         {
-            return $query->orderBy('update_at');
+            return $query->orderBy('updated_at','DESC');
         }
 
-        return $query->orderBy('update_at','ASC');
+        return $query->orderBy('updated_at','ASC');
     }
     
     public function comments()
     {
         return $this->hasMany('App\comment');
     }
+
 }

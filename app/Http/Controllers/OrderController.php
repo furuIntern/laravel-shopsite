@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Auth;
-use App\Orders;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Http\Request;
 use Session;
+use Auth;
+use App\Orders;
 use Facades\UseCart;
+
 
 
 class OrderController extends Controller
@@ -33,15 +35,14 @@ class OrderController extends Controller
 
             UseCart::getStoreProduct($this->order(),$id);
             
+            $request->session()->forget('cart');
+
+            return view('checkout\completeOrder')->with( 'key', Crypt::encryptString($id));
         }
         catch(Expection $e) 
         {
             return 'Caught Expection: '. $e->getMessage();
-        } 
-            
-        $request->session()->forget('cart');
-        
-        return redirect()->route('product',['success' => 'success purchase products']);
+        }   
               
     }
 }

@@ -28,6 +28,6 @@ class UseSetting
 
     public function sort()
     {
-        return $this->setting->sort;
+        return $this->setting->sort_product;
     }
 }

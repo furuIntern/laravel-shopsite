@@ -4,12 +4,13 @@ namespace App\Http\Controllers\products;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\ProductsFilter;
 use App\Products;
 use App\Categories;
 use App\Comment;
+use App\Orders;
 use Cart;
 use App\Setting;
+use Illuminate\Support\Facades\Crypt;
 
 class ProductsController extends Controller
 {
@@ -60,7 +61,60 @@ class ProductsController extends Controller
 
     }
 
-    protected function showShop($products)
+    public function orderGuest(Request $request)
+    {
+        if($request->route()->name('orderGuest'))
+        {
+            return view('shop\orderGuest',$this->showShop());
+        }
+
+    }
+
+    public function showOrderGuest(Request $request)
+    {
+
+        try {
+            
+            return view('shop\orderGuest\order',[ 
+                'order' => Orders::where('id',$this->decrypted($request->id))->orderGuest()->get()
+            ]);
+
+        } catch (DecryptException $e) {
+            
+        }
+    }
+
+    public function showDetailOrderGuest(Request $request)
+    {
+        try {
+            
+            return view('shop\orderGuest\detail', [
+                'items' => Orders::find($this->decrypted($request->id))->products()->get()
+            ]);
+
+        } catch (DecryptException $e) {
+            
+        }
+        
+    }
+
+    public function deleteOrderGuest(Request $request)
+    {
+        try {
+                
+            Orders::find($this->decrypted($request->id))->delete();
+
+        } catch (DecryptException $e) {
+            
+        }
+    }
+
+    protected function decrypted($cryp)
+    {
+        return Crypt::decryptString($cryp);
+    } 
+
+    protected function showShop($products = NULL)
     {
         return [
             'products' => $products,

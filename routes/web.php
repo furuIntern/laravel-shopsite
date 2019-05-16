@@ -94,6 +94,11 @@ Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
     Route::get('/detail/{id}', 'products\ProductsController@detailProduct')->name('detailProduct');
     Route::match(['get' , 'post'] , '/filter' , 'products\ProductsController@filter')->name('filter');
     Route::post('/upComment','user\CommentController@upComment')->name('addComment');
+    Route::get('/order','products\ProductsController@orderGuest')->name('orderGuest');
+    Route::post('/show-order', 'products\ProductsController@showOrderGuest')->name('getOrderGuest');
+    Route::post('/show-detail', 'products\ProductsController@showDetailOrderGuest')->name('detailOrderGuest');
+    Route::post('/delete-order', 'products\ProductsController@deleteOrderGuest')->name('deleteOrderGuest');
+
     Route::group( ['prefix' => 'cart'] ,function() {
 
         Route::get('/' ,'cart\CartController@showCart')->name('detailCart');

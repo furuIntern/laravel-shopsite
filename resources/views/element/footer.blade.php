@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="widget">
                 <img src="" alt="">
                 <p></p>
@@ -19,15 +19,17 @@
                         
             </div>
         </div>
-        <div>
+        <div class="col-md-3">
             <h4>{{Facades\App\Services\Setting\UseSetting::sort()}}</h4>
-            <div class="row">
-                @foreach (App\Products::sort(Facades\App\Services\Setting\UseSetting::sort()) as $item)
-                    
-                @endforeach                
+            <div class="row" style="padding-left:0">
+                <div class="container">
+                    @foreach (App\Products::sort(Facades\App\Services\Setting\UseSetting::sort())->take(6)->get() as $product)
+                        <img class="col-3" style="padding:0" src="{{asset('storage/ImageProduct/'.$product->id.'.png')}}" alt="" width="60" height="60"/>
+                    @endforeach    
+                </div>                
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="useful_link">
                 <h4>useful link</h4>
                 <ul>
@@ -39,7 +41,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h4>description</h4>
             <p class="description">{{Facades\App\Services\Setting\UseSetting::description()}}</p>
         </div>

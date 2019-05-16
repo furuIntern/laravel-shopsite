@@ -9,13 +9,25 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-
 .navbar-laravel {
   background-color: $white;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+#bar > li {
+  text-transform: uppercase;
+}
+
+#complete {
+  background-color: $green;
+  
+  * {
+    font-size: 1rem;
+  }
+
 }
 
 .description {
@@ -29,9 +41,6 @@
   display: block;
 }
 
-#bar > li {
-  text-transform: uppercase;
-}
 .dropdown-menu {
   top: 30px;
 }
@@ -127,18 +136,19 @@ footer > .container {
 }
 
 .useful_link {
-
   width: 100%;
   
   > ul {
     padding: 0;
-    > li {
 
+    > li {
       padding: 20px;
       border-bottom: $gray solid 2px;
+      
     }
     a {
       transition: 2s;
+
     }
     a:hover {
       padding-left: 1rem;

@@ -21,7 +21,6 @@ class UseCart extends Cart
             'name' => $information['name'],
             'phone' => $information['phone'],
             'address' => $information['address'],
-            'instance' => $this->currentInstance(),
             'total_amount' => $this->count(),
             'total_price' => $this->total(),
             'user_id' => $id,

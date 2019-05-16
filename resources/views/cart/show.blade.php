@@ -1,8 +1,8 @@
     <h4 class="d-flex justify-content-between">
         <strong>Cart</strong>
-       
+        @if (Session::has('cart'))
             <span class="badge badge-secondary">{{Cart::count()}}</span>
-        
+        @endif
     </h4>
     @if (Session::has('cart'))
         <ul class="list-group">
