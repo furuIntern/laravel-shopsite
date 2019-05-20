@@ -15,7 +15,7 @@ class RouteHome
      */
     public function handle($request, Closure $next)
     {
-        $admin = !$request->user()->hasRole('user');
+        $admin = $request->user()?!$request->user()->hasRole('user'):false;
         if($admin){
             return redirect('admin');
         } else {

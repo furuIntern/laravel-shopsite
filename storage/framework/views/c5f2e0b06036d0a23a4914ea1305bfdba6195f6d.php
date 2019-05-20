@@ -16,16 +16,16 @@
             <div class="col-md-2 bg-info text-light px-4" >
                 <h2 class='text-center my-3'><?php echo e(ucwords($setting->title)); ?></h2>
                 <hr/>
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('manage setting')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('setting')): ?>
                 <a class='component text-light btn btn-info btn-block' href="<?php echo e(route('show-setting')); ?>"><i class="fas fa-cogs"></i> Setting</a>
                 <?php endif; ?>
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('manage orders')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('read-orders')): ?>
                 <a href="<?php echo e(route('show-orders')); ?>" class='component btn btn-info text-light btn-block'><i class="fas fa-store"></i> Orders</a>
                 <?php endif; ?>
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('manage products')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('read-products')): ?>
                 <a class='component text-light btn btn-info btn-block' href="<?php echo e(route('show-products')); ?>"><i class="fas fa-warehouse"></i> Products</a>
                 <?php endif; ?>
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('manage members')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('read-members')): ?>
                 <a class='component text-light btn btn-info btn-block' href="<?php echo e(route('show-members')); ?>"><i class="fas fa-user-friends"></i> Member</a>
                 <?php endif; ?>
             </div>

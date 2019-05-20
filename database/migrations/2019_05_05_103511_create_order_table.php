@@ -19,8 +19,9 @@ class CreateOrderTable extends Migration
             $table->string('phone',11);
             $table->string('address');
             $table->enum('state',['waiting','completed'])->default('waiting');
-            $table->unsignedBigInteger('user_id')->index();
+            $table->unsignedBigInteger('user_id')->index()->nullable();
             $table->unsignedBigInteger('total_price');
+            $table->unsignedBigInteger('total_amount');
             $table->timestamps();
         });
         Schema::create('order-detail', function (Blueprint $table) {

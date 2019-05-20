@@ -2,13 +2,18 @@
 <?php if($errors->any()): ?>
     <div class="alert alert-danger text-center w-50 container fixed-top">Your request is invalid</div>
 <?php endif; ?>
-<div class="container mt-3 text-right">
-    <button class='btn btn-light ml-role' data-toggle="collapse" data-target="#role"><i class="fas fa-bars"></i> Role</button>
-    <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addMember"><i class="fas fa-plus"></i> Member</button>
+<div class="container mt-3">
+<?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('add-members')): ?>
+    <div class="text-right">
+        <button class='btn btn-light ml-role' data-toggle="collapse" data-target="#role"><i class="fas fa-bars"></i> Role</button>
+        <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addMember"><i class="fas fa-plus"></i> Member</button>
+    </div>
+
+    <!-- show roles -->
     <div class="collapse text-left" id='role'>
         <?php $__currentLoopData = $roles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <div class="btn-group mt-2">
-                <div class="btn btn-primary"><?php echo e($role->name); ?></div>
+            <div class="btn-group mt-2 mr-2">
+                <button class="btn btn-primary role" data-toggle="modal" data-target="#permissions"><?php echo e($role->name); ?></button>
                 <a href="<?php echo e(route('delete-role',['role'=>$role->id])); ?>" class ='btn btn-danger'>&times;</a>
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -17,38 +22,40 @@
 <hr/>
  <!-- Add role form  -->
 <div class="modal fade" id='addRole'>
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form action="<?php echo e(route('add-role')); ?>" method="post">
             <?php echo csrf_field(); ?>
                 <div class="modal-header">
                     <div class="modal-title">
-                        <h5 class='text-dark'><b>New member</b></h5>
+                        <h5 class='text-dark'><b>New role</b></h5>
                     </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="form-control" name='role' placeholder='Name'/>
-                    <div class='d-flex mt-2'>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='setting' class="custom-control-input" id="setting">
-                            <label class="custom-control-label" for="setting">Setting</label>
+                <div class="container-fluid">
+                    <input type="text" class="form-control mb-2" name='role' placeholder='Name'/>
+                    <div class="row">
+                        <?php $__currentLoopData = $permissions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$permission): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($key != 0): ?>
+                        <div class="col-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name='permiss[<?php echo e($permission->id); ?>]' class="custom-control-input" id="permission-<?php echo e($permission->id); ?>">
+                                <label class="custom-control-label" for="permission-<?php echo e($permission->id); ?>"><?php echo e(ucwords(str_replace('-',' ',$permission->name))); ?></label>
+                            </div>
                         </div>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='products' class="custom-control-input" id="products">
-                            <label class="custom-control-label" for="products">Products</label>
-                        </div>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='orders' class="custom-control-input" id="orders">
-                            <label class="custom-control-label" for="orders">Orders</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name='members' class="custom-control-input" id="members">
-                            <label class="custom-control-label" for="members">Members</label>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        <div class="col-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name='permiss[<?php echo e($permissions[0]->id); ?>]' class="custom-control-input" id="permission-<?php echo e($permissions[0]->id); ?>">
+                                <label class="custom-control-label" for="permission-<?php echo e($permissions[0]->id); ?>"><?php echo e(ucwords($permissions[0]->name)); ?></label>
+                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="modal-footer text-center justify-content-center">
                     <button class="btn btn-success">
@@ -129,10 +136,9 @@
                             </div>
                             <div class="col-md-8">
                                 <select name="role" class='custom-select'>
-                                    <option value="user">User</option>
-                                    <option value="seller">Seller</option>
-                                    <option value="admin">Admin</option>
-                                    <option value="super-admin">Super Admin</option>
+                                    <?php $__currentLoopData = $roles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                       <option value="<?php echo e($role->name); ?>"><?php echo e(ucwords($role->name)); ?></option>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 </select>
                             </div>
                         </div>
@@ -148,6 +154,7 @@
     </div>
 </div>
 <!-- End form add member -->
+<?php endif; ?>
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -169,6 +176,7 @@
         </div>
     </div>
 </div>
+<div class='d-flex justify-content-center mt-5'><?php echo e($users->links()); ?></div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
 <script>

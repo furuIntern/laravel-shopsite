@@ -16,16 +16,16 @@
             <div class="col-md-2 bg-info text-light px-4" >
                 <h2 class='text-center my-3'>{{ucwords($setting->title)}}</h2>
                 <hr/>
-                @can('manage setting')
+                @can('setting')
                 <a class='component text-light btn btn-info btn-block' href="{{route('show-setting')}}"><i class="fas fa-cogs"></i> Setting</a>
                 @endcan
-                @can('manage orders')
+                @can('read-orders')
                 <a href="{{route('show-orders')}}" class='component btn btn-info text-light btn-block'><i class="fas fa-store"></i> Orders</a>
                 @endcan
-                @can('manage products')
+                @can('read-products')
                 <a class='component text-light btn btn-info btn-block' href="{{route('show-products')}}"><i class="fas fa-warehouse"></i> Products</a>
                 @endcan
-                @can('manage members')
+                @can('read-members')
                 <a class='component text-light btn btn-info btn-block' href="{{route('show-members')}}"><i class="fas fa-user-friends"></i> Member</a>
                 @endcan
             </div>

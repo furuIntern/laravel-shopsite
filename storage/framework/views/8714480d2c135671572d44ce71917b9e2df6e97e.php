@@ -3,6 +3,7 @@
     <div class="alert alert-danger text-center w-50 container fixed-top">Your request is invalid</div>
 <?php endif; ?>
 <div class="container mt-3">
+<?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('add-orders')): ?>
 <div class='text-right px-5'>
     <button class="border rounded-top border-warning bg-warning" data-toggle="modal" data-target="#addOrder">
         <b style='font-size: 16px;'><i class="fas fa-plus-square"></i> Add</b>
@@ -64,6 +65,7 @@
     </div>
 </div>
 <!-- End add order form -->
+<?php endif; ?>
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -92,6 +94,10 @@
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </div>
+</div>
+<div class="d-flex justify-content-center mt">
+    <?php echo e($orders->links()); ?>
+
 </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>

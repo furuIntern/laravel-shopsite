@@ -1,4 +1,5 @@
 <?php $__env->startSection('component'); ?>
+    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('add-products')): ?>
     <div class="container mt-3">
         <div class="d-flex justify-content-end">
         <button class='btn btn-light' data-toggle="modal" data-target="#addCategory"><i class="fas fa-plus"></i> Category</button>
@@ -6,6 +7,9 @@
         <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addProduct"><i class="fas fa-plus"></i> Product</button>
         </div>
         <hr/>
+    <?php else: ?>
+    <div class="mt-3"></div>    
+    <?php endif; ?>
         <div class="card">
             <div class="card-header">
                 <div class="row">
@@ -18,6 +22,13 @@
                     <div class="col-2 text-center">
                         <b>Amount</b>
                     </div>
+                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('read-products')): ?>
+                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->denies('update-products')): ?>
+                    <div class="col-2 text-center">
+                        <b>Sold</b>
+                    </div>
+                    <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="card-body">
@@ -31,6 +42,7 @@
                         <?php echo e($product->name); ?>
 
                     </div>
+                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('update-products')): ?>
                     <div class="col-2 text-center">
                         <input type="number" value='<?php echo e($product->amount); ?>' min='0' data-apply='#apply-<?php echo e($product->id); ?>' id='product-<?php echo e($product->id); ?>' class="form-control form-control-sm amount"/>
                     </div>
@@ -38,6 +50,16 @@
                         <a href="product/<?php echo e($product->id); ?>" class="btn btn-primary btn-sm">Detail</a>
                         <button class='btn btn-success btn-sm apply' style='display:none' data-product='<?php echo e($product->id); ?>'  data-apply='#product-<?php echo e($product->id); ?>' id='apply-<?php echo e($product->id); ?>'>Apply</button>                          
                     </div>
+                    <?php elseif (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('read-products')): ?>
+                    <div class="col-2 text-center">
+                    <?php echo e($product->amount); ?>
+
+                    </div>
+                    <div class="col-2 text-center">
+                    <?php echo e($product->sold); ?>
+
+                    </div>
+                    <?php endif; ?>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
@@ -149,7 +171,10 @@
         </div>
     </div>
     <!-- End product form -->
+    <div class='d-flex justify-content-center mt-5'>
+    <?php echo e($products->links()); ?>
 
+    </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
     

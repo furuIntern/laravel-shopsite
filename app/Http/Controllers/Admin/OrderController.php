@@ -19,7 +19,7 @@ class OrderController extends Controller
     public function index()
     {   
         $products = Product::all();
-        $orders = Order::all();
+        $orders = Order::paginate(20);
         return view('admin\orderslist',['products'=>$products,'orders'=>$orders]);
     }
 

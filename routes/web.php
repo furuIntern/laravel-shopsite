@@ -13,7 +13,9 @@
 Route::get('/login','Auth\LoginController@showLoginForm');
 Auth::routes(['verify' => true]);
 Route::get('logout','Auth\LoginController@logout')->name('get-logout');
-Route::group(['middleware'=>['permission:manage setting']],function(){
+
+
+Route::group(['middleware'=>['permission:setting']],function(){
     Route::get('admin/setting','Admin\SettingController@index')->name('show-setting');
     Route::post('admin/setting/description','Admin\SettingController@store');
     Route::post('admin/setting/title','Admin\SettingController@update');
@@ -30,40 +32,48 @@ Route::group(['middleware'=>['permission:manage setting']],function(){
  * 
  * Member
  */
-Route::group(['middleware'=>['permission:manage members']], function(){
+Route::group(['middleware'=>['permission:read-members']], function(){
     Route::get('admin/members','Admin\MemberController@index')->name('show-members');
     Route::post('admin/members/add','Admin\MemberController@store');
     Route::get('admin/member/{user}','Admin\MemberController@show');
     Route::post('admin/member/update/{user}','Admin\MemberController@update');
+    Route::group(['middleware'=>['permission:delete-members']], function(){
     Route::get('admin/member/delete/{user}','Admin\MemberController@destroy');
     Route::get('admin/role/delete/{role}','Admin\MemberController@deleteRole')->name('delete-role');
-    Route::post('admin/role/add/','Admin\MemberController@addRole')->name('add-role');
+    });
+    Route::post('admin/role/add/','Admin\MemberController@addRole')->name('add-role')->middleware('permission:add-members');
 });
 /**
  * 
  * 
  * Order
  */
-Route::group(['middleware'=>['permission:show-orders']],function(){
+Route::group(['middleware'=>['permission:read-orders']],function(){
     Route::get('admin/orders','Admin\OrderController@index')->name('show-orders');
     Route::get('admin','Admin\OrderController@index')->name('admin-page');
     Route::view('ajax/add/ProductInOrder','admin\ajax\AddProductInOrder')->name('add-productForm-order');
-    Route::post('admin/order/add','Admin\OrderController@store');
+    Route::post('admin/order/add','Admin\OrderController@store')->middleware('permission:add-orders');
     Route::post('admin/order/update/state/{order}','Admin\OrderController@updateState');
     Route::get('admin/order/detail/{order}','Admin\OrderController@show');
-    Route::get('admin/order/delete/{order}','Admin\OrderController@destroy')->name('delete-order');
+    Route::get('admin/order/delete/{order}','Admin\OrderController@destroy')->name('delete-order')->middleware('permission:delete-orders');
 });
-Route::group(['middleware'=>['permission:show-products']],function(){
+Route::group(['middleware'=>['permission:read-products']],function(){
     Route::get('admin/products','Admin\ProductController@index')->name('show-products');
-    Route::post('admin/categories/add','Admin\CategoriesController@create')->name('add-categories');
-    Route::get('admin/categories/option','Admin\CategoriesController@display')->name('option-categories');
-    Route::get('admin/category/option/{categories}','Admin\CategoriesController@show')->name('option-category');
-    Route::post('admin/products/add','Admin\ProductController@store')->name('add-product');
-    Route::post('admin/category/add','Admin\CategoriesController@store')->name('add-category');
+
+    Route::group(['middleware'=>['permission:add-products']],function(){
+        Route::post('admin/categories/add','Admin\CategoriesController@create')->name('add-categories');
+        Route::get('admin/categories/option','Admin\CategoriesController@display')->name('option-categories');
+        Route::get('admin/category/option/{categories}','Admin\CategoriesController@show')->name('option-category');
+        Route::post('admin/products/add','Admin\ProductController@store')->name('add-product');
+        Route::post('admin/category/add','Admin\CategoriesController@store')->name('add-category');
+    });
     Route::get('admin/product/{product}','Admin\ProductController@show')->name('display-product');
+
+    Route::group(['middleware'=>['permission:update-products']],function(){
     Route::post('admin/product/update/{product}','Admin\ProductController@update');
     Route::post('admin/product/{product}/edit','Admin\ProductController@edit');
-    Route::get('admin/product/delete/{product}','Admin\ProductController@destroy');
+    });
+    Route::get('admin/product/delete/{product}','Admin\ProductController@destroy')->middleware('permission:delete-products');
 });
 
 

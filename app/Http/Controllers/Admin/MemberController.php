@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 use Illuminate\Support\Facades\DB;
 
 
@@ -21,9 +22,11 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        $roles = Role::whereNotIn('name',['super-admin'])->paginate(15);
-        $data = ['users'=> $users,'roles'=> $roles];
+
+        $users = User::paginate(15);
+        $permissions = Permission::all();
+        $roles = Role::whereNotIn('name',['super-admin']);
+        $data = ['users'=> $users,'roles'=> $roles,'permissions'=>$permissions];
         return view('Admin/memberlist',$data);
     }
 
@@ -116,27 +119,13 @@ class MemberController extends Controller
         $request->validate([
             'role' => 'required|unique:roles,name'
         ]);
+        $permissions = collect($request->permiss);
         try{
             DB::beginTransaction();
             $role = new Role;
             $role->name = $request->role;
             $role->save();
-            $permissions = collect([]);
-            if($request->products){
-                $permissions->push('manage products');
-            }
-            if($request->members){
-                $permissions->push('manage members');
-            }
-
-            if($request->orders){
-                $permissions->push('manage orders');
-            }
-
-            if($request->setting){
-                $permissions->push('manage setting');
-            }
-            $role->syncPermissions($permissions);
+            $role->syncPermissions($permissions->keys()->all());
             DB::commit();
         }
         catch (Exception $e){

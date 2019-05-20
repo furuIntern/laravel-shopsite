@@ -14,8 +14,8 @@ class Orders extends Model
     ];
 
     public function products() {
-        return $this->belongsToMany('App\Products','detail_orders','order_id','product_id')
-                    ->withPivot('qty','price','priceTax');
+        return $this->belongsToMany('App\Products','order-detail','order_id','product_id')
+                    ->withPivot('amount');
     }
 
     public function scopeFindOrders($query,$id) {

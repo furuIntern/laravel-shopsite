@@ -14,15 +14,15 @@ class RoleAndPermissionSeeder extends Seeder
     {
         $setting = Permission::create(['name'=>'setting']);
         $addMember = Permission::create(['name'=>'add-members']);
-        $showMember = Permission::create(['name'=>'show-members']);
+        $readMember = Permission::create(['name'=>'read-members']);
         $updateMember = Permission::create(['name'=>'update-members']);
-        $editMember = Permission::create(['name'=>'edit-members']);
-        $showOrders = Permission::create(['name'=>'show-orders']);
+        $deleteMember = Permission::create(['name'=>'delete-members']);
+        $readOrders = Permission::create(['name'=>'read-orders']);
         $addOrders = Permission::create(['name'=>'add-orders']);
         $updateOrders = Permission::create(['name'=>'update-orders']);
         $deleteOrders = Permission::create(['name'=>'delete-orders']);
         $addProducts = Permission::create(['name'=>'add-products']);
-        $showProducts = Permission::create(['name'=>'show-products']);
+        $readProducts = Permission::create(['name'=>'read-products']);
         $deleteProducts = Permission::create(['name'=>'delete-products']);
         $updateProducts = Permission::create(['name'=>'update-products']);
         $spadmin = Role::create(['name'=>'super-admin']);

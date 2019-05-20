@@ -13,7 +13,7 @@ class AddMemberRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('manage members');
+        return $this->user()->hasPermissionTo('add-members');
     }
 
     /**

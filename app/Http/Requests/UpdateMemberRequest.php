@@ -13,7 +13,7 @@ class UpdateMemberRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('manage members');
+        return $this->user()->hasPermissionTo('update-members');
     }
 
     /**

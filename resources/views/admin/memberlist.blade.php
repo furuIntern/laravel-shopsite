@@ -3,13 +3,18 @@
 @if($errors->any())
     <div class="alert alert-danger text-center w-50 container fixed-top">Your request is invalid</div>
 @endif
-<div class="container mt-3 text-right">
-    <button class='btn btn-light ml-role' data-toggle="collapse" data-target="#role"><i class="fas fa-bars"></i> Role</button>
-    <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addMember"><i class="fas fa-plus"></i> Member</button>
+<div class="container mt-3">
+@can('add-members')
+    <div class="text-right">
+        <button class='btn btn-light ml-role' data-toggle="collapse" data-target="#role"><i class="fas fa-bars"></i> Role</button>
+        <button class='btn btn-light ml-2' data-toggle="modal" data-target="#addMember"><i class="fas fa-plus"></i> Member</button>
+    </div>
+
+    <!-- show roles -->
     <div class="collapse text-left" id='role'>
         @foreach($roles as $role)
-            <div class="btn-group mt-2">
-                <div class="btn btn-primary">{{$role->name}}</div>
+            <div class="btn-group mt-2 mr-2">
+                <button class="btn btn-primary role" data-toggle="modal" data-target="#permissions">{{$role->name}}</button>
                 <a href="{{route('delete-role',['role'=>$role->id])}}" class ='btn btn-danger'>&times;</a>
             </div>
         @endforeach
@@ -18,38 +23,40 @@
 <hr/>
  <!-- Add role form  -->
 <div class="modal fade" id='addRole'>
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form action="{{route('add-role')}}" method="post">
             @csrf
                 <div class="modal-header">
                     <div class="modal-title">
-                        <h5 class='text-dark'><b>New member</b></h5>
+                        <h5 class='text-dark'><b>New role</b></h5>
                     </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="form-control" name='role' placeholder='Name'/>
-                    <div class='d-flex mt-2'>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='setting' class="custom-control-input" id="setting">
-                            <label class="custom-control-label" for="setting">Setting</label>
+                <div class="container-fluid">
+                    <input type="text" class="form-control mb-2" name='role' placeholder='Name'/>
+                    <div class="row">
+                        @foreach($permissions as $key=>$permission)
+                        @if($key != 0)
+                        <div class="col-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name='permiss[{{$permission->id}}]' class="custom-control-input" id="permission-{{$permission->id}}">
+                                <label class="custom-control-label" for="permission-{{$permission->id}}">{{ucwords(str_replace('-',' ',$permission->name))}}</label>
+                            </div>
                         </div>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='products' class="custom-control-input" id="products">
-                            <label class="custom-control-label" for="products">Products</label>
-                        </div>
-                        <div class="custom-control custom-checkbox mr-3">
-                            <input type="checkbox" name='orders' class="custom-control-input" id="orders">
-                            <label class="custom-control-label" for="orders">Orders</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name='members' class="custom-control-input" id="members">
-                            <label class="custom-control-label" for="members">Members</label>
+                        @endif
+                        @endforeach
+                        <div class="col-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name='permiss[{{$permissions[0]->id}}]' class="custom-control-input" id="permission-{{$permissions[0]->id}}">
+                                <label class="custom-control-label" for="permission-{{$permissions[0]->id}}">{{ucwords($permissions[0]->name)}}</label>
+                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="modal-footer text-center justify-content-center">
                     <button class="btn btn-success">
@@ -130,10 +137,9 @@
                             </div>
                             <div class="col-md-8">
                                 <select name="role" class='custom-select'>
-                                    <option value="user">User</option>
-                                    <option value="seller">Seller</option>
-                                    <option value="admin">Admin</option>
-                                    <option value="super-admin">Super Admin</option>
+                                    @foreach($roles as $role)
+                                       <option value="{{$role->name}}">{{ucwords($role->name)}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
@@ -149,6 +155,7 @@
     </div>
 </div>
 <!-- End form add member -->
+@endcan
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -170,6 +177,7 @@
         </div>
     </div>
 </div>
+<div class='d-flex justify-content-center mt-5'>{{$users->links()}}</div>
 @endsection
 @section('script')
 <script>
