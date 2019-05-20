@@ -7,8 +7,8 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Orders;
 use App\DetailOrder;
-use App\services\Cart\facades\UseCart;
-use Gloudemans\Shoppingcart\Facades\Cart;
+use Facades\UseCart;
+use Cart;
 use Auth;
 
 class UserController extends Controller
@@ -54,9 +54,10 @@ class UserController extends Controller
     {
         UseCart::restore($id);
         
-        return view('user\order\edit',[ 
-                        'items' => Cart::total(),
-                    ]);
+        return redirect()->route('detailCart',[
+            'items' => dd(Cart::content()),
+            'total' => UseCart::total()
+        ]);
         
     }
 

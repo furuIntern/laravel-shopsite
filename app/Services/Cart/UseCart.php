@@ -83,22 +83,24 @@ class UseCart extends Cart
 
         $store = $this->getConnection()->table($this->getTableName())->find($id);
 
-        $contentStore = $this->getConnection()->table('detail_orders')->join('products','products.id','=','detail_orders.product_id',)->where('order_id',$store->id)->get();
+        $contentStore = $this->getConnection()->table('order-detail')
+                                ->join('products','products.id','=','order-detail.product_id',)
+                                ->where('order_id',$store->id)
+                                ->get();
         
         $content = $this->getContent();
 
         $currentInstance = $this->currentInstance();
         
-        $this->instance($store->instance);
-
         foreach($contentStore as $item) {
 
             $content->put($item->rowId, $item);
         }
         
-        $this->session->put($this->instance, $content);
-
         $this->instance($currentInstance);
+
+        dd($this->instance);
+        $this->session->put($this->instance, $content);
         
     }
 

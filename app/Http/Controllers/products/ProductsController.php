@@ -8,6 +8,7 @@ use App\Products;
 use App\Categories;
 use App\Comment;
 use App\Orders;
+use App\ProductsFilter;
 use Cart;
 use App\Setting;
 use Illuminate\Support\Facades\Crypt;
@@ -25,11 +26,14 @@ class ProductsController extends Controller
 
     public function category(Request $request) {
         
-        $parent = Categories::find($request->id);
+        if($request->route()->name('product'))
+        {
+            $parent = Categories::find($request->id);
         
-        $products = Products::ItemsCategory($parent)->paginate(10);
+            $products = Products::ItemsCategory($parent)->paginate(10);
         
-        return view('shop\showProduct', $this->showShop($products));
+            return view('shop\showProduct', $this->showShop($products));
+        }
     }
 
     public function detailProduct(Request $request , $id) {

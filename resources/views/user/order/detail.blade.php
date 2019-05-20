@@ -28,7 +28,7 @@
         </table>
     <div class="d-flex justify-content-center mb-3">
         <a class="btn btn-primary" name="back" href="">Back</a>
-        <a href="{{route('edit',[ 'id' => $id])}}">restore</a>
+        <!--<a href="{{route('edit',[ 'id' => $id])}}">restore</a>-->
     </div>
     
    

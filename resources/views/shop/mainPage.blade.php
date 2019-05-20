@@ -1,6 +1,7 @@
 @extends('layouts\shop')
 
 @section('main')
+    @include('layouts\loadingScreen')
     <div id="products">
         <div class="row">
             @foreach ($products as $product)

@@ -8,6 +8,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 .navbar-laravel {
   background-color: $white;
@@ -186,6 +188,10 @@ button > a:hover {
   padding: 5px;
   margin: 0;
 }
+
+
+
+
 
 
 
