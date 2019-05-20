@@ -39,10 +39,10 @@ class ProductsController extends Controller
     public function detailProduct(Request $request , $id) {
 
         $Product = Products::find($id);
-        return view('shop\detailProduct' , [ 
-                    'product' => $Product ,
-                    'comments' => Comment::with('user')->where('product_id',$id)->paginate(10)
-                ]);
+        return view('shop\detailProduct' , $this->showShop(
+            $Product,
+            Comment::with('user')->where('product_id',$id)->paginate(10)
+        ));
     }
 
     public function filter(ProductsFilter $filter) {
@@ -118,10 +118,11 @@ class ProductsController extends Controller
         return Crypt::decryptString($cryp);
     } 
 
-    protected function showShop($products = NULL)
+    protected function showShop($products = NULL, $comment = NULL)
     {
         return [
             'products' => $products,
+            'comments' => $comment,
             'items' => Cart::content(),
             'total' => Cart::total()
         ];

@@ -3,11 +3,11 @@
 @section('main')
     <div class=row>
         <div class="col-sm-5">
-            <img src="{{$product->img}}" alt="">
+            <img style="width:100%" src="{{ asset('storage/ImageProduct/'.$products->id.'.png') }}" alt="">
         </div>
         <div class="col-sm-7">
             <div class="card">
-                <p>{{$product->description}}</p>
+                <p>{{$products->description}}</p>
             </div>
             <div>
                 <form class="d-flex justify-content-between">
@@ -17,7 +17,7 @@
                         @csrf
                     </div>
                     <div>
-                        <input class="btn btn-success" style="margin: 2rem 0 auto 0" type="submit" value="Add-To-Cart" name="addCart" data-id="{{$product->id}}" />
+                        <input class="btn btn-success" style="margin: 2rem 0 auto 0" type="submit" value="Add-To-Cart" name="addCart" data-id="{{$products->id}}" />
                     </div>
                 </form>
             </div>
@@ -30,7 +30,7 @@
             @csrf
             <label for="comment">Comment</label>
             <textarea class="form-control" name="comment" id="comment" cols="5" rows="5"></textarea>
-            <input type="submit" class="mt-2 btn btn-success" data-id="{{$product->id}}" name="upComment" value="Update"/>
+            <input type="submit" class="mt-2 btn btn-success" data-id="{{$products->id}}" name="upComment" value="Update"/>
         </form>
     </div>
     <div class="mt-4" id="showComment">
@@ -86,6 +86,15 @@
                 }).then(function(data) {
                     
                 })
+            })
+
+            $(document).on('click','a[name="deleteCart"]',function(e) {
+            
+            e.preventDefault();
+            axios.post('{{route("deleteCart")}}')
+                .then(function(data) {
+                    $('#shoppingCart').html(data.data);
+                }) 
             })
         })
     </script>
