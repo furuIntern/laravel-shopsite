@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                                @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
+                                @foreach (App\Categories::with('children')->where('parent_id', NULL)->orderBy('level','DESC')->get() as $parent)
                                            
                                 <li class="nav-item dropdown">
                                     <a data-id="{{$parent->id}}" class="nav-link category" href="">{{$parent->name}}</a>
