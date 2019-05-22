@@ -178,4 +178,15 @@ button > a:hover {
 }
 
 
+.img-soft {
+  float: left;
+  width: 100%;
+  padding: 0;
+  transition: 1s;
+  transform: translateZ(0);
+}
 
+.img-soft:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}

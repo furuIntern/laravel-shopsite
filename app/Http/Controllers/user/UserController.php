@@ -7,9 +7,13 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Orders;
 use App\DetailOrder;
+use App\Mail\SendContact;
 use Facades\UseCart;
 use Cart;
 use Auth;
+use Mail;
+
+
 
 class UserController extends Controller
 {
@@ -72,6 +76,13 @@ class UserController extends Controller
 
     }
 
-   
+   public function sendContact(Request $request)
+   {    
+        $info = $request->all();
+
+        Mail::to('demoblack789@gmail.com')->send(new SendContact($info));
+
+        return redirect()->back()->with('status', 'Send message successfully!');
+   }
     
 }

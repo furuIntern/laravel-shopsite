@@ -35,7 +35,6 @@ class ProductsController extends Controller
             return view('shop\showProduct', $this->showShop($products));
         }
 
-        return $this->showProducts();
 
     }
 

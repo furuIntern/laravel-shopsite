@@ -25,7 +25,7 @@
                 <div class="container">
                     @foreach (App\Products::sort(Facades\App\Services\Setting\UseSetting::sort())->take(6)->get() as $product)
                         <a href="{{route('detailProduct',[ 'id' => $product->id])}}">
-                            <img class="col-3" style="padding:0 ; float:left" src="{{asset('storage/ImageProduct/'.$product->id.'.png')}}" alt="" width="70" height="60"/>
+                            <img class="col-3 img-soft" src="{{asset('storage/ImageProduct/'.$product->id.'.png')}}" alt="" width="70" height="60"/>
                         </a>
                     @endforeach    
                 </div>                
