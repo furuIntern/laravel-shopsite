@@ -10,14 +10,14 @@
     <title>{{Facades\App\Services\Setting\UseSetting::title()}}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
  
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
 <body>
     <div id="app">
@@ -33,24 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                                @foreach (App\Categories::with('children')->where('parent_id', NULL)->get() as $parent)
-                                           
-                                <li class="nav-item dropdown">
-                                    <a data-id="{{$parent->id}}" class="nav-link category" href="">{{$parent->name}}</a>
-                                            
-                                        @if (!empty($parent->children[0]))
-                                            <ul class="dropdown-menu">
-                                                @foreach ($parent->children as $chill)
-                                                    <li>
-                                                        <a data-id="{{$chill->id}}" class="dropdown-item category " href="">{{$chill->name}}</a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        @endif
-                                    </li>
-                                @endforeach
-                            
-                        
+                        @yield('nav-content')
                     </ul>
 
                     <!-- Right Side Of Navbar -->

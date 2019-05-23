@@ -69,10 +69,7 @@ Route::group(['middleware'=>['permission:manage products']],function(){
 
 Route::get('/', 'products\ProductsController@showProducts')->name('product');
 
-
-Auth::routes();
-
-Route::match([ 'get','post' ],'/home', 'HomeController@index')->name('home');
+Route::match([ 'get','post' ],'/home', 'HomeController@index')->name('home')->middleware('verified');
 
 /**
  * 
@@ -98,6 +95,7 @@ Route::group([ 'prefix' => '/shop' , ['middleware' => 'guest']] ,function() {
     Route::post('/show-order', 'products\ProductsController@showOrderGuest')->name('getOrderGuest');
     Route::post('/show-detail', 'products\ProductsController@showDetailOrderGuest')->name('detailOrderGuest');
     Route::post('/delete-order', 'products\ProductsController@deleteOrderGuest')->name('deleteOrderGuest');
+    Route::get('/send-mail', 'user\UserController@sendContact')->name('sendContact');
 
     Route::group( ['prefix' => 'cart'] ,function() {
 

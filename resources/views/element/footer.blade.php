@@ -24,7 +24,9 @@
             <div class="row" style="padding-left:0">
                 <div class="container">
                     @foreach (App\Products::sort(Facades\App\Services\Setting\UseSetting::sort())->take(6)->get() as $product)
-                        <img class="col-3" style="padding:0" src="{{asset('storage/ImageProduct/'.$product->id.'.png')}}" alt="" width="60" height="60"/>
+                        <a href="{{route('detailProduct',[ 'id' => $product->id])}}">
+                            <img class="col-3 img-soft" src="{{asset('storage/ImageProduct/'.$product->id.'.png')}}" alt="" width="70" height="60"/>
+                        </a>
                     @endforeach    
                 </div>                
             </div>
@@ -33,11 +35,11 @@
             <div class="useful_link">
                 <h4>useful link</h4>
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">about us</a></li>
-                    <li><a href="">service</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">service</a></li>
                     <li><a href="{{ route('contact') }}">{{ __('Contact') }}</a></li>
-                    <li><a href="">portfolio</a></li>
+                    <li><a href="#">portfolio</a></li>
                 </ul>
             </div>
         </div>

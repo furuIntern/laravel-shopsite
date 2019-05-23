@@ -26,7 +26,7 @@
                     Detail
                 </a>
                 <a  class="btn btn-danger btn-block link mt-2" 
-                    href="{{route('deleteCart')}}" name="deleteCart">
+                    href="" name="deleteCart">
                     Delete Cart
                 </a>
             </li>

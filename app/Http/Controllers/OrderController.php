@@ -37,7 +37,12 @@ class OrderController extends Controller
             
             $request->session()->forget('cart');
 
-            return view('checkout\completeOrder')->with( 'key', Crypt::encryptString($id));
+            if(!Auth::check())
+            {
+                return view('checkout\completeOrder')->with( 'key', Crypt::encryptString($id));
+            }
+
+            return ridirect()->route('index')->with( 'success', "Complete Order");
         }
         catch(Expection $e) 
         {

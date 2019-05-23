@@ -8,6 +8,7 @@ use App\Products;
 use App\Categories;
 use App\Comment;
 use App\Orders;
+use App\ProductsFilter;
 use Cart;
 use App\Setting;
 use Illuminate\Support\Facades\Crypt;
@@ -25,20 +26,25 @@ class ProductsController extends Controller
 
     public function category(Request $request) {
         
-        $parent = Categories::find($request->id);
+        if($request->route()->name('product'))
+        {
+            $parent = Categories::find($request->id);
         
-        $products = Products::ItemsCategory($parent)->paginate(10);
+            $products = Products::ItemsCategory($parent)->paginate(10);
         
-        return view('shop\showProduct', $this->showShop($products));
+            return view('shop\showProduct', $this->showShop($products));
+        }
+
+
     }
 
     public function detailProduct(Request $request , $id) {
 
         $Product = Products::find($id);
-        return view('shop\detailProduct' , [ 
-                    'product' => $Product ,
-                    'comments' => Comment::with('user')->where('product_id',$id)->paginate(10)
-                ]);
+        return view('shop\detailProduct' , $this->showShop(
+            $Product,
+            Comment::with('user')->where('product_id',$id)->paginate(10)
+        ));
     }
 
     public function filter(ProductsFilter $filter) {
@@ -114,10 +120,11 @@ class ProductsController extends Controller
         return Crypt::decryptString($cryp);
     } 
 
-    protected function showShop($products = NULL)
+    protected function showShop($products = NULL, $comment = NULL)
     {
         return [
             'products' => $products,
+            'comments' => $comment,
             'items' => Cart::content(),
             'total' => Cart::total()
         ];

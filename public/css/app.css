@@ -10826,3 +10826,18 @@ button > a:hover {
   margin: 0;
 }
 
+.img-soft {
+  float: left;
+  width: 100%;
+  padding: 0;
+  transition: 1s;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.img-soft:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: 1s;
+}
+

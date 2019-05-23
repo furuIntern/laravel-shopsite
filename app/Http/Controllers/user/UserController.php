@@ -7,9 +7,13 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Orders;
 use App\DetailOrder;
-use App\services\Cart\facades\UseCart;
-use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Mail\SendContact;
+use Facades\UseCart;
+use Cart;
 use Auth;
+use Mail;
+
+
 
 class UserController extends Controller
 {
@@ -54,9 +58,10 @@ class UserController extends Controller
     {
         UseCart::restore($id);
         
-        return view('user\order\edit',[ 
-                        'items' => Cart::total(),
-                    ]);
+        return redirect()->route('detailCart',[
+            'items' => dd(Cart::content()),
+            'total' => UseCart::total()
+        ]);
         
     }
 
@@ -71,6 +76,13 @@ class UserController extends Controller
 
     }
 
-   
+   public function sendContact(Request $request)
+   {    
+        $info = $request->all();
+
+        Mail::to('demoblack789@gmail.com')->send(new SendContact($info));
+
+        return redirect()->back()->with('status', 'Send message successfully!');
+   }
     
 }

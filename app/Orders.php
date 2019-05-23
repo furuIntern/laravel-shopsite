@@ -20,8 +20,8 @@ class Orders extends Model
 
     public function scopeFindOrders($query,$id) {
 
-        $query->where('user_id', $id);
-             
+        $query->where('user_id', $id)
+                ->where('state', 'waiting');
 
         return $query;
     }
