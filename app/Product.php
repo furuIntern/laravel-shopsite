@@ -8,7 +8,7 @@ class Product extends Model
 {
     protected $table = 'products';
     protected $fillable = [
-        'name','price','amount','category_id','sold'
+        'name','price','amount','category_id','sold','description'
     ];
 
     public function scopeProductsFilter($query,$filter) {

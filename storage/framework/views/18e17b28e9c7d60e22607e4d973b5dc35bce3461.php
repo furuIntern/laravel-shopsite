@@ -40,6 +40,8 @@
                             <h3 class='text-center'><?php echo e($product->sold); ?></h3>
                         </div>
                     </div>
+                    <div>Description</div>
+                    <textarea name="description" id="" cols="100%" rows="10" class='form-control'><?php echo e(ucwords($product->description)); ?></textarea>
                 </div>
                 </div>
             </div>

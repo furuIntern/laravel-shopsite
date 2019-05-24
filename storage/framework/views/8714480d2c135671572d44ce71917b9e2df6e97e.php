@@ -45,14 +45,12 @@
                                 <div class="col-9">
                                     <input list='products' class="form-control" name='product[]' placeholder='Product...'/>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-2">
                                     <input type="number" min='1' step='1' class="form-control" name='amount[]' placeholder='Amonut...'/>
                                 </div>
                             </div>
                         </div>
-                        <div class='text-right'>
-                            <button class="btn btn-outline-success" id='AddProductToOrder' type='button'> <i class="fas fa-plus-square"></i> Add</button>
-                        </div>
+                        <button class="btn btn-outline-success" id='AddProductToOrder' type='button'> <i class="fas fa-plus-square"></i> Add</button>
                     </div>
                 </div>
                 <div class="modal-footer text-center justify-content-center">
@@ -113,6 +111,9 @@
         axios.post('order/update/state/'+this.dataset.order);
         $(this).html('completed');
     });
+    function delRow(elem){
+        $(elem).parent().parent().remove();
+    }
 </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('admin.layouts.manage', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Training\Laravel\shop-site\resources\views/admin\orderslist.blade.php ENDPATH**/ ?>

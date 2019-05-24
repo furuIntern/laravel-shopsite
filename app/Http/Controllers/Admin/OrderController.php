@@ -50,12 +50,14 @@ class OrderController extends Controller
         ]);
         $products = collect([]);
         $total = 0;
+        $amount = 0;
             foreach($request->input('product.*') as $key => $productName){
                 $product = Product::where('name',$productName)->first();
                 $OrderDetail = new OrderDetail;
                 $OrderDetail->product_id=$product->id;
                 $OrderDetail->amount=$request->input('amount.'.$key);
                 $total += $product->price*$request->input('amount.'.$key);
+                $amount += $request->input('amount.'.$key);
                 $product->amount -= $request->input('amount.'.$key);
                 $products->push($OrderDetail);
             }
@@ -65,6 +67,7 @@ class OrderController extends Controller
             $order->address = $request->address;
             $order->phone = $request->phone;
             $order->total_price = $total;
+            $order->total_amount = $amount;
             $order->save();
             $order->detail()->saveMany($products);
             return redirect()->route('show-orders');

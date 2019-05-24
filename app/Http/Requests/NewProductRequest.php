@@ -14,7 +14,7 @@ class NewProductRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('manage products');
+        return $this->user()->hasPermissionTo('add-products');
     }
 
     /**

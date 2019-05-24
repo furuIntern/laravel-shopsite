@@ -161,6 +161,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>Description</div>
+                            <textarea name="description" id="" cols="100%" rows="5" class='form-control'></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">

@@ -45,7 +45,8 @@ class ProductController extends Controller
             'name' => $request->name,
             'price'=> $request->price,
             'amount'=> $request->amount,
-            'category_id'=> $request->category
+            'category_id'=> $request->category,
+            'description'=>$request->description
         ]);
         $request->file('img')->storeAs('public/ImageProduct',$product->id.'.png');
         return redirect()->route('show-products');
@@ -73,13 +74,16 @@ class ProductController extends Controller
         $request->validate([
             'img'=>'image',
             'price'=>['required','min:0','numeric'],
-            'amount'=>['required','min:0','numeric']
+            'amount'=>['required','min:0','numeric'],
+            'description'=>['required']
+
         ]);
         if($request->file('img')){
             $request->file('img')->storeAs('public/ImageProduct',$product->id.'.png');
         }
         $product->amount = $request->amount;
         $product->price = $request->price;
+        $product->description = $request->description;
         $product->save();
         return redirect()->route('show-products');
     }
@@ -94,9 +98,10 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $request->validate([
-            'amount'=> 'required|numeric|min:0'
+            'amount'=> 'required|numeric|min:0',
         ]);
         $product->amount = $request->amount;
+        
         $product->save();
     }
 
@@ -108,6 +113,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        
+        $product->delete();
+        return redirect()->route('show-products');
     }
 }
